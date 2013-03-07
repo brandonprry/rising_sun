@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85624617-6B56-4A51-9B2C-D361B0604028}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data.PersistentObjects</RootNamespace>
+    <AssemblyName>AutoAssess.Data</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="ICSharpCode.SharpZipLib" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ToolResultsMappings\ARP-ScanResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\HydraResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\NBTScanResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\NiktoResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\NMapResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\OneSixtyOneResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\SMBClientResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\SSLScanResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\TracerouteResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\W3afResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\WapitiResultsMap.cs" />
+    <Compile Include="ToolResultsMappings\WhoisResultsMap.cs" />
+    <Compile Include="ToolOptionsMappings\ARP-ScanOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\HydraOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\NBTScanOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\NiktoOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\NMapOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\SMBClientOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\TracerouteOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\W3afOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\WapitiOptionsMap.cs" />
+    <Compile Include="ToolOptionsMappings\WhoisOptionsMap.cs" />
+    <Compile Include="Mappings\NMapHostMap.cs" />
+    <Compile Include="Mappings\ScanMap.cs" />
+    <Compile Include="ToolResultsMappings\SQLMapResultsMap.cs" />
+    <Compile Include="ToolOptionsMappings\SSLScanOptionsMap.cs" />
+    <Compile Include="Mappings\SQLMapKeyMap.cs" />
+    <Compile Include="Mappings\RouteMap.cs" />
+    <Compile Include="ToolOptionsMappings\SQLMapOptionsMap.cs" />
+    <Compile Include="Mappings\ScanOptionsMap.cs" />
+    <Compile Include="Mappings\ShareDetailsMap.cs" />
+    <Compile Include="PersistentNMapHost.cs" />
+    <Compile Include="PersistentPort.cs" />
+    <Compile Include="PersistentProfile.cs" />
+    <Compile Include="PersistentRoute.cs" />
+    <Compile Include="PersistentScan.cs" />
+    <Compile Include="PersistentScanOptions.cs" />
+    <Compile Include="PersistentShareDetails.cs" />
+    <Compile Include="PersistentSQLMapKey.cs" />
+    <Compile Include="PersistentHydraOptions.cs" />
+    <Compile Include="PersistentNBTScanOptions.cs" />
+    <Compile Include="PersistentOneSixtyOneOptions.cs" />
+    <Compile Include="ToolOptionsMappings\OneSixtyOneOptionsMap.cs" />
+    <Compile Include="PersistentSMBClientOptions.cs" />
+    <Compile Include="PersistentSQLMapOptions.cs" />
+    <Compile Include="PersistentSSLScanOptions.cs" />
+    <Compile Include="PersistentTracerouteOptions.cs" />
+    <Compile Include="PersistentW3afOptionsMap.cs" />
+    <Compile Include="PersistentWapitiOptions.cs" />
+    <Compile Include="PersistentWhoisOptions.cs" />
+    <Compile Include="PersistentHydraResults.cs" />
+    <Compile Include="PersistentNBTScanResults.cs" />
+    <Compile Include="PersistentNiktoResults.cs" />
+    <Compile Include="PersistentNMapResults.cs" />
+    <Compile Include="PersistentOneSixtyOneResults.cs" />
+    <Compile Include="PersistentSMBClientResults.cs" />
+    <Compile Include="PersistentSQLMapResults.cs" />
+    <Compile Include="PersistentSSLScanResults.cs" />
+    <Compile Include="PersistentTracerouteResults.cs" />
+    <Compile Include="PersistentW3afResults.cs" />
+    <Compile Include="PersistentWapitiResults.cs" />
+    <Compile Include="PersistentWhoisResults.cs" />
+    <Compile Include="PersistentUser.cs" />
+    <Compile Include="PersistentARPScanResults.cs" />
+    <Compile Include="Mappings\PortMap.cs" />
+    <Compile Include="PersistentARPScanOptions.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="PersistentClient.cs" />
+    <Compile Include="Mappings\ClientMap.cs" />
+    <Compile Include="Mappings\UserMap.cs" />
+    <Compile Include="PersistentNMapOptions.cs" />
+    <Compile Include="PersistentNiktoOptions.cs" />
+    <Compile Include="PersistentCVE.cs" />
+    <Compile Include="PersistentNVD.cs" />
+    <Compile Include="Mappings\CVEMap.cs" />
+    <Compile Include="Mappings\NVDMap.cs" />
+    <Compile Include="Mappings\CVECommentMap.cs" />
+    <Compile Include="Mappings\CVEReferenceMap.cs" />
+    <Compile Include="Mappings\CVSSMap.cs" />
+    <Compile Include="Mappings\NVDReferenceMap.cs" />
+    <Compile Include="Mappings\VulnerableSoftwareMap.cs" />
+    <Compile Include="PersistentWapitiBug.cs" />
+    <Compile Include="PersistentWapitiReference.cs" />
+    <Compile Include="Mappings\WapitiBugMap.cs" />
+    <Compile Include="Mappings\WapitiReferenceMap.cs" />
+    <Compile Include="PersistentDsxsOptions.cs" />
+    <Compile Include="PersistentDsxsResults.cs" />
+    <Compile Include="ToolResultsMappings\DsxsResultsMap.cs" />
+    <Compile Include="ToolOptionsMappings\DsxsOptionsMap.cs" />
+    <Compile Include="PersistentPackage.cs" />
+    <Compile Include="Mappings\PackageMap.cs" />
+    <Compile Include="PersistentProfileHost.cs" />
+    <Compile Include="PersistentProfileHostVerification.cs" />
+    <Compile Include="Mappings\ProfileHostVerificationMap.cs" />
+    <Compile Include="Mappings\ProfileHostMap.cs" />
+    <Compile Include="PersistentNiktoItem.cs" />
+    <Compile Include="Mappings\NiktoItemMap.cs" />
+    <Compile Include="PersistentEvent.cs" />
+    <Compile Include="Mappings\EventMap.cs" />
+    <Compile Include="Mappings\ProfileMap.cs" />
+    <Compile Include="PersistentVirtualMachine.cs" />
+    <Compile Include="Mappings\VirtualMachineMap.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="ToolOptionsMappings\" />
+    <Folder Include="ToolResultsMappings\" />
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Data.BusinessObjects\AutoAssess.Data.BusinessObjects.csproj">
+      <Project>{9349CF02-BCB2-4F87-B413-DD6D9AEE0AA9}</Project>
+      <Name>AutoAssess.Data.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.PersistentObjects\AutoAssess.Data.Nessus.PersistentObjects.csproj">
+      <Project>{48CB24EF-F501-463E-AC9C-95491A1E6D5B}</Project>
+      <Name>AutoAssess.Data.Nessus.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.PersistentObjects\AutoAssess.Data.OpenVAS.PersistentObjects.csproj">
+      <Project>{3161735C-8CE5-43E5-A4E1-837B6FD32A72}</Project>
+      <Name>AutoAssess.Data.OpenVAS.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.BusinessObjects\AutoAssess.Data.Nessus.BusinessObjects.csproj">
+      <Project>{CCA85782-68B2-4838-9C36-14D209AEC90F}</Project>
+      <Name>AutoAssess.Data.Nessus.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Virtualbox\AutoAssess.Data.Virtualbox.csproj">
+      <Project>{734D0B0E-B6F9-438D-ACFB-7374862CCF7C}</Project>
+      <Name>AutoAssess.Data.Virtualbox</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

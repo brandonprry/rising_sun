@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9349CF02-BCB2-4F87-B413-DD6D9AEE0AA9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data.BusinessObjects</RootNamespace>
+    <AssemblyName>AutoAssess.Data.BusinessObjects</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ToolOptions\OpenVASToolOptions.cs" />
+    <Compile Include="ToolOptions\NMapToolOptions.cs" />
+    <Compile Include="ToolOptions\WhoisToolOptions.cs" />
+    <Compile Include="ToolOptions\ARP-ScanToolOptions.cs" />
+    <Compile Include="ToolOptions\HydraToolOptions.cs" />
+    <Compile Include="ToolOptions\MetasploitToolOptions.cs" />
+    <Compile Include="ToolOptions\NBTScanToolOptions.cs" />
+    <Compile Include="ToolOptions\NiktoToolOptions.cs" />
+    <Compile Include="ToolOptions\OneSixtyOneToolOptions.cs" />
+    <Compile Include="ToolOptions\SMBClientToolOptions.cs" />
+    <Compile Include="ToolOptions\SSLScanToolOptions.cs" />
+    <Compile Include="ToolOptions\TcpDumpToolOptions.cs" />
+    <Compile Include="ToolOptions\TracerouteToolOptions.cs" />
+    <Compile Include="ToolOptions\W3afToolOptions.cs" />
+    <Compile Include="ToolOptions\WapitiToolOptions.cs" />
+    <Compile Include="ToolOptions\WinexeToolOptions.cs" />
+    <Compile Include="ToolOptions\SQLMapOptions.cs" />
+    <Compile Include="ToolResults\OpenVASToolResults.cs" />
+    <Compile Include="ToolResults\NMapToolResults.cs" />
+    <Compile Include="ToolResults\HydraToolResults.cs" />
+    <Compile Include="ToolResults\MetasploitToolResults.cs" />
+    <Compile Include="ToolResults\NBTScanToolResults.cs" />
+    <Compile Include="ToolResults\NiktoToolResults.cs" />
+    <Compile Include="ToolResults\OneSixtyOneToolResults.cs" />
+    <Compile Include="ToolResults\SMBClientToolResults.cs" />
+    <Compile Include="ToolResults\SSLScanToolResults.cs" />
+    <Compile Include="ToolResults\TcpDumpToolResults.cs" />
+    <Compile Include="ToolResults\TracerouteToolResults.cs" />
+    <Compile Include="ToolResults\W3afToolResults.cs" />
+    <Compile Include="ToolResults\WapitiToolResults.cs" />
+    <Compile Include="ToolResults\WinexeToolResults.cs" />
+    <Compile Include="ToolResults\WhoisToolResults.cs" />
+    <Compile Include="ToolResults\SQLMapResults.cs" />
+    <Compile Include="Tools\OpenVAS.cs" />
+    <Compile Include="Tools\SMBClient.cs" />
+    <Compile Include="Tools\SSLScan.cs" />
+    <Compile Include="Tools\OneSixtyOne.cs" />
+    <Compile Include="Tools\NBTScan.cs" />
+    <Compile Include="Tools\NMap.cs" />
+    <Compile Include="Tools\Traceroute.cs" />
+    <Compile Include="Tools\Hydra.cs" />
+    <Compile Include="Tools\W3af.cs" />
+    <Compile Include="Tools\Wapiti.cs" />
+    <Compile Include="Tools\Nikto.cs" />
+    <Compile Include="Tools\Winexe.cs" />
+    <Compile Include="Tools\Metasploit.cs" />
+    <Compile Include="Tools\TcpDump.cs" />
+    <Compile Include="Tools\Whois.cs" />
+    <Compile Include="Tools\SQLMap.cs" />
+    <Compile Include="Assessment.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="NMapHost.cs" />
+    <Compile Include="Port.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="Route.cs" />
+    <Compile Include="Scan.cs" />
+    <Compile Include="ScanOptions.cs" />
+    <Compile Include="ScanType.cs" />
+    <Compile Include="ShareDetails.cs" />
+    <Compile Include="SQLMapKey.cs" />
+    <Compile Include="ToolOptions.cs" />
+    <Compile Include="ToolResults.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Website.cs" />
+    <Compile Include="ToolResults\ARPScanToolResults.cs" />
+    <Compile Include="Interfaces\INMapHost.cs" />
+    <Compile Include="Interfaces\ITool.cs" />
+    <Compile Include="Interfaces\IToolOptions.cs" />
+    <Compile Include="Interfaces\IToolResults.cs" />
+    <Compile Include="Interfaces\IVulnerabilityScan.cs" />
+    <Compile Include="ToolResults\MBSAScanResult.cs" />
+    <Compile Include="CVE.cs" />
+    <Compile Include="NVD.cs" />
+    <Compile Include="Tools\NmapTraceroute.cs" />
+    <Compile Include="Tools\Dsxs.cs" />
+    <Compile Include="ToolResults\DsxsToolResults.cs" />
+    <Compile Include="ToolOptions\DsxsToolOptions.cs" />
+    <Compile Include="Tools\WPScan.cs" />
+    <Compile Include="ToolResults\WPScanToolResults.cs" />
+    <Compile Include="ToolOptions\WPScanToolOptions.cs" />
+    <Compile Include="Tools\JoomlaScan.cs" />
+    <Compile Include="ToolResults\JoomlaScanToolResults.cs" />
+    <Compile Include="ToolOptions\JoomlaScanToolOptions.cs" />
+    <Compile Include="Tools\BlindElephant.cs" />
+    <Compile Include="ToolResults\BlindElephantToolResults.cs" />
+    <Compile Include="ToolOptions\BlindElephantToolOptions.cs" />
+    <Compile Include="DsxsItem.cs" />
+    <Compile Include="Interfaces\IWebVuln.cs" />
+    <Compile Include="Interfaces\IVuln.cs" />
+    <Compile Include="Tools\ARPScan.cs" />
+    <Compile Include="Correlator.cs" />
+    <Compile Include="Package.cs" />
+    <Compile Include="ProfileHost.cs" />
+    <Compile Include="ProfileHostVerification.cs" />
+    <Compile Include="NiktoItem.cs" />
+    <Compile Include="Event.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.BusinessObjects\AutoAssess.Data.OpenVAS.BusinessObjects.csproj">
+      <Project>{C0D46987-B569-4BA6-A97D-2446789B3910}</Project>
+      <Name>AutoAssess.Data.OpenVAS.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.BusinessObjects\AutoAssess.Data.Nessus.BusinessObjects.csproj">
+      <Project>{CCA85782-68B2-4838-9C36-14D209AEC90F}</Project>
+      <Name>AutoAssess.Data.Nessus.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.PersistentObjects\AutoAssess.Data.OpenVAS.PersistentObjects.csproj">
+      <Project>{3161735C-8CE5-43E5-A4E1-837B6FD32A72}</Project>
+      <Name>AutoAssess.Data.OpenVAS.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.PersistentObjects\AutoAssess.Data.Nessus.PersistentObjects.csproj">
+      <Project>{48CB24EF-F501-463E-AC9C-95491A1E6D5B}</Project>
+      <Name>AutoAssess.Data.Nessus.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Misc\AutoAssess.Misc.csproj">
+      <Project>{183217A9-6980-4783-ADEF-4D4F273FA70A}</Project>
+      <Name>AutoAssess.Misc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.BusinessObjects\AutoAssess.Data.Nexpose.BusinessObjects.csproj">
+      <Project>{180C0D69-7307-4C9A-9E54-0F5E7A561B04}</Project>
+      <Name>AutoAssess.Data.Nexpose.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.PersistentObjects\AutoAssess.Data.Nexpose.PersistentObjects.csproj">
+      <Project>{E9A53559-118E-4744-AA84-8F16277E86BD}</Project>
+      <Name>AutoAssess.Data.Nexpose.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\metasploit-sharp\metasploit-sharp\metasploit-sharp.csproj">
+      <Project>{7406EF69-41DD-467A-90F9-BB34FBC39C0C}</Project>
+      <Name>metasploit-sharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.BusinessObjects\AutoAssess.Data.Metasploit.Pro.BusinessObjects.csproj">
+      <Project>{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.PersistentObjects\AutoAssess.Data.Metasploit.Pro.PersistentObjects.csproj">
+      <Project>{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\openvas-sharp\openvas-sharp.csproj">
+      <Project>{F133DABB-CC2F-4507-90C3-C1B20F9E66CF}</Project>
+      <Name>openvas-sharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nessus-sharp\nessus-sharp.csproj">
+      <Project>{C5D9ABF5-AF33-4479-8237-EAE828C5BFCE}</Project>
+      <Name>nessus-sharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nexpose-sharp\nexpose-sharp\nexpose-sharp.csproj">
+      <Project>{35EDE3B5-13AE-4E8B-B699-50C48E1CCE17}</Project>
+      <Name>nexpose-sharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="rsc\interesting_ports" />
+    <EmbeddedResource Include="rsc\password.lst" />
+    <EmbeddedResource Include="rsc\suspicious_ports" />
+    <EmbeddedResource Include="rsc\username.lst" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+</Project>

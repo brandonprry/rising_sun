@@ -1,0 +1,99 @@
+<Type Name="Website" FullName="AutoAssess.Data.BusinessObjects.Website">
+  <TypeSignature Language="C#" Value="public class Website" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Website extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+    <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+    <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+    <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+    <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Website ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPv4Address">
+      <MemberSignature Language="C#" Value="public System.Net.IPAddress IPv4Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress IPv4Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IPAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URL">
+      <MemberSignature Language="C#" Value="public string URL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string URL" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

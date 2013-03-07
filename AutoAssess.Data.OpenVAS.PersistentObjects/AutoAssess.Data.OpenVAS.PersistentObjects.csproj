@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3161735C-8CE5-43E5-A4E1-837B6FD32A72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data.OpenVAS.PersistentObjects</RootNamespace>
+    <AssemblyName>AutoAssess.Data.OpenVAS.Objects</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Mappings\OpenVASAgentMap.cs" />
+    <Compile Include="Mappings\OpenVASConfigMap.cs" />
+    <Compile Include="Mappings\OpenVASCredentialsMap.cs" />
+    <Compile Include="Mappings\OpenVASEscalatorMap.cs" />
+    <Compile Include="Mappings\OpenVASLSCCredentialMap.cs" />
+    <Compile Include="Mappings\OpenVASNVTMap.cs" />
+    <Compile Include="Mappings\OpenVASNoteMap.cs" />
+    <Compile Include="Mappings\OpenVASNVTFamilyMap.cs" />
+    <Compile Include="Mappings\OpenVASOverrideMap.cs" />
+    <Compile Include="Mappings\OpenVASReportFormatMap.cs" />
+    <Compile Include="Mappings\OpenVASScheduleMap.cs" />
+    <Compile Include="Mappings\OpenVASTargetMap.cs" />
+    <Compile Include="Mappings\OpenVASTaskMap.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Mappings\OpenVASEscalatorConditionMap.cs" />
+    <Compile Include="Mappings\OpenVASEscalatorMethodMap.cs" />
+    <Compile Include="Mappings\OpenVASEscalatorEventMap.cs" />
+    <Compile Include="PersistentOpenVASAgent.cs" />
+    <Compile Include="PersistentOpenVASConfig.cs" />
+    <Compile Include="PersistentOpenVASCredentials.cs" />
+    <Compile Include="PersistentOpenVASEscalator.cs" />
+    <Compile Include="PersistentOpenVASLSCCredential.cs" />
+    <Compile Include="PersistentOpenVASNote.cs" />
+    <Compile Include="PersistentOpenVASNVT.cs" />
+    <Compile Include="PersistentOpenVASNVTFamily.cs" />
+    <Compile Include="PersistentOpenVASOverride.cs" />
+    <Compile Include="PersistentOpenVASReportFormat.cs" />
+    <Compile Include="PersistentOpenVASSchedule.cs" />
+    <Compile Include="PersistentOpenVASSlave.cs" />
+    <Compile Include="PersistentOpenVASTarget.cs" />
+    <Compile Include="PersistentOpenVASTask.cs" />
+    <Compile Include="PersistentEscalatorCondition.cs" />
+    <Compile Include="PersistentEscalatorMethod.cs" />
+    <Compile Include="PersistentEscalatorEvent.cs" />
+    <Compile Include="PersistentOpenVASScan.cs" />
+    <Compile Include="PersistentResultCount.cs" />
+    <Compile Include="PersistentReportPort.cs" />
+    <Compile Include="PersistentReportResult.cs" />
+    <Compile Include="PersistentReportNVT.cs" />
+    <Compile Include="PersistentReportFilter.cs" />
+    <Compile Include="Mappings\ReportFilterMap.cs" />
+    <Compile Include="Mappings\ReportNVTMap.cs" />
+    <Compile Include="Mappings\ReportPortMap.cs" />
+    <Compile Include="Mappings\ReportResultMap.cs" />
+    <Compile Include="Mappings\ResultCountMap.cs" />
+    <Compile Include="Mappings\OpenVASSlaveMap.cs" />
+    <Compile Include="Mappings\OpenVASScanMap.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.BusinessObjects\AutoAssess.Data.OpenVAS.BusinessObjects.csproj">
+      <Project>{C0D46987-B569-4BA6-A97D-2446789B3910}</Project>
+      <Name>AutoAssess.Data.OpenVAS.BusinessObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+</Project>

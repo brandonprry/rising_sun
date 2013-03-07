@@ -1,0 +1,52 @@
+<Type Name="OpenVASReportParser" FullName="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportParser">
+  <TypeSignature Language="C#" Value="public static class OpenVASReportParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable sealed beforefieldinit OpenVASReportParser extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.OpenVAS.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+    <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+    <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ParseHostsFromReport">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;string,AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHost&gt; ParseHostsFromReport (System.Xml.XmlDocument doc);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;string, class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHost&gt; ParseHostsFromReport(class System.Xml.XmlDocument doc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHost&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+      </Parameters>
+      <Docs>
+        <param name="doc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

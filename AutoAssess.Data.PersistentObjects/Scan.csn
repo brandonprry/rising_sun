@@ -1,0 +1,96 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Data.Linq;
+using System.IO;
+using System.Net;
+using System.Text;
+using AutoAssess.Data;
+
+namespace AutoAssess.Data
+{
+	public class Scan
+	{
+		public Scan ()
+		{
+		}
+		
+		public ScanType ScanType { get; set; }
+		
+		public string Host { get; set; }
+		
+		public string Range { get; set; }
+		
+		public IList<ITool> Tools { get; set; }
+		
+		public Dictionary<Type, IToolResults> Results { get; set; }
+		
+		public void Run()
+		{
+			Results = new Dictionary<Type, IToolResults>();
+			string ipListPath = "/tmp/" + Guid.NewGuid().ToString();
+			ASCIIEncoding enc = new ASCIIEncoding();
+			NMap nmap = new NMap();
+			IToolOptions _options = new NMapToolOptions();
+			
+			if (!string.IsNullOrEmpty(this.Host))
+				(_options as NMapToolOptions).Host = this.Host;
+			else
+				(_options as NMapToolOptions).Range = this.Range;
+			
+			nmap.Options = (_options as NMapToolOptions);
+			
+			Console.WriteLine("nmapping");
+			IToolResults _results = nmap.Run();
+			
+			
+			using (TextWriter ipList = new StreamWriter(ipListPath))
+			{
+			
+				foreach (NMapHost host in (_results as NMapToolResults).Hosts)
+				{
+					ipList.WriteLine(host.IPAddress);
+					
+					_options = new TracerouteToolOptions();
+					
+					(_options as TracerouteToolOptions).Host = host.IPAddress;
+					
+					Traceroute traceroute = new Traceroute(_options as TracerouteToolOptions);
+					
+					traceroute.Run();
+					
+					foreach (Port port in host.OpenPorts)
+					{
+						if (port.Service == "http")
+							;
+						else if (port.Service == "https")
+							;
+						//etc...
+					}
+				}
+			
+			}
+			
+			File.Delete(ipListPath);
+			
+			
+			
+			
+			
+//			this.Tools = new List<ITool>();
+//			
+//			this.Tools.Add((ITool)(new NMap()));
+//			
+//			if (this.ScanType == ScanType.Full)
+//			{
+//				this.Tools.Add((ITool)(new OpenVAS()));
+//			}
+//			
+//			foreach (ITool tool in Tools)
+//			{
+//				Results.Add(tool.GetType(), tool.Run());
+//			}
+		}
+	}
+}
+

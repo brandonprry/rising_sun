@@ -1,0 +1,145 @@
+<Type Name="NexposeReportType" FullName="AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType">
+  <TypeSignature Language="C#" Value="public enum NexposeReportType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NexposeReportType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Nexpose.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CSV">
+      <MemberSignature Language="C#" Value="CSV" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType CSV = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HTML">
+      <MemberSignature Language="C#" Value="HTML" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType HTML = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PDF">
+      <MemberSignature Language="C#" Value="PDF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType PDF = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RTF">
+      <MemberSignature Language="C#" Value="RTF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType RTF = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType Text = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XML">
+      <MemberSignature Language="C#" Value="XML" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType XML = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

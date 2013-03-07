@@ -1,0 +1,365 @@
+<Type Name="NMapHost" FullName="AutoAssess.Data.BusinessObjects.NMapHost">
+  <TypeSignature Language="C#" Value="public class NMapHost" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NMapHost extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+    <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+    <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+    <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+    <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NMapHost ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NMapHost (System.Xml.XmlNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNode node) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CleanHost">
+      <MemberSignature Language="C#" Value="public virtual void CleanHost ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CleanHost() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceType">
+      <MemberSignature Language="C#" Value="public virtual string DeviceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hostname">
+      <MemberSignature Language="C#" Value="public virtual string Hostname { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Hostname" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPAddressv4">
+      <MemberSignature Language="C#" Value="public virtual string IPAddressv4 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IPAddressv4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPAddressv6">
+      <MemberSignature Language="C#" Value="public virtual string IPAddressv6 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IPAddressv6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPAddressV6">
+      <MemberSignature Language="C#" Value="public virtual string IPAddressV6 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IPAddressV6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MAC">
+      <MemberSignature Language="C#" Value="public virtual string MAC { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MAC" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkDistance">
+      <MemberSignature Language="C#" Value="public virtual string NetworkDistance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NetworkDistance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OS">
+      <MemberSignature Language="C#" Value="public virtual string OS { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OS" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OS_Details">
+      <MemberSignature Language="C#" Value="public virtual string OS_Details { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OS_Details" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ports">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.BusinessObjects.Port&gt; Ports { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.BusinessObjects.Port&gt; Ports" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.BusinessObjects.Port&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBusinessXml">
+      <MemberSignature Language="C#" Value="public virtual string ToBusinessXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToBusinessXml() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39785</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40892</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4079</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30330</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38007</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41864</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30159</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36209</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36824</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38754</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

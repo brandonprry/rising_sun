@@ -1,0 +1,939 @@
+<html>
+  <head>
+    <title>AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">AutoAssess.Data.Nexpose.PersistentObjects</a> : <a href="index.html">AutoAssess.Data.Nexpose.PersistentObjects Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset">Overview</a>
+      </p>
+      <p>
+        <a href="#T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset">PersistentNexposeAsset  Class</h1>
+    <p class="Summary" id="T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Signature">
+      <h2>Syntax</h2>
+      <div class="Signature">public class  <b>PersistentNexposeAsset</b> : <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a></div>
+    </div>
+    <div class="Remarks" id="T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Docs:Version Information">
+        <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset">PersistentNexposeAsset</a>
+                    </b>()</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset(AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset)">PersistentNexposeAsset</a>
+                    </b>(<a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedBy">CreatedBy</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedOn">CreatedOn</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.Fingerprints">Fingerprints</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostFingerprint&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.HostTests">HostTests</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostTest&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.ID">ID</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.IPAddressV4">IPAddressV4</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.IsActive">IsActive</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedBy">LastModifiedBy</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedOn">LastModifiedOn</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.Names">Names</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostName&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentFingerprints">PersistentFingerprints</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;PersistentNexposeHostFingerprint&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentHostTests">PersistentHostTests</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;PersistentNexposeHostTest&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentNames">PersistentNames</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;PersistentNexposeHostName&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentServices">PersistentServices</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;PersistentNexposeHostService&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.RemoteDeviceID">RemoteDeviceID</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.RiskScore">RiskScore</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Decimal">decimal</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.ScanTemplate">ScanTemplate</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.Services">Services</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostService&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.SiteImportance">SiteImportance</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.SiteName">SiteName</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.Status">Status</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html#P:AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset.Vulnerabilities">Vulnerabilities</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeVulnerability&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a>.</i>)</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetCreationInfo(System.Guid)">SetCreationInfo</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetUpdateInfo(System.Guid)">SetUpdateInfo</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset">PersistentNexposeAsset Constructor</h3>
+        <blockquote id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>PersistentNexposeAsset</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset(AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset)">PersistentNexposeAsset Constructor</h3>
+        <blockquote id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset(AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>PersistentNexposeAsset</b> (<a href="../AutoAssess.Data.Nexpose.BusinessObjects/NexposeAsset.html">AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset</a> asset)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset(AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset):Parameters">
+            <dl>
+              <dt>
+                <i>asset</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset(AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset(AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset):Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedBy">CreatedBy Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedBy:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a> <b>CreatedBy</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedBy:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedBy:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedBy:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedOn">CreatedOn Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedOn:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a> <b>CreatedOn</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedOn:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedOn:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.CreatedOn:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.ID">ID Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.ID:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a> <b>ID</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.ID:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.ID:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.ID:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.IsActive">IsActive Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.IsActive:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsActive</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.IsActive:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.IsActive:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.IsActive:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedBy">LastModifiedBy Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedBy:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a> <b>LastModifiedBy</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedBy:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedBy:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedBy:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedOn">LastModifiedOn Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedOn:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a> <b>LastModifiedOn</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedOn:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedOn:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.LastModifiedOn:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentFingerprints">PersistentFingerprints Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentFingerprints:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;PersistentNexposeHostFingerprint&gt;</a> <b>PersistentFingerprints</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentFingerprints:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentFingerprints:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentFingerprints:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentHostTests">PersistentHostTests Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentHostTests:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;PersistentNexposeHostTest&gt;</a> <b>PersistentHostTests</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentHostTests:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentHostTests:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentHostTests:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentNames">PersistentNames Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentNames:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;PersistentNexposeHostName&gt;</a> <b>PersistentNames</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentNames:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentNames:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentNames:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentServices">PersistentServices Property</h3>
+        <blockquote id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentServices:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;PersistentNexposeHostService&gt;</a> <b>PersistentServices</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentServices:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentServices:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.PersistentServices:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetCreationInfo(System.Guid)">SetCreationInfo Method</h3>
+        <blockquote id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetCreationInfo(System.Guid):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetCreationInfo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a> owner)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetCreationInfo(System.Guid):Parameters">
+            <dl>
+              <dt>
+                <i>owner</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetCreationInfo(System.Guid):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetCreationInfo(System.Guid):Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetUpdateInfo(System.Guid)">SetUpdateInfo Method</h3>
+        <blockquote id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetUpdateInfo(System.Guid):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetUpdateInfo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Guid">Guid</a> modifier)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetUpdateInfo(System.Guid):Parameters">
+            <dl>
+              <dt>
+                <i>modifier</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetUpdateInfo(System.Guid):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:AutoAssess.Data.Nexpose.PersistentObjects.PersistentNexposeAsset.SetUpdateInfo(System.Guid):Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Nexpose.PersistentObjects<br /><b>Assembly: </b>AutoAssess.Data.Nexpose.PersistentObjects (in AutoAssess.Data.Nexpose.PersistentObjects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41861, 1.0.4648.30156, 1.0.4648.36206, 1.0.4657.36821, 1.0.4813.38752</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

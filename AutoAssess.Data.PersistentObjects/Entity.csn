@@ -1,0 +1,9 @@
+using System;
+
+namespace AutoAssess.Data
+{
+	public abstract class Entity
+	{
+		protected Guid ID { get; set; }
+	}
+}

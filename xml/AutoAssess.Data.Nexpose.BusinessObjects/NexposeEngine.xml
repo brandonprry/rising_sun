@@ -1,0 +1,40 @@
+<Type Name="NexposeEngine" FullName="AutoAssess.Data.Nexpose.BusinessObjects.NexposeEngine">
+  <TypeSignature Language="C#" Value="public class NexposeEngine" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NexposeEngine extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Nexpose.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NexposeEngine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

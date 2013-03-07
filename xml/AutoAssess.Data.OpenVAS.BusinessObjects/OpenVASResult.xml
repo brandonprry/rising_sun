@@ -1,0 +1,37 @@
+<Type Name="OpenVASResult" FullName="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASResult">
+  <TypeSignature Language="C#" Value="public class OpenVASResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit OpenVASResult extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.OpenVAS.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpenVASResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

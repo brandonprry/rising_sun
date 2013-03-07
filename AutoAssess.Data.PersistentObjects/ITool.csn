@@ -1,0 +1,15 @@
+
+using System;
+
+namespace autoassess_service
+{
+	public interface ITool
+	{
+		string Name { get; }
+		string Description { get; }
+		
+		IToolOptions Options { get; set; }
+		
+		IToolResults Run();
+	}
+}

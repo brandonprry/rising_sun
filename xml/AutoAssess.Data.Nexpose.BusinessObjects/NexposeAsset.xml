@@ -1,0 +1,301 @@
+<Type Name="NexposeAsset" FullName="AutoAssess.Data.Nexpose.BusinessObjects.NexposeAsset">
+  <TypeSignature Language="C#" Value="public class NexposeAsset" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NexposeAsset extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Nexpose.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NexposeAsset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NexposeAsset (System.Xml.XmlNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNode node) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fingerprints">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostFingerprint&gt; Fingerprints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostFingerprint&gt; Fingerprints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostFingerprint&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostTests">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostTest&gt; HostTests { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostTest&gt; HostTests" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostTest&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPAddressV4">
+      <MemberSignature Language="C#" Value="public virtual string IPAddressV4 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IPAddressV4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Names">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostName&gt; Names { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostName&gt; Names" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostName&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteDeviceID">
+      <MemberSignature Language="C#" Value="public virtual int RemoteDeviceID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RemoteDeviceID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RiskScore">
+      <MemberSignature Language="C#" Value="public virtual decimal RiskScore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal RiskScore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScanTemplate">
+      <MemberSignature Language="C#" Value="public virtual string ScanTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScanTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Services">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostService&gt; Services { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostService&gt; Services" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeHostService&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteImportance">
+      <MemberSignature Language="C#" Value="public virtual string SiteImportance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SiteImportance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteName">
+      <MemberSignature Language="C#" Value="public virtual string SiteName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SiteName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public virtual string Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vulnerabilities">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeVulnerability&gt; Vulnerabilities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class AutoAssess.Data.Nexpose.BusinessObjects.NexposeVulnerability&gt; Vulnerabilities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;AutoAssess.Data.Nexpose.BusinessObjects.NexposeVulnerability&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

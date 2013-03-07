@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48CB24EF-F501-463E-AC9C-95491A1E6D5B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data.Nessus.PersistentObjects</RootNamespace>
+    <AssemblyName>AutoAssess.Data.Nessus.Objects</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Mappings\NessusPluginMap.cs" />
+    <Compile Include="Mappings\NessusPluginFamilyMap.cs" />
+    <Compile Include="Mappings\NessusPolicyMap.cs" />
+    <Compile Include="Mappings\NessusPreferenceMap.cs" />
+    <Compile Include="Mappings\NessusReportMap.cs" />
+    <Compile Include="Mappings\NessusScanMap.cs" />
+    <Compile Include="Mappings\NessusScanTemplateMap.cs" />
+    <Compile Include="Mappings\NessusUserMap.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="PersistentNessusPlugin.cs" />
+    <Compile Include="PersistentNessusHost.cs" />
+    <Compile Include="PersistentNessusPluginFamily.cs" />
+    <Compile Include="PersistentNessusPolicy.cs" />
+    <Compile Include="PersistentNessusPreference.cs" />
+    <Compile Include="PersistentNessusReport.cs" />
+    <Compile Include="PersistentNessusScan.cs" />
+    <Compile Include="PersistentNessusScanTemplate.cs" />
+    <Compile Include="PersistentNessusUser.cs" />
+    <Compile Include="PersistentNessusSeverityItem.cs" />
+    <Compile Include="PersistentNessusReportHost.cs" />
+    <Compile Include="PersistentNessusReportItem.cs" />
+    <Compile Include="PersistentNessusHostProperties.cs" />
+    <Compile Include="Mappings\NessusHostPropertiesMap.cs" />
+    <Compile Include="Mappings\NessusReportHostMap.cs" />
+    <Compile Include="Mappings\NessusReportItemMap.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.BusinessObjects\AutoAssess.Data.Nessus.BusinessObjects.csproj">
+      <Project>{CCA85782-68B2-4838-9C36-14D209AEC90F}</Project>
+      <Name>AutoAssess.Data.Nessus.BusinessObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+</Project>

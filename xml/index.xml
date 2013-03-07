@@ -1,0 +1,624 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="AutoAssess.Data" Version="1.0.4657.36825">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("AutoAssess.Data")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="AutoAsses.Data.Metasploit">
+      <Type Name="MetasploitModuleType" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.BusinessObjects">
+      <Type Name="ARPScan" Kind="Class" />
+      <Type Name="ARPScanToolOptions" Kind="Class" />
+      <Type Name="ARPScanToolResults" Kind="Class" />
+      <Type Name="Assessment" Kind="Class" />
+      <Type Name="BlindElephant" Kind="Class" />
+      <Type Name="BlindElephantToolOptions" Kind="Class" />
+      <Type Name="BlindElephantToolResults" Kind="Class" />
+      <Type Name="Client" Kind="Class" />
+      <Type Name="Correlation" Kind="Class" />
+      <Type Name="Correlator" Kind="Class" />
+      <Type Name="Correlators" Kind="Enumeration" />
+      <Type Name="CVE" Kind="Class" />
+      <Type Name="CVEComment" Kind="Class" />
+      <Type Name="CVEReference" Kind="Class" />
+      <Type Name="CVSS" Kind="Class" />
+      <Type Name="Dsxs" Kind="Class" />
+      <Type Name="DsxsItem" Kind="Class" />
+      <Type Name="DsxsToolOptions" Kind="Class" />
+      <Type Name="DsxsToolResults" Kind="Class" />
+      <Type Name="Event" Kind="Class" />
+      <Type Name="Hydra" Kind="Class" />
+      <Type Name="HydraProtocol" Kind="Enumeration" />
+      <Type Name="HydraToolOptions" Kind="Class" />
+      <Type Name="HydraToolResults" Kind="Class" />
+      <Type Name="INMapHost" Kind="Interface" />
+      <Type Name="ITool" Kind="Interface" />
+      <Type Name="IToolOptions" Kind="Interface" />
+      <Type Name="IToolResults" Kind="Interface" />
+      <Type Name="IVuln" Kind="Interface" />
+      <Type Name="IVulnerabilityScan" Kind="Interface" />
+      <Type Name="IWebVuln" Kind="Interface" />
+      <Type Name="JoomlaScan" Kind="Class" />
+      <Type Name="JoomlaScanToolOptions" Kind="Class" />
+      <Type Name="JoomlaScanToolResults" Kind="Class" />
+      <Type Name="Metasploit" Kind="Class" />
+      <Type Name="MetasploitToolOptions" Kind="Class" />
+      <Type Name="MetasploitToolResults" Kind="Class" />
+      <Type Name="NBTScan" Kind="Class" />
+      <Type Name="NBTScanToolOptions" Kind="Class" />
+      <Type Name="NBTScanToolResults" Kind="Class" />
+      <Type Name="Nikto" Kind="Class" />
+      <Type Name="NiktoItem" Kind="Class" />
+      <Type Name="NiktoToolOptions" Kind="Class" />
+      <Type Name="NiktoToolResults" Kind="Class" />
+      <Type Name="NMap" Kind="Class" />
+      <Type Name="NMapHost" Kind="Class" />
+      <Type Name="NMapToolOptions" Kind="Class" />
+      <Type Name="NMapToolResults" Kind="Class" />
+      <Type Name="NmapTraceroute" Kind="Class" />
+      <Type Name="NVD" Kind="Class" />
+      <Type Name="NVDReference" Kind="Class" />
+      <Type Name="OneSixtyOne" Kind="Class" />
+      <Type Name="OneSixtyOneToolOptions" Kind="Class" />
+      <Type Name="OneSixtyOneToolResults" Kind="Class" />
+      <Type Name="OpenVASTool" Kind="Class" />
+      <Type Name="OpenVASToolOptions" Kind="Class" />
+      <Type Name="OpenVASToolResults" Kind="Class" />
+      <Type Name="Package" Kind="Class" />
+      <Type Name="Port" Kind="Class" />
+      <Type Name="PortState" Kind="Enumeration" />
+      <Type Name="Profile" Kind="Class" />
+      <Type Name="ProfileHost" Kind="Class" />
+      <Type Name="ProfileHostVerification" Kind="Class" />
+      <Type Name="ProfileVerification" Kind="Class" />
+      <Type Name="Route" Kind="Class" />
+      <Type Name="Scan" Kind="Class" />
+      <Type Name="ScanLevel" Kind="Enumeration" />
+      <Type Name="ScanOptions" Kind="Class" />
+      <Type Name="ScanType" Kind="Enumeration" />
+      <Type Name="ShareDetails" Kind="Class" />
+      <Type Name="SMBClient" Kind="Class" />
+      <Type Name="SMBClientToolOptions" Kind="Class" />
+      <Type Name="SMBClientToolResults" Kind="Class" />
+      <Type Name="SQLMap" Kind="Class" />
+      <Type Name="SQLMapOptions" Kind="Class" />
+      <Type Name="SQLMapResults" Kind="Class" />
+      <Type Name="SQLMapVulnerability" Kind="Class" />
+      <Type Name="SSLScan" Kind="Class" />
+      <Type Name="SSLScanToolOptions" Kind="Class" />
+      <Type Name="SSLScanToolResults" Kind="Class" />
+      <Type Name="TcpDump" Kind="Class" />
+      <Type Name="TcpDumpToolOptions" Kind="Class" />
+      <Type Name="TcpDumpToolResults" Kind="Class" />
+      <Type Name="ToolOptions" Kind="Class" />
+      <Type Name="ToolResults" Kind="Class" />
+      <Type Name="Traceroute" Kind="Class" />
+      <Type Name="TracerouteToolOptions" Kind="Class" />
+      <Type Name="TracerouteToolResults" Kind="Class" />
+      <Type Name="User" Kind="Class" />
+      <Type Name="VulnerableSoftware" Kind="Class" />
+      <Type Name="W3af" Kind="Class" />
+      <Type Name="W3afToolOptions" Kind="Class" />
+      <Type Name="W3afToolResults" Kind="Class" />
+      <Type Name="Wapiti" Kind="Class" />
+      <Type Name="WapitiBug" Kind="Class" />
+      <Type Name="WapitiReference" Kind="Class" />
+      <Type Name="WapitiToolOptions" Kind="Class" />
+      <Type Name="WapitiToolResults" Kind="Class" />
+      <Type Name="Website" Kind="Class" />
+      <Type Name="Whois" Kind="Class" />
+      <Type Name="WhoisToolOptions" Kind="Class" />
+      <Type Name="WhoisToolResults" Kind="Class" />
+      <Type Name="Winexe" Kind="Class" />
+      <Type Name="WinexeToolOptions" Kind="Class" />
+      <Type Name="WinexeToolResults" Kind="Class" />
+      <Type Name="WPScan" Kind="Class" />
+      <Type Name="WPScanToolOptions" Kind="Class" />
+      <Type Name="WPScanToolResults" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Metasploit.BusinessObjects">
+      <Type Name="IMetasploitProxy" Kind="Interface" />
+      <Type Name="MetasploitCredentials" Kind="Class" />
+      <Type Name="MetasploitModule" Kind="Class" />
+      <Type Name="MetasploitModuleInfo" Kind="Class" />
+      <Type Name="MetasploitObjectManager" Kind="Class" />
+      <Type Name="MetasploitPayload" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Metasploit.PersistentObjects">
+      <Type Name="MyClass" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Metasploit.Pro">
+      <Type Name="MetasploitProManager" Kind="Class" />
+      <Type Name="MetasploitProManagerSession" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Metasploit.Pro.BusinessObjects">
+      <Type Name="MetasploitCredential" Kind="Class" />
+      <Type Name="MetasploitEvent" Kind="Class" />
+      <Type Name="MetasploitExploitAttempt" Kind="Class" />
+      <Type Name="MetasploitExploitSession" Kind="Class" />
+      <Type Name="MetasploitHost" Kind="Class" />
+      <Type Name="MetasploitHostCredential" Kind="Class" />
+      <Type Name="MetasploitHostDetail" Kind="Class" />
+      <Type Name="MetasploitHostExploitSession" Kind="Class" />
+      <Type Name="MetasploitModuleAction" Kind="Class" />
+      <Type Name="MetasploitModuleArchitecture" Kind="Class" />
+      <Type Name="MetasploitModuleAuthor" Kind="Class" />
+      <Type Name="MetasploitModuleDetail" Kind="Class" />
+      <Type Name="MetasploitModuleDetails" Kind="Class" />
+      <Type Name="MetasploitModuleMixin" Kind="Class" />
+      <Type Name="MetasploitModulePlatform" Kind="Class" />
+      <Type Name="MetasploitModuleReference" Kind="Class" />
+      <Type Name="MetasploitModuleTarget" Kind="Class" />
+      <Type Name="MetasploitNote" Kind="Class" />
+      <Type Name="MetasploitRef" Kind="Class" />
+      <Type Name="MetasploitReport" Kind="Class" />
+      <Type Name="MetasploitScan" Kind="Class" />
+      <Type Name="MetasploitService" Kind="Class" />
+      <Type Name="MetasploitTag" Kind="Class" />
+      <Type Name="MetasploitVulnerability" Kind="Class" />
+      <Type Name="MetasploitVulnerabilityDetail" Kind="Class" />
+      <Type Name="MetasploitVulnerabilityReference" Kind="Class" />
+      <Type Name="MetasploitWebForm" Kind="Class" />
+      <Type Name="MetasploitWebpage" Kind="Class" />
+      <Type Name="MetasploitWebsite" Kind="Class" />
+      <Type Name="MetasploitWebVuln" Kind="Class" />
+      <Type Name="MetasploitWebVulnerability" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Metasploit.Pro.PersistentObjects">
+      <Type Name="PersistentMetasploitCredential" Kind="Class" />
+      <Type Name="PersistentMetasploitEvent" Kind="Class" />
+      <Type Name="PersistentMetasploitExploitAttempt" Kind="Class" />
+      <Type Name="PersistentMetasploitExploitSession" Kind="Class" />
+      <Type Name="PersistentMetasploitHost" Kind="Class" />
+      <Type Name="PersistentMetasploitHostDetails" Kind="Class" />
+      <Type Name="PersistentMetasploitModuleAction" Kind="Class" />
+      <Type Name="PersistentMetasploitModuleArchitecture" Kind="Class" />
+      <Type Name="PersistentMetasploitModuleAuthor" Kind="Class" />
+      <Type Name="PersistentMetasploitModuleDetails" Kind="Class" />
+      <Type Name="PersistentMetasploitModuleMixin" Kind="Class" />
+      <Type Name="PersistentMetasploitModulePlatform" Kind="Class" />
+      <Type Name="PersistentMetasploitModuleReference" Kind="Class" />
+      <Type Name="PersistentMetasploitModuleTarget" Kind="Class" />
+      <Type Name="PersistentMetasploitNote" Kind="Class" />
+      <Type Name="PersistentMetasploitScan" Kind="Class" />
+      <Type Name="PersistentMetasploitService" Kind="Class" />
+      <Type Name="PersistentMetasploitTag" Kind="Class" />
+      <Type Name="PersistentMetasploitVulnerability" Kind="Class" />
+      <Type Name="PersistentMetasploitVulnerabilityDetail" Kind="Class" />
+      <Type Name="PersistentMetasploitVulnerabilityReference" Kind="Class" />
+      <Type Name="PersistentMetasploitWebForm" Kind="Class" />
+      <Type Name="PersistentMetasploitWebPage" Kind="Class" />
+      <Type Name="PersistentMetasploitWebsite" Kind="Class" />
+      <Type Name="PersistentMetasploitWebVulnerability" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Nessus">
+      <Type Name="NessusManager" Kind="Class" />
+      <Type Name="NessusManagerSession" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Nessus.BusinessObjects">
+      <Type Name="NessusHost" Kind="Class" />
+      <Type Name="NessusHostProperties" Kind="Class" />
+      <Type Name="NessusObjectManager" Kind="Class" />
+      <Type Name="NessusPlugin" Kind="Class" />
+      <Type Name="NessusPluginFamily" Kind="Class" />
+      <Type Name="NessusPolicy" Kind="Class" />
+      <Type Name="NessusPort" Kind="Class" />
+      <Type Name="NessusPortDetails" Kind="Class" />
+      <Type Name="NessusPortDetailsData" Kind="Class" />
+      <Type Name="NessusPortSeverityItem" Kind="Class" />
+      <Type Name="NessusPreference" Kind="Class" />
+      <Type Name="NessusReport" Kind="Class" />
+      <Type Name="NessusReportHost" Kind="Class" />
+      <Type Name="NessusReportItem" Kind="Class" />
+      <Type Name="NessusScan" Kind="Class" />
+      <Type Name="NessusScanTemplate" Kind="Class" />
+      <Type Name="NessusSeverityItem" Kind="Class" />
+      <Type Name="NessusUser" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Nessus.PersistentObjects">
+      <Type Name="IEntity" Kind="Interface" />
+      <Type Name="NessusPluginFamilyMap" Kind="Class" />
+      <Type Name="NessusPluginMap" Kind="Class" />
+      <Type Name="NessusPolicyMap" Kind="Class" />
+      <Type Name="NessusPreferenceMap" Kind="Class" />
+      <Type Name="NessusReportMap" Kind="Class" />
+      <Type Name="NessusScanMap" Kind="Class" />
+      <Type Name="NessusScanTemplateMap" Kind="Class" />
+      <Type Name="NessusUserMap" Kind="Class" />
+      <Type Name="PersistentNessusHost" Kind="Class" />
+      <Type Name="PersistentNessusHostProperties" Kind="Class" />
+      <Type Name="PersistentNessusPlugin" Kind="Class" />
+      <Type Name="PersistentNessusPluginFamily" Kind="Class" />
+      <Type Name="PersistentNessusPolicy" Kind="Class" />
+      <Type Name="PersistentNessusPreference" Kind="Class" />
+      <Type Name="PersistentNessusReport" Kind="Class" />
+      <Type Name="PersistentNessusReportHost" Kind="Class" />
+      <Type Name="PersistentNessusReportItem" Kind="Class" />
+      <Type Name="PersistentNessusScan" Kind="Class" />
+      <Type Name="PersistentNessusScanTemplate" Kind="Class" />
+      <Type Name="PersistentNessusSeverityItem" Kind="Class" />
+      <Type Name="PersistentNessusUser" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Nexpose">
+      <Type Name="NexposeObjectManager11" Kind="Class" />
+      <Type Name="NexposeObjectManager12" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Nexpose.BusinessObjects">
+      <Type Name="NexposeAsset" Kind="Class" />
+      <Type Name="NexposeCredentials" Kind="Class" />
+      <Type Name="NexposeCredentialType" Kind="Enumeration" />
+      <Type Name="NexposeEngine" Kind="Class" />
+      <Type Name="NexposeHostFingerprint" Kind="Class" />
+      <Type Name="NexposeHostName" Kind="Class" />
+      <Type Name="NexposeHostService" Kind="Class" />
+      <Type Name="NexposeHostTest" Kind="Class" />
+      <Type Name="NexposeParser" Kind="Class" />
+      <Type Name="NexposeReport" Kind="Class" />
+      <Type Name="NexposeReportType" Kind="Enumeration" />
+      <Type Name="NexposeScan" Kind="Class" />
+      <Type Name="NexposeServiceConfiguration" Kind="Class" />
+      <Type Name="NexposeServiceFingerprint" Kind="Class" />
+      <Type Name="NexposeServiceTest" Kind="Class" />
+      <Type Name="NexposeSite" Kind="Class" />
+      <Type Name="NexposeTest" Kind="Class" />
+      <Type Name="NexposeVulnerability" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Nexpose.PersistentObjects">
+      <Type Name="NexposeScanMapping" Kind="Class" />
+      <Type Name="PersistentNexposeAsset" Kind="Class" />
+      <Type Name="PersistentNexposeEngine" Kind="Class" />
+      <Type Name="PersistentNexposeHostFingerprint" Kind="Class" />
+      <Type Name="PersistentNexposeHostName" Kind="Class" />
+      <Type Name="PersistentNexposeHostService" Kind="Class" />
+      <Type Name="PersistentNexposeHostTest" Kind="Class" />
+      <Type Name="PersistentNexposeReport" Kind="Class" />
+      <Type Name="PersistentNexposeScan" Kind="Class" />
+      <Type Name="PersistentNexposeServiceConfiguration" Kind="Class" />
+      <Type Name="PersistentNexposeServiceFingerprint" Kind="Class" />
+      <Type Name="PersistentNexposeServiceTest" Kind="Class" />
+      <Type Name="PersistentNexposeSite" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.OpenVAS">
+      <Type Name="OpenVASManager" Kind="Class" />
+      <Type Name="OpenVASManagerSession" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.OpenVAS.BusinessObjects">
+      <Type Name="EscalatorCondition" Kind="Class" />
+      <Type Name="EscalatorEvent" Kind="Class" />
+      <Type Name="EscalatorMethod" Kind="Class" />
+      <Type Name="EscalatorMethodData" Kind="Class" />
+      <Type Name="IOpenVASObject" Kind="Interface" />
+      <Type Name="OpenVASAgent" Kind="Class" />
+      <Type Name="OpenVASConfig" Kind="Class" />
+      <Type Name="OpenVASCredentials" Kind="Class" />
+      <Type Name="OpenVASEscalator" Kind="Class" />
+      <Type Name="OpenVASLSCCredential" Kind="Class" />
+      <Type Name="OpenVASNote" Kind="Class" />
+      <Type Name="OpenVASNVT" Kind="Class" />
+      <Type Name="OpenVASNVTFamily" Kind="Class" />
+      <Type Name="OpenVASObjectManager" Kind="Class" />
+      <Type Name="OpenVASOverride" Kind="Class" />
+      <Type Name="OpenVASReport" Kind="Class" />
+      <Type Name="OpenVASReportFormat" Kind="Class" />
+      <Type Name="OpenVASReportHost" Kind="Class" />
+      <Type Name="OpenVASReportHostPort" Kind="Class" />
+      <Type Name="OpenVASReportHostResult" Kind="Class" />
+      <Type Name="OpenVASReportHostResultNVT" Kind="Class" />
+      <Type Name="OpenVASReportParser" Kind="Class" />
+      <Type Name="OpenVASResult" Kind="Class" />
+      <Type Name="OpenVASScan" Kind="Class" />
+      <Type Name="OpenVASSchedule" Kind="Class" />
+      <Type Name="OpenVASSlave" Kind="Class" />
+      <Type Name="OpenVASTarget" Kind="Class" />
+      <Type Name="OpenVASTask" Kind="Class" />
+      <Type Name="ReportFilter" Kind="Class" />
+      <Type Name="ReportNVT" Kind="Class" />
+      <Type Name="ReportPort" Kind="Class" />
+      <Type Name="ReportResult" Kind="Class" />
+      <Type Name="ResultCount" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.OpenVAS.PersistentObjects">
+      <Type Name="IEntity" Kind="Interface" />
+      <Type Name="OpenVASAgentMap" Kind="Class" />
+      <Type Name="OpenVASConfigMap" Kind="Class" />
+      <Type Name="OpenVASCredentialsMap" Kind="Class" />
+      <Type Name="OpenVASEscalatorConditionMap" Kind="Class" />
+      <Type Name="OpenVASEscalatorEventMap" Kind="Class" />
+      <Type Name="OpenVASEscalatorMap" Kind="Class" />
+      <Type Name="OpenVASEscalatorMethodMap" Kind="Class" />
+      <Type Name="OpenVASLSCCredentialMap" Kind="Class" />
+      <Type Name="OpenVASNoteMap" Kind="Class" />
+      <Type Name="OpenVASNVTFamilyMap" Kind="Class" />
+      <Type Name="OpenVASNVTMap" Kind="Class" />
+      <Type Name="OpenVASOverrideMap" Kind="Class" />
+      <Type Name="OpenVASReportFormatMap" Kind="Class" />
+      <Type Name="OpenVASReportMap" Kind="Class" />
+      <Type Name="OpenVASScanMap" Kind="Class" />
+      <Type Name="OpenVASScheduleMap" Kind="Class" />
+      <Type Name="OpenVASSlaveMap" Kind="Class" />
+      <Type Name="OpenVASTargetMap" Kind="Class" />
+      <Type Name="OpenVASTaskMap" Kind="Class" />
+      <Type Name="PersistentEscalatorCondition" Kind="Class" />
+      <Type Name="PersistentEscalatorEvent" Kind="Class" />
+      <Type Name="PersistentEscalatorMethod" Kind="Class" />
+      <Type Name="PersistentOpenVASAgent" Kind="Class" />
+      <Type Name="PersistentOpenVASConfig" Kind="Class" />
+      <Type Name="PersistentOpenVASCredentials" Kind="Class" />
+      <Type Name="PersistentOpenVASEscalator" Kind="Class" />
+      <Type Name="PersistentOpenVASLSCCredential" Kind="Class" />
+      <Type Name="PersistentOpenVASNote" Kind="Class" />
+      <Type Name="PersistentOpenVASNVT" Kind="Class" />
+      <Type Name="PersistentOpenVASNVTFamily" Kind="Class" />
+      <Type Name="PersistentOpenVASOverride" Kind="Class" />
+      <Type Name="PersistentOpenVASReport" Kind="Class" />
+      <Type Name="PersistentOpenVASReportFormat" Kind="Class" />
+      <Type Name="PersistentOpenVASScan" Kind="Class" />
+      <Type Name="PersistentOpenVASSchedule" Kind="Class" />
+      <Type Name="PersistentOpenVASSlave" Kind="Class" />
+      <Type Name="PersistentOpenVASTarget" Kind="Class" />
+      <Type Name="PersistentOpenVASTask" Kind="Class" />
+      <Type Name="PersistentReportFilter" Kind="Class" />
+      <Type Name="PersistentReportNVT" Kind="Class" />
+      <Type Name="PersistentReportPort" Kind="Class" />
+      <Type Name="PersistentReportResult" Kind="Class" />
+      <Type Name="PersistentResultCount" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.PersistentObjects">
+      <Type Name="ClientMap" Kind="Class" />
+      <Type Name="CVECommentMap" Kind="Class" />
+      <Type Name="CVEMap" Kind="Class" />
+      <Type Name="CVEReferenceMap" Kind="Class" />
+      <Type Name="CVSSMap" Kind="Class" />
+      <Type Name="DsxsOptionsMap" Kind="Class" />
+      <Type Name="DsxsResultsMap" Kind="Class" />
+      <Type Name="IEntity" Kind="Interface" />
+      <Type Name="NMapResultsMap" Kind="Class" />
+      <Type Name="NVDMap" Kind="Class" />
+      <Type Name="NVDReferenceMap" Kind="Class" />
+      <Type Name="PackageMap" Kind="Class" />
+      <Type Name="PersistentARPScanOptions" Kind="Class" />
+      <Type Name="PersistentARPScanResults" Kind="Class" />
+      <Type Name="PersistentClient" Kind="Class" />
+      <Type Name="PersistentCVE" Kind="Class" />
+      <Type Name="PersistentCVEComment" Kind="Class" />
+      <Type Name="PersistentCVEReference" Kind="Class" />
+      <Type Name="PersistentCVSS" Kind="Class" />
+      <Type Name="PersistentDsxsOptions" Kind="Class" />
+      <Type Name="PersistentDsxsResults" Kind="Class" />
+      <Type Name="PersistentEvent" Kind="Class" />
+      <Type Name="PersistentHydraOptions" Kind="Class" />
+      <Type Name="PersistentHydraResults" Kind="Class" />
+      <Type Name="PersistentMetasploitScan" Kind="Class" />
+      <Type Name="PersistentNBTScanOptions" Kind="Class" />
+      <Type Name="PersistentNBTScanResults" Kind="Class" />
+      <Type Name="PersistentNiktoItem" Kind="Class" />
+      <Type Name="PersistentNiktoOptions" Kind="Class" />
+      <Type Name="PersistentNiktoResults" Kind="Class" />
+      <Type Name="PersistentNMapHost" Kind="Class" />
+      <Type Name="PersistentNMapOptions" Kind="Class" />
+      <Type Name="PersistentNMapResults" Kind="Class" />
+      <Type Name="PersistentNVD" Kind="Class" />
+      <Type Name="PersistentNVDReference" Kind="Class" />
+      <Type Name="PersistentOneSixtyOneOptions" Kind="Class" />
+      <Type Name="PersistentOneSixtyOneResults" Kind="Class" />
+      <Type Name="PersistentPackage" Kind="Class" />
+      <Type Name="PersistentPort" Kind="Class" />
+      <Type Name="PersistentProfile" Kind="Class" />
+      <Type Name="PersistentProfileHost" Kind="Class" />
+      <Type Name="PersistentProfileHostVerification" Kind="Class" />
+      <Type Name="PersistentProfileVerification" Kind="Class" />
+      <Type Name="PersistentRoute" Kind="Class" />
+      <Type Name="PersistentScan" Kind="Class" />
+      <Type Name="PersistentScanOptions" Kind="Class" />
+      <Type Name="PersistentShareDetails" Kind="Class" />
+      <Type Name="PersistentSMBClientOptions" Kind="Class" />
+      <Type Name="PersistentSMBClientResults" Kind="Class" />
+      <Type Name="PersistentSQLMapOptions" Kind="Class" />
+      <Type Name="PersistentSQLMapResults" Kind="Class" />
+      <Type Name="PersistentSQLMapVulnerability" Kind="Class" />
+      <Type Name="PersistentSSLScanOptions" Kind="Class" />
+      <Type Name="PersistentSSLScanResults" Kind="Class" />
+      <Type Name="PersistentTracerouteOptions" Kind="Class" />
+      <Type Name="PersistentTracerouteResults" Kind="Class" />
+      <Type Name="PersistentUser" Kind="Class" />
+      <Type Name="PersistentVirtualMachine" Kind="Class" />
+      <Type Name="PersistentVulnerableSoftware" Kind="Class" />
+      <Type Name="PersistentW3afOptionsMap" Kind="Class" />
+      <Type Name="PersistentW3afResults" Kind="Class" />
+      <Type Name="PersistentWapitiBug" Kind="Class" />
+      <Type Name="PersistentWapitiOptions" Kind="Class" />
+      <Type Name="PersistentWapitiReference" Kind="Class" />
+      <Type Name="PersistentWapitiResults" Kind="Class" />
+      <Type Name="PersistentWhoisOptions" Kind="Class" />
+      <Type Name="PersistentWhoisResults" Kind="Class" />
+      <Type Name="ProfileHostVerificationMap" Kind="Class" />
+      <Type Name="ProfileVerificationMap" Kind="Class" />
+      <Type Name="UserMap" Kind="Class" />
+      <Type Name="VulnerableSoftwareMap" Kind="Class" />
+      <Type Name="WapitiBugMap" Kind="Class" />
+      <Type Name="WapitiReferenceMap" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.PersistentObjects.PersistentObjects">
+      <Type Name="ARP_ScanOptionsMap" Kind="Class" />
+      <Type Name="ARP_ScanResultsMap" Kind="Class" />
+      <Type Name="HydraOptionsMap" Kind="Class" />
+      <Type Name="HydraResultsMap" Kind="Class" />
+      <Type Name="NBTScanOptionsMap" Kind="Class" />
+      <Type Name="NBTScanResultsMap" Kind="Class" />
+      <Type Name="NiktoOptionsMap" Kind="Class" />
+      <Type Name="NiktoResultsMap" Kind="Class" />
+      <Type Name="NMapHostMap" Kind="Class" />
+      <Type Name="NMapOptionsMap" Kind="Class" />
+      <Type Name="OneSixtyOneOptionsMap" Kind="Class" />
+      <Type Name="OneSixtyOneResultsMap" Kind="Class" />
+      <Type Name="PortMap" Kind="Class" />
+      <Type Name="ProfileMap" Kind="Class" />
+      <Type Name="RouteMap" Kind="Class" />
+      <Type Name="ScanMap" Kind="Class" />
+      <Type Name="ScanOptionsMap" Kind="Class" />
+      <Type Name="ShareDetailsMap" Kind="Class" />
+      <Type Name="SMBClientOptionsMap" Kind="Class" />
+      <Type Name="SMBClientResultsMap" Kind="Class" />
+      <Type Name="SQLMapKeyMap" Kind="Class" />
+      <Type Name="SQLMapOptionsMap" Kind="Class" />
+      <Type Name="SQLMapResultsMap" Kind="Class" />
+      <Type Name="SSLScanOptionsMap" Kind="Class" />
+      <Type Name="SSLScanResultsMap" Kind="Class" />
+      <Type Name="TracerouteOptionsMap" Kind="Class" />
+      <Type Name="TracerouteResultsMap" Kind="Class" />
+      <Type Name="W3afOptionsMap" Kind="Class" />
+      <Type Name="W3afResultsMap" Kind="Class" />
+      <Type Name="WapitiOptionsMap" Kind="Class" />
+      <Type Name="WapitiResultsMap" Kind="Class" />
+      <Type Name="WhoisOptionsMap" Kind="Class" />
+      <Type Name="WhoisResultsMap" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Reporting">
+      <Type Name="MyClass" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Data.Virtualbox">
+      <Type Name="VirtualboxManager" Kind="Class" />
+      <Type Name="VirtualMachine" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Misc">
+      <Type Name="Hashing" Kind="Class" />
+      <Type Name="StringUtils" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.SyncMetasploit">
+    </Namespace>
+    <Namespace Name="AutoAssess.SyncNessus">
+    </Namespace>
+    <Namespace Name="AutoAssess.SyncOpenVAS">
+    </Namespace>
+    <Namespace Name="AutoAssess.Web">
+      <Type Name="WebUserMap" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Web.Admin">
+    </Namespace>
+    <Namespace Name="AutoAssess.Web.Admin.Admin">
+    </Namespace>
+    <Namespace Name="AutoAssess.Web.API">
+      <Type Name="ApiHttpHandler" Kind="Class" />
+      <Type Name="Badge" Kind="Class" />
+      <Type Name="CreateClient" Kind="Class" />
+      <Type Name="CreateEvent" Kind="Class" />
+      <Type Name="CreateNexposeSite" Kind="Class" />
+      <Type Name="CreateProfile" Kind="Class" />
+      <Type Name="CreateProfileHost" Kind="Class" />
+      <Type Name="CreateProfileHostVerification" Kind="Class" />
+      <Type Name="CreateScan" Kind="Class" />
+      <Type Name="CreateUser" Kind="Class" />
+      <Type Name="CreateWhoisReport" Kind="Class" />
+      <Type Name="GetAvailableVirtualMachines" Kind="Class" />
+      <Type Name="GetNessusPolicies" Kind="Class" />
+      <Type Name="GetNessusReport" Kind="Class" />
+      <Type Name="GetNessusReportHostPort" Kind="Class" />
+      <Type Name="GetNessusReportHosts" Kind="Class" />
+      <Type Name="GetNessusReportPorts" Kind="Class" />
+      <Type Name="GetNexposeAdHocReport" Kind="Class" />
+      <Type Name="GetNexposeEngines" Kind="Class" />
+      <Type Name="GetNexposeReportTemplates" Kind="Class" />
+      <Type Name="GetNexposeScanReport" Kind="Class" />
+      <Type Name="GetNiktoReport" Kind="Class" />
+      <Type Name="GetOpenVASConfigs" Kind="Class" />
+      <Type Name="GetOpenVASReport" Kind="Class" />
+      <Type Name="GetProfile" Kind="Class" />
+      <Type Name="GetProfileHosts" Kind="Class" />
+      <Type Name="GetProfiles" Kind="Class" />
+      <Type Name="GetScan" Kind="Class" />
+      <Type Name="GetSMBClientReport" Kind="Class" />
+      <Type Name="GetSQLMapReport" Kind="Class" />
+      <Type Name="GetTracerouteReport" Kind="Class" />
+      <Type Name="GetWhoisReport" Kind="Class" />
+      <Type Name="Global" Kind="Class" />
+      <Type Name="ListNexposeReports" Kind="Class" />
+    </Namespace>
+    <Namespace Name="AutoAssess.Web.API.Admin">
+    </Namespace>
+    <Namespace Name="AutoAssess.Web.Data">
+      <Type Name="Entity" Kind="Class" />
+      <Type Name="VerificationKey" Kind="Class" />
+      <Type Name="VerificationKeyMap" Kind="Class" />
+      <Type Name="WebUser" Kind="Class" />
+      <Type Name="WebUserInfo" Kind="Class" />
+      <Type Name="WebUserInfoMap" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Mappings">
+      <Type Name="EventMap" Kind="Class" />
+      <Type Name="MetasploitCredentialMap" Kind="Class" />
+      <Type Name="MetasploitEventMap" Kind="Class" />
+      <Type Name="MetasploitExploitAttemptMap" Kind="Class" />
+      <Type Name="MetasploitExploitSessionMap" Kind="Class" />
+      <Type Name="MetasploitHostDetailsMap" Kind="Class" />
+      <Type Name="MetasploitHostMap" Kind="Class" />
+      <Type Name="MetasploitModuleActionMap" Kind="Class" />
+      <Type Name="MetasploitModuleArchitectureMap" Kind="Class" />
+      <Type Name="MetasploitModuleAuthorMap" Kind="Class" />
+      <Type Name="MetasploitModuleDetailsMap" Kind="Class" />
+      <Type Name="MetasploitModuleMixinMap" Kind="Class" />
+      <Type Name="MetasploitModulePlatformMap" Kind="Class" />
+      <Type Name="MetasploitModuleReferenceMap" Kind="Class" />
+      <Type Name="MetasploitModuleTargetMap" Kind="Class" />
+      <Type Name="MetasploitNoteMap" Kind="Class" />
+      <Type Name="MetasploitScanMap" Kind="Class" />
+      <Type Name="MetasploitServiceMap" Kind="Class" />
+      <Type Name="MetasploitTagMap" Kind="Class" />
+      <Type Name="MetasploitVulnerabilityDetailMap" Kind="Class" />
+      <Type Name="MetasploitVulnerabilityMap" Kind="Class" />
+      <Type Name="MetasploitVulnerabilityReferenceMap" Kind="Class" />
+      <Type Name="MetasploitWebFormMap" Kind="Class" />
+      <Type Name="MetasploitWebPageMap" Kind="Class" />
+      <Type Name="MetasploitWebsiteMap" Kind="Class" />
+      <Type Name="MetasploitWebVulnerabilityMap" Kind="Class" />
+      <Type Name="NessusHostPropertiesMap" Kind="Class" />
+      <Type Name="NessusReportHostMap" Kind="Class" />
+      <Type Name="NessusReportItemMap" Kind="Class" />
+      <Type Name="NexposeAssetMap" Kind="Class" />
+      <Type Name="NexposeHostFingerprintMap" Kind="Class" />
+      <Type Name="NexposeHostNameMap" Kind="Class" />
+      <Type Name="NexposeHostServiceMap" Kind="Class" />
+      <Type Name="NexposeHostTestMap" Kind="Class" />
+      <Type Name="NexposeServiceConfigurationMap" Kind="Class" />
+      <Type Name="NexposeServiceFingerprintMap" Kind="Class" />
+      <Type Name="NexposeServiceTestMap" Kind="Class" />
+      <Type Name="NiktoItemMap" Kind="Class" />
+      <Type Name="ProfileHostMap" Kind="Class" />
+      <Type Name="ReportFilterMap" Kind="Class" />
+      <Type Name="ReportNVTMap" Kind="Class" />
+      <Type Name="ReportPortMap" Kind="Class" />
+      <Type Name="ReportResultMap" Kind="Class" />
+      <Type Name="ResultCountMap" Kind="Class" />
+      <Type Name="VirtualMachineMap" Kind="Class" />
+    </Namespace>
+  </Types>
+  <Title>AutoAssess.Data.Metasploit.Pro.PersistentObjects</Title>
+</Overview>

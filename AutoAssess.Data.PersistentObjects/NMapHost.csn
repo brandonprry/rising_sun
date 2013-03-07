@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+
+namespace AutoAssess.Data
+{
+	public class NMapHost
+	{
+		List<Port> _openPorts;
+		
+		public NMapHost ()
+		{
+		}
+		
+		public List<Port> OpenPorts 
+		{ 
+			get
+			{
+				if (_openPorts == null)
+					_openPorts = new List<Port>();
+				
+				return _openPorts;
+			}
+			
+			set
+			{
+				_openPorts = value;	
+			}
+		}
+		
+		public string Hostname { get; set; }
+		
+		public string IPAddress { get; set; }
+		
+		public string MAC { get; set; }
+		
+		public string DeviceType { get; set; }
+		
+		public string OS { get; set; }
+		
+		public string OS_Details { get; set; }
+		
+		public string NetworkDistance { get; set; }
+		
+	}
+}
+

@@ -1,0 +1,669 @@
+<Type Name="MetasploitHost" FullName="AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost">
+  <TypeSignature Language="C#" Value="public class MetasploitHost" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MetasploitHost extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Metasploit.Pro.Objects</AssemblyName>
+    <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetasploitHost ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetasploitHost (System.Xml.XmlNode doc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNode doc) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="doc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public virtual string Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comm">
+      <MemberSignature Language="C#" Value="public virtual string Comm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credentials">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitCredential&gt; Credentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitCredential&gt; Credentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitCredential&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Details">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHostDetail&gt; Details { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHostDetail&gt; Details" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHostDetail&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExploitAttemptCount">
+      <MemberSignature Language="C#" Value="public virtual int ExploitAttemptCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ExploitAttemptCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExploitAttempts">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitAttempt&gt; ExploitAttempts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitAttempt&gt; ExploitAttempts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitAttempt&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostDetailCount">
+      <MemberSignature Language="C#" Value="public virtual int HostDetailCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HostDetailCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Info">
+      <MemberSignature Language="C#" Value="public virtual string Info { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Info" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MAC">
+      <MemberSignature Language="C#" Value="public virtual string MAC { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MAC" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoteCount">
+      <MemberSignature Language="C#" Value="public virtual int NoteCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NoteCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Notes">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitNote&gt; Notes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitNote&gt; Notes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitNote&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSArchitecture">
+      <MemberSignature Language="C#" Value="public virtual string OSArchitecture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OSArchitecture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSFlavor">
+      <MemberSignature Language="C#" Value="public virtual string OSFlavor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OSFlavor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSLanguage">
+      <MemberSignature Language="C#" Value="public virtual string OSLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OSLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSName">
+      <MemberSignature Language="C#" Value="public virtual string OSName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OSName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSServicePack">
+      <MemberSignature Language="C#" Value="public virtual string OSServicePack { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OSServicePack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Purpose">
+      <MemberSignature Language="C#" Value="public virtual string Purpose { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Purpose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteCreatedAt">
+      <MemberSignature Language="C#" Value="public virtual string RemoteCreatedAt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RemoteCreatedAt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteID">
+      <MemberSignature Language="C#" Value="public virtual int RemoteID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RemoteID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteUpdatedAt">
+      <MemberSignature Language="C#" Value="public virtual string RemoteUpdatedAt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RemoteUpdatedAt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteWorkspaceID">
+      <MemberSignature Language="C#" Value="public virtual int RemoteWorkspaceID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RemoteWorkspaceID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceCount">
+      <MemberSignature Language="C#" Value="public virtual int ServiceCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ServiceCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Services">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitService&gt; Services { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitService&gt; Services" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitService&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sessions">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitSession&gt; Sessions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitSession&gt; Sessions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitSession&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public virtual string State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tags">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitTag&gt; Tags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitTag&gt; Tags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitTag&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VulnCount">
+      <MemberSignature Language="C#" Value="public virtual int VulnCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VulnCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vulnerabilities">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitVulnerability&gt; Vulnerabilities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitVulnerability&gt; Vulnerabilities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitVulnerability&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

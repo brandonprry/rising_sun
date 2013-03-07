@@ -1,0 +1,41 @@
+<Type Name="NessusScanMap" FullName="AutoAssess.Data.Nessus.PersistentObjects.NessusScanMap">
+  <TypeSignature Language="C#" Value="public class NessusScanMap : FluentNHibernate.Mapping.ClassMap&lt;AutoAssess.Data.Nessus.PersistentObjects.PersistentNessusScan&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NessusScanMap extends FluentNHibernate.Mapping.ClassMap`1&lt;class AutoAssess.Data.Nessus.PersistentObjects.PersistentNessusScan&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Nessus.Objects</AssemblyName>
+    <AssemblyVersion>1.0.4644.34400</AssemblyVersion>
+    <AssemblyVersion>1.0.4657.36820</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38753</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>FluentNHibernate.Mapping.ClassMap&lt;AutoAssess.Data.Nessus.PersistentObjects.PersistentNessusScan&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">AutoAssess.Data.Nessus.PersistentObjects.PersistentNessusScan</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NessusScanMap ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.34400</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41860</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30155</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36204</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36820</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38753</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,141 @@
+<Type Name="OpenVASReportHost" FullName="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHost">
+  <TypeSignature Language="C#" Value="public class OpenVASReportHost" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit OpenVASReportHost extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.OpenVAS.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+    <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+    <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpenVASReportHost ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPAddress">
+      <MemberSignature Language="C#" Value="public string IPAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IPAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ports">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHostPort&gt; Ports { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHostPort&gt; Ports" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHostPort&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHostResult&gt; Results { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHostResult&gt; Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportHostResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Risk">
+      <MemberSignature Language="C#" Value="public int Risk { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Risk" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

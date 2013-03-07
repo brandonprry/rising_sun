@@ -1,0 +1,48 @@
+<Type Name="WebUserInfoMap" FullName="AutoAssess.Web.Data.WebUserInfoMap">
+  <TypeSignature Language="C#" Value="public class WebUserInfoMap : FluentNHibernate.Mapping.ClassMap&lt;AutoAssess.Web.Data.WebUserInfo&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebUserInfoMap extends FluentNHibernate.Mapping.ClassMap`1&lt;class AutoAssess.Web.Data.WebUserInfo&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Web.Data</AssemblyName>
+    <AssemblyVersion>1.0.4613.40895</AssemblyVersion>
+    <AssemblyVersion>1.0.4628.4083</AssemblyVersion>
+    <AssemblyVersion>1.0.4644.38009</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41867</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30162</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36212</AssemblyVersion>
+    <AssemblyVersion>1.0.4657.39686</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38759</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>FluentNHibernate.Mapping.ClassMap&lt;AutoAssess.Web.Data.WebUserInfo&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">AutoAssess.Web.Data.WebUserInfo</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebUserInfoMap ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.40895</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4083</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38009</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41867</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30162</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36212</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.39686</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38759</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

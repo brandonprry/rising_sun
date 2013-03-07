@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93EBAB27-73D4-4CAE-AF1C-0A5B9D67DBF8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>load_ovas_nss_nx_to_msf_and_save</RootNamespace>
+    <AssemblyName>load_ovas_nss_nx_to_msf_and_save</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.BusinessObjects\AutoAssess.Data.OpenVAS.BusinessObjects.csproj">
+      <Project>{C0D46987-B569-4BA6-A97D-2446789B3910}</Project>
+      <Name>AutoAssess.Data.OpenVAS.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.PersistentObjects\AutoAssess.Data.OpenVAS.PersistentObjects.csproj">
+      <Project>{3161735C-8CE5-43E5-A4E1-837B6FD32A72}</Project>
+      <Name>AutoAssess.Data.OpenVAS.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.PersistentObjects\AutoAssess.Data.Nexpose.PersistentObjects.csproj">
+      <Project>{E9A53559-118E-4744-AA84-8F16277E86BD}</Project>
+      <Name>AutoAssess.Data.Nexpose.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.BusinessObjects\AutoAssess.Data.Nexpose.BusinessObjects.csproj">
+      <Project>{180C0D69-7307-4C9A-9E54-0F5E7A561B04}</Project>
+      <Name>AutoAssess.Data.Nexpose.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.PersistentObjects\AutoAssess.Data.Nessus.PersistentObjects.csproj">
+      <Project>{48CB24EF-F501-463E-AC9C-95491A1E6D5B}</Project>
+      <Name>AutoAssess.Data.Nessus.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.BusinessObjects\AutoAssess.Data.Nessus.BusinessObjects.csproj">
+      <Project>{CCA85782-68B2-4838-9C36-14D209AEC90F}</Project>
+      <Name>AutoAssess.Data.Nessus.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.PersistentObjects\AutoAssess.Data.Metasploit.Pro.PersistentObjects.csproj">
+      <Project>{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.BusinessObjects\AutoAssess.Data.Metasploit.Pro.BusinessObjects.csproj">
+      <Project>{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.BusinessObjects\AutoAssess.Data.BusinessObjects.csproj">
+      <Project>{9349CF02-BCB2-4F87-B413-DD6D9AEE0AA9}</Project>
+      <Name>AutoAssess.Data.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.PersistentObjects\AutoAssess.Data.PersistentObjects.csproj">
+      <Project>{85624617-6B56-4A51-9B2C-D361B0604028}</Project>
+      <Name>AutoAssess.Data.PersistentObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,265 @@
+<Type Name="MetasploitScan" FullName="AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitScan">
+  <TypeSignature Language="C#" Value="public class MetasploitScan" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MetasploitScan extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Metasploit.Pro.Objects</AssemblyName>
+    <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetasploitScan ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetasploitScan (System.Xml.XmlDocument report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDocument report) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="report" Type="System.Xml.XmlDocument" />
+      </Parameters>
+      <Docs>
+        <param name="report">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetasploitScan (System.Xml.XmlNode report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNode report) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="report" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="report">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credentials">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitCredential&gt; Credentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitCredential&gt; Credentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitCredential&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Events">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitEvent&gt; Events { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitEvent&gt; Events" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitEvent&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hosts">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost&gt; Hosts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost&gt; Hosts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModuleDetails">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitModuleDetails&gt; ModuleDetails { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitModuleDetails&gt; ModuleDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitModuleDetails&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sessions">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitSession&gt; Sessions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitSession&gt; Sessions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitExploitSession&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebForms">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebForm&gt; WebForms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebForm&gt; WebForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebForm&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebPages">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebpage&gt; WebPages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebpage&gt; WebPages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebpage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Websites">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebsite&gt; Websites { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebsite&gt; Websites" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebsite&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebVulnerabilities">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebVulnerability&gt; WebVulnerabilities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebVulnerability&gt; WebVulnerabilities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4644.41067</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36208</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38747</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitWebVulnerability&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

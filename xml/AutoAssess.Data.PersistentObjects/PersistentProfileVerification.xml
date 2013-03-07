@@ -1,0 +1,225 @@
+<Type Name="PersistentProfileVerification" FullName="AutoAssess.Data.PersistentObjects.PersistentProfileVerification">
+  <TypeSignature Language="C#" Value="public class PersistentProfileVerification : AutoAssess.Data.BusinessObjects.ProfileVerification" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistentProfileVerification extends AutoAssess.Data.BusinessObjects.ProfileVerification" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data</AssemblyName>
+    <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AutoAssess.Data.BusinessObjects.ProfileVerification</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistentProfileVerification ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistentProfileVerification (AutoAssess.Data.BusinessObjects.ProfileVerification verification);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class AutoAssess.Data.BusinessObjects.ProfileVerification verification) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="verification" Type="AutoAssess.Data.BusinessObjects.ProfileVerification" />
+      </Parameters>
+      <Docs>
+        <param name="verification">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistentProfileVerification (System.Xml.XmlDocument doc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDocument doc) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+      </Parameters>
+      <Docs>
+        <param name="doc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public virtual Guid CreatedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid CreatedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedOn">
+      <MemberSignature Language="C#" Value="public virtual DateTime CreatedOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreatedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public virtual Guid ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public virtual bool IsActive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedBy">
+      <MemberSignature Language="C#" Value="public virtual Guid LastModifiedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid LastModifiedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedOn">
+      <MemberSignature Language="C#" Value="public virtual DateTime LastModifiedOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModifiedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentProfile">
+      <MemberSignature Language="C#" Value="public virtual AutoAssess.Data.PersistentObjects.PersistentProfile ParentProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AutoAssess.Data.PersistentObjects.PersistentProfile ParentProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.PersistentObjects.PersistentProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCreationInfo">
+      <MemberSignature Language="C#" Value="public virtual AutoAssess.Data.PersistentObjects.PersistentProfileVerification SetCreationInfo (Guid userID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class AutoAssess.Data.PersistentObjects.PersistentProfileVerification SetCreationInfo(valuetype System.Guid userID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.PersistentObjects.PersistentProfileVerification</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userID" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="userID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPersistentXml">
+      <MemberSignature Language="C#" Value="public virtual string ToPersistentXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToPersistentXml() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

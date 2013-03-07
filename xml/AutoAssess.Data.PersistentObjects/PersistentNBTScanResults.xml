@@ -1,0 +1,324 @@
+<Type Name="PersistentNBTScanResults" FullName="AutoAssess.Data.PersistentObjects.PersistentNBTScanResults">
+  <TypeSignature Language="C#" Value="public class PersistentNBTScanResults : AutoAssess.Data.BusinessObjects.NBTScanToolResults, AutoAssess.Data.PersistentObjects.IEntity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PersistentNBTScanResults extends AutoAssess.Data.BusinessObjects.NBTScanToolResults implements class AutoAssess.Data.PersistentObjects.IEntity" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data</AssemblyName>
+    <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+    <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+    <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+    <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AutoAssess.Data.BusinessObjects.NBTScanToolResults</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>AutoAssess.Data.PersistentObjects.IEntity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistentNBTScanResults ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public virtual Guid CreatedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid CreatedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedOn">
+      <MemberSignature Language="C#" Value="public virtual DateTime CreatedOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreatedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public virtual Guid ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public virtual bool IsActive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedBy">
+      <MemberSignature Language="C#" Value="public virtual Guid LastModifiedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid LastModifiedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedOn">
+      <MemberSignature Language="C#" Value="public virtual DateTime LastModifiedOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModifiedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentProfile">
+      <MemberSignature Language="C#" Value="public virtual AutoAssess.Data.PersistentObjects.PersistentProfile ParentProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AutoAssess.Data.PersistentObjects.PersistentProfile ParentProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.PersistentObjects.PersistentProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCreationInfo">
+      <MemberSignature Language="C#" Value="public virtual void SetCreationInfo (Guid userID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCreationInfo(valuetype System.Guid userID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userID" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="userID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUpdateInfo">
+      <MemberSignature Language="C#" Value="public virtual void SetUpdateInfo (Guid userID, bool isActive);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUpdateInfo(valuetype System.Guid userID, bool isActive) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userID" Type="System.Guid" />
+        <Parameter Name="isActive" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="userID">To be added.</param>
+        <param name="isActive">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPersistentXml">
+      <MemberSignature Language="C#" Value="public virtual string ToPersistentXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToPersistentXml() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public virtual AutoAssess.Data.PersistentObjects.PersistentUser User { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AutoAssess.Data.PersistentObjects.PersistentUser User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39786</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40893</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4080</AssemblyVersion>
+        <AssemblyVersion>1.0.4644.38008</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41865</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30160</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36210</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36825</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38755</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.PersistentObjects.PersistentUser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

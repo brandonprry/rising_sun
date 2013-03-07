@@ -1,0 +1,84 @@
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AutoAssess.Web.API/Database/AutoAssess_Service/Initial.sql">
+    <Files>
+      <File FileName="AutoAssess.Data.BusinessObjects/Scan.cs" Line="12" Column="7" />
+      <File FileName="autoassess_service/Main.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web/Registration.aspx.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web/CreateScan.aspx.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web/CreateProfile.aspx.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web/AddHostToProfile.aspx.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web/web.config" Line="1" Column="1" />
+      <File FileName="AutoAssess.Data.OpenVAS.BusinessObjects/OpenVASObjectManager.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Data.Nessus.BusinessObjects/NessusObjectManager.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web.API/GetNessusPolicies.ashx.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web.API/GetOpenVASConfigs.ashx.cs" Line="13" Column="3" />
+      <File FileName="AutoAssess.Data.Virtualbox/VirtualboxManager.cs" Line="22" Column="33" />
+      <File FileName="AutoAssess.Data.Virtualbox/VirtualMachine.cs" Line="31" Column="18" />
+      <File FileName="AutoAssess.Web.API/GetAvailableVirtualMachines.ashx" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web.API/GetAvailableVirtualMachines.ashx.cs" Line="21" Column="53" />
+      <File FileName="AutoAssess.Web.Admin/CreateScan.aspx" Line="17" Column="41" />
+      <File FileName="AutoAssess.Web.Admin/CreateScan.aspx.cs" Line="60" Column="24" />
+      <File FileName="AutoAssess.Web.API/CreateScan.ashx.cs" Line="53" Column="12" />
+      <File FileName="AutoAssess.Data.PersistentObjects/PersistentScan.cs" Line="74" Column="30" />
+      <File FileName="AutoAssess.Data.PersistentObjects/PersistentScanOptions.cs" Line="76" Column="53" />
+      <File FileName="AutoAssess.Data.PersistentObjects/Mappings/ScanOptionsMap.cs" Line="43" Column="20" />
+      <File FileName="AutoAssess.Web.API/Database/AutoAssess_Service/Initial.sql" Line="1199" Column="30" />
+      <File FileName="AutoAssess.Data.PersistentObjects/PersistentVirtualMachine.cs" Line="20" Column="39" />
+      <File FileName="AutoAssess.Data.PersistentObjects/Mappings/VirtualMachineMap.cs" Line="24" Column="59" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="AutoAssess.Data.PersistentObjects" expanded="True">
+            <Node name="Mappings" expanded="True" />
+          </Node>
+          <Node name="AutoAssess.Data.Virtualbox" expanded="True" />
+          <Node name="AutoAssess.Web.Admin" expanded="True">
+            <Node name="CreateScan.aspx" expanded="True" />
+          </Node>
+          <Node name="AutoAssess.Web.API" expanded="True">
+            <Node name="Database" expanded="True">
+              <Node name="AutoAssess_Service" expanded="True">
+                <Node name="Initial.sql" selected="True" />
+              </Node>
+            </Node>
+            <Node name="CreateScan.ashx" expanded="True" />
+            <Node name="GetAvailableVirtualMachines.ashx" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>this.CurrentResults.PersistentHosts</Value>
+          <Value>ID</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/Example.OpenVAS/Default.aspx.cs" line="32" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Data.OpenVAS/OpenVASManager.cs" line="1190" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Data/Scan.cs" line="126" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Data.OpenVAS/OpenVASManagerSession.cs" line="120" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Data.OpenVAS/OpenVASManagerSession.cs" line="163" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Data.OpenVAS/OpenVASManagerSession.cs" line="193" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Data/ToolResults/SQLMapResults.cs" line="96" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Web.API/GetProfile.ashx.cs" line="38" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Data.PersistentObjects/PersistentNMapHost.cs" line="41" />
+      <Breakpoint file="/home/bperry/External/Backup/bperry/Projects/autoassess_service/AutoAssess.Web/ViewProfiles.aspx.cs" line="51" />
+      <Breakpoint file="/home/bperry/Projects/autoassess_service/AutoAssess.Web.API/GetNexposeEngines.ashx.cs" line="39" />
+      <Breakpoint file="/home/bperry/Projects/autoassess_service/AutoAssess.Web.API/CreateScan.ashx.cs" line="22" />
+      <Breakpoint file="/home/bperry/Projects/autoassess_service/AutoAssess.Data.PersistentObjects/PersistentWapitiBug.cs" line="19" />
+      <Breakpoint file="/home/bperry/Projects/autoassess_service/AutoAssess.Data.Nessus.BusinessObjects/NessusObjectManager.cs" line="72" />
+      <Breakpoint file="/home/bperry/Projects/autoassess_service/AutoAssess.Data.Nessus.BusinessObjects/NessusObjectManager.cs" line="72" />
+      <Breakpoint file="/media/2936fc27-5d5c-4643-9c84-21bd8e3e0b8e/Backup/Projects/autoassess_service/AutoAssess.Web.API/GetAvailableVirtualMachines.ashx.cs" line="19" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Brandon Perry" Email="bperry.volatile@gmail.com" Copyright="Brandon Perry" Company="OpenDiagnostics" Trademark="" />
+</Properties>

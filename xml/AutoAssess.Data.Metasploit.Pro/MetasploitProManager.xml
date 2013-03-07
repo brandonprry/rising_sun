@@ -1,0 +1,1323 @@
+<Type Name="MetasploitProManager" FullName="AutoAssess.Data.Metasploit.Pro.MetasploitProManager">
+  <TypeSignature Language="C#" Value="public class MetasploitProManager : AutoAssess.Data.Metasploit.MetasploitManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetasploitProManager extends AutoAssess.Data.Metasploit.MetasploitManager" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Metasploit.Pro</AssemblyName>
+    <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AutoAssess.Data.Metasploit.MetasploitManager</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetasploitProManager (AutoAssess.Data.Metasploit.Pro.MetasploitProManagerSession sess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class AutoAssess.Data.Metasploit.Pro.MetasploitProManagerSession sess) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sess" Type="AutoAssess.Data.Metasploit.Pro.MetasploitProManagerSession" />
+      </Parameters>
+      <Docs>
+        <param name="sess">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProActivate">
+      <MemberSignature Language="C#" Value="public void ProActivate (System.Collections.Hashtable options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProActivate(class System.Collections.Hashtable options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProActivateOffline">
+      <MemberSignature Language="C#" Value="public void ProActivateOffline (string activationFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProActivateOffline(string activationFilePath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activationFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activationFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProAddProject">
+      <MemberSignature Language="C#" Value="public void ProAddProject (System.Collections.Hashtable options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProAddProject(class System.Collections.Hashtable options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProAddWorkspace">
+      <MemberSignature Language="C#" Value="public void ProAddWorkspace (System.Collections.Hashtable options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProAddWorkspace(class System.Collections.Hashtable options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProCheckForUpdates">
+      <MemberSignature Language="C#" Value="public void ProCheckForUpdates (System.Collections.Hashtable options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProCheckForUpdates(class System.Collections.Hashtable options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProDeleteProject">
+      <MemberSignature Language="C#" Value="public void ProDeleteProject (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProDeleteProject(string name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProDeleteTaskLog">
+      <MemberSignature Language="C#" Value="public void ProDeleteTaskLog (string taskID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProDeleteTaskLog(string taskID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="taskID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProDeletWorkspace">
+      <MemberSignature Language="C#" Value="public void ProDeletWorkspace (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProDeletWorkspace(string name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProGetCurrentLicense">
+      <MemberSignature Language="C#" Value="public void ProGetCurrentLicense ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProGetCurrentLicense() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProGetInformation">
+      <MemberSignature Language="C#" Value="public void ProGetInformation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProGetInformation() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProGetProjects">
+      <MemberSignature Language="C#" Value="public void ProGetProjects ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProGetProjects() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProGetTaskList">
+      <MemberSignature Language="C#" Value="public void ProGetTaskList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProGetTaskList() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProGetTaskLog">
+      <MemberSignature Language="C#" Value="public void ProGetTaskLog (string taskID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProGetTaskLog(string taskID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="taskID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProGetTaskStatus">
+      <MemberSignature Language="C#" Value="public void ProGetTaskStatus (string taskID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProGetTaskStatus(string taskID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="taskID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProGetUsers">
+      <MemberSignature Language="C#" Value="public void ProGetUsers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProGetUsers() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProGetWorkspaces">
+      <MemberSignature Language="C#" Value="public void ProGetWorkspaces ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProGetWorkspaces() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProImportData">
+      <MemberSignature Language="C#" Value="public void ProImportData (string workspaceName, string data, System.Collections.Hashtable options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProImportData(string workspaceName, string data, class System.Collections.Hashtable options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workspaceName" Type="System.String" />
+        <Parameter Name="data" Type="System.String" />
+        <Parameter Name="options" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="workspaceName">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProImportFile">
+      <MemberSignature Language="C#" Value="public void ProImportFile (string workspaceName, string path, System.Collections.Hashtable options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProImportFile(string workspaceName, string path, class System.Collections.Hashtable options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workspaceName" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="options" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="workspaceName">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProInstallUpdate">
+      <MemberSignature Language="C#" Value="public void ProInstallUpdate (System.Collections.Hashtable options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProInstallUpdate(class System.Collections.Hashtable options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProInstallUpdateOffline">
+      <MemberSignature Language="C#" Value="public void ProInstallUpdateOffline (string updatePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProInstallUpdateOffline(string updatePath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="updatePath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProListModules">
+      <MemberSignature Language="C#" Value="public void ProListModules (string moduleType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProListModules(string moduleType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="moduleType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="moduleType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProListReports">
+      <MemberSignature Language="C#" Value="public void ProListReports (string workspaceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProListReports(string workspaceName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workspaceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="workspaceName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProLootDownload">
+      <MemberSignature Language="C#" Value="public void ProLootDownload (int lootID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProLootDownload(int32 lootID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lootID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lootID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProLootList">
+      <MemberSignature Language="C#" Value="public void ProLootList (string workspaceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProLootList(string workspaceName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workspaceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="workspaceName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProMeterpreterChdir">
+      <MemberSignature Language="C#" Value="public void ProMeterpreterChdir (int sessionID, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProMeterpreterChdir(int32 sessionID, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionID" Type="System.Int32" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionID">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProMeterpreterGetCwd">
+      <MemberSignature Language="C#" Value="public void ProMeterpreterGetCwd (int sessionID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProMeterpreterGetCwd(int32 sessionID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sessionID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProMeterpreterListDirectory">
+      <MemberSignature Language="C#" Value="public void ProMeterpreterListDirectory (int sessionID, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProMeterpreterListDirectory(int32 sessionID, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionID" Type="System.Int32" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionID">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProMeterpreterListRootPaths">
+      <MemberSignature Language="C#" Value="public void ProMeterpreterListRootPaths (int sessionID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProMeterpreterListRootPaths(int32 sessionID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sessionID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProMeterpreterListTunnelInterfaces">
+      <MemberSignature Language="C#" Value="public void ProMeterpreterListTunnelInterfaces (int sessionID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProMeterpreterListTunnelInterfaces(int32 sessionID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sessionID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProMeterpreterRemoveFile">
+      <MemberSignature Language="C#" Value="public void ProMeterpreterRemoveFile (int sessionID, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProMeterpreterRemoveFile(int32 sessionID, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionID" Type="System.Int32" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionID">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProMeterpreterSearch">
+      <MemberSignature Language="C#" Value="public void ProMeterpreterSearch (int sessionID, string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProMeterpreterSearch(int32 sessionID, string query) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sessionID" Type="System.Int32" />
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sessionID">To be added.</param>
+        <param name="query">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProModuleSearch">
+      <MemberSignature Language="C#" Value="public void ProModuleSearch (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProModuleSearch(string query) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="query">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProModuleValidate">
+      <MemberSignature Language="C#" Value="public void ProModuleValidate (string moduleName, System.Collections.Hashtable options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProModuleValidate(string moduleName, class System.Collections.Hashtable options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="moduleName" Type="System.String" />
+        <Parameter Name="options" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="moduleName">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProRegister">
+      <MemberSignature Language="C#" Value="public void ProRegister (string productKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProRegister(string productKey) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="productKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="productKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProReportDownload">
+      <MemberSignature Language="C#" Value="public void ProReportDownload (int reportID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProReportDownload(int32 reportID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProReportDownloadByTask">
+      <MemberSignature Language="C#" Value="public void ProReportDownloadByTask (int taskID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProReportDownloadByTask(int32 taskID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="taskID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProRestartService">
+      <MemberSignature Language="C#" Value="public void ProRestartService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProRestartService() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProRevertToPreviousLicense">
+      <MemberSignature Language="C#" Value="public void ProRevertToPreviousLicense ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProRevertToPreviousLicense() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartBruteforce">
+      <MemberSignature Language="C#" Value="public void ProStartBruteforce (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartBruteforce(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartCleanup">
+      <MemberSignature Language="C#" Value="public void ProStartCleanup (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartCleanup(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartCollect">
+      <MemberSignature Language="C#" Value="public void ProStartCollect (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartCollect(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartDiscover">
+      <MemberSignature Language="C#" Value="public void ProStartDiscover (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartDiscover(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartExploit">
+      <MemberSignature Language="C#" Value="public void ProStartExploit (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartExploit(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartImport">
+      <MemberSignature Language="C#" Value="public void ProStartImport (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartImport(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartImportCredentials">
+      <MemberSignature Language="C#" Value="public void ProStartImportCredentials (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartImportCredentials(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartNexpose">
+      <MemberSignature Language="C#" Value="public void ProStartNexpose (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartNexpose(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartReport">
+      <MemberSignature Language="C#" Value="public void ProStartReport (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartReport(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartWebAudit">
+      <MemberSignature Language="C#" Value="public void ProStartWebAudit (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartWebAudit(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartWebscan">
+      <MemberSignature Language="C#" Value="public void ProStartWebscan (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartWebscan(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStartWebsploit">
+      <MemberSignature Language="C#" Value="public void ProStartWebsploit (System.Collections.Hashtable config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStartWebsploit(class System.Collections.Hashtable config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStopTask">
+      <MemberSignature Language="C#" Value="public void ProStopTask (string taskID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStopTask(string taskID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="taskID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProStopUpdate">
+      <MemberSignature Language="C#" Value="public void ProStopUpdate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProStopUpdate() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProUpdateStatus">
+      <MemberSignature Language="C#" Value="public void ProUpdateStatus ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProUpdateStatus() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProValidateImportFile">
+      <MemberSignature Language="C#" Value="public void ProValidateImportFile (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProValidateImportFile(string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

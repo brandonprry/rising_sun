@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data.Metasploit.Pro.PersistentObjects</RootNamespace>
+    <AssemblyName>AutoAssess.Data.Metasploit.Pro.PersistentObjects</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="PersistentMetasploitScan.cs" />
+    <Compile Include="PersistentMetasploitHost.cs" />
+    <Compile Include="PersistentMetasploitEvent.cs" />
+    <Compile Include="PersistentMetasploitModuleDetails.cs" />
+    <Compile Include="PersistentMetasploitExploitSession.cs" />
+    <Compile Include="PersistentMetasploitWebForm.cs" />
+    <Compile Include="PersistentMetasploitWebPage.cs" />
+    <Compile Include="PersistentMetasploitWebsite.cs" />
+    <Compile Include="Mappings\MetasploitEventMap.cs" />
+    <Compile Include="Mappings\MetasploitExploitSessionMap.cs" />
+    <Compile Include="Mappings\MetasploitHostMap.cs" />
+    <Compile Include="Mappings\MetasploitModuleDetailsMap.cs" />
+    <Compile Include="Mappings\MetasploitScanMap.cs" />
+    <Compile Include="Mappings\MetasploitWebFormMap.cs" />
+    <Compile Include="Mappings\MetasploitWebPageMap.cs" />
+    <Compile Include="Mappings\MetasploitWebVulnerabilityMap.cs" />
+    <Compile Include="PersistentMetasploitCredential.cs" />
+    <Compile Include="PersistentMetasploitHostDetails.cs" />
+    <Compile Include="PersistentMetasploitExploitAttempt.cs" />
+    <Compile Include="PersistentMetasploitNote.cs" />
+    <Compile Include="PersistentMetasploitTag.cs" />
+    <Compile Include="PersistentMetasploitVulnerability.cs" />
+    <Compile Include="PersistentMetasploitService.cs" />
+    <Compile Include="PersistentMetasploitModuleAuthor.cs" />
+    <Compile Include="PersistentMetasploitModuleReference.cs" />
+    <Compile Include="PersistentMetasploitModuleArchitecture.cs" />
+    <Compile Include="PersistentMetasploitModulePlatform.cs" />
+    <Compile Include="PersistentMetasploitModuleTarget.cs" />
+    <Compile Include="PersistentMetasploitModuleAction.cs" />
+    <Compile Include="PersistentMetasploitModuleMixin.cs" />
+    <Compile Include="PersistentMetasploitVulnerabilityReference.cs" />
+    <Compile Include="PersistentMetasploitVulnerabilityDetail.cs" />
+    <Compile Include="Mappings\MetasploitCredentialMap.cs" />
+    <Compile Include="Mappings\MetasploitExploitAttemptMap.cs" />
+    <Compile Include="Mappings\MetasploitHostDetailsMap.cs" />
+    <Compile Include="Mappings\MetasploitModuleActionMap.cs" />
+    <Compile Include="Mappings\MetasploitModuleArchitectureMap.cs" />
+    <Compile Include="Mappings\MetasploitModuleAuthorMap.cs" />
+    <Compile Include="Mappings\MetasploitModuleMixinMap.cs" />
+    <Compile Include="Mappings\MetasploitModulePlatformMap.cs" />
+    <Compile Include="Mappings\MetasploitModuleReferenceMap.cs" />
+    <Compile Include="Mappings\MetasploitModuleTargetMap.cs" />
+    <Compile Include="Mappings\MetasploitNoteMap.cs" />
+    <Compile Include="Mappings\MetasploitServiceMap.cs" />
+    <Compile Include="Mappings\MetasploitTagMap.cs" />
+    <Compile Include="Mappings\MetasploitVulnerabilityDetailMap.cs" />
+    <Compile Include="Mappings\MetasploitVulnerabilityMap.cs" />
+    <Compile Include="Mappings\MetasploitVulnerabilityReferenceMap.cs" />
+    <Compile Include="Mappings\MetasploitWebsiteMap.cs" />
+    <Compile Include="PersistentMetasploitWebVulnerability.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.BusinessObjects\AutoAssess.Data.Metasploit.Pro.BusinessObjects.csproj">
+      <Project>{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.BusinessObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+</Project>

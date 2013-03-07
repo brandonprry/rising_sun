@@ -1,0 +1,553 @@
+drop table profile;
+create table Profile (
+	ProfileID			uuid PRIMARY KEY,
+	UserID				uuid,
+	WebUserID			uuid,
+	ClientID			uuid,
+	CurrentResultsID	uuid,
+	Name				varchar(256),
+	Range				varchar(100),
+	HasRun				boolean,
+	Duration			text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table profileverification;
+create table ProfileVerification (
+	ProfileVerificationID	uuid PRIMARY KEY,
+	ProfileID				uuid,
+	IsVerified				boolean,
+	WhoisRegex				text,
+	VerifiedOn				timestamp,
+	VerificationFileName	text,
+	VerificationData		text,
+  VerificationError   text,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+drop table scan;
+create table Scan (
+	ScanID					uuid PRIMARY KEY,
+	ProfileID				uuid,
+	ScanOptionsID			uuid,
+	UserID					uuid,
+	NessusScanID			uuid,
+	NexposeSiteID			text,
+	OpenVASReportID			text,
+	MetasploitReportTaskID	text,
+	Name					varchar(256),
+	HasRun					boolean,
+  Duration        text,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+drop table scanoptions;
+create table ScanOptions (
+	ScanOptionsID			uuid PRIMARY KEY,
+	ParentScanID			uuid,
+	SQLMapOptionsID			uuid,
+	UserID					uuid,
+	IsBruteforce			boolean,
+	IsWapiti				boolean,
+	IsW3af					boolean,
+	IsSQLMap				boolean,
+	IsVulnAssessment 		boolean,
+	RemoteNessusPolicyID	int,
+	RemoteOpenVASConfigID	varchar(128),
+	RemoteNexposeSiteID		int,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+	
+);
+		
+drop table sqlmapoptions;
+create table SQLMapOptions (
+	SQLMapOptionsID		uuid PRIMARY KEY,
+	ScanOptionsID		uuid,
+	Risk				int,
+	Level				int,
+	CrawlLevel			int,
+	TestForms			boolean,
+	Threads				int,
+	URL					varchar(256),
+	Port				int,
+	DBMS				varchar(128),
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table tracerouteresult;
+create table TracerouteResult (
+	TracerouteResultID 	uuid PRIMARY KEY,
+	ProfileID			uuid,
+	NMapHostID			uuid,
+	UserID					uuid,
+	FullOutput			text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table tracerouteroute;
+create table TracerouteRoute (
+	TracerouteRouteID 		uuid PRIMARY KEY,
+	TracerouteResultID		uuid,
+	ProfileID				uuid,
+	UserID					uuid,
+	Hop						int,
+	FirstHostname			varchar(128),
+	SecondHostname			varchar(128),
+	ThirdHostname			varchar(128),
+	FirstIPAddress			varchar(128),
+	SecondIPAddress			varchar(128),
+	ThirdIPAddress			varchar(128),
+	FirstResult				varchar(128),
+	SecondResult			varchar(128),
+	ThirdResult				varchar(128),
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+drop table whoisresult;
+create table WhoisResult (
+	WhoisResultID 	uuid PRIMARY KEY,
+	ProfileID		uuid,
+	NMapHostID		uuid,
+	UserID					uuid,
+	FullOutput		text,
+	CreatedOn		timestamp,
+	CreatedBy		uuid,
+	LastModifiedOn	timestamp,
+	LastModifiedBy	uuid,
+	IsActive		boolean
+);
+
+drop table sslscanresult;
+create table SSLScanResult (
+	SSLScanResultID 	uuid PRIMARY KEY,
+	ProfileID			uuid,
+	HostPortID			uuid,
+	UserID				uuid,
+	FullOutput			text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table niktoresult;
+create table NiktoResult (
+	NiktoResultID 	uuid PRIMARY KEY,
+	ProfileID			uuid,
+	FullOutput			text,
+	HostPortID			uuid,
+	UserID				uuid,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table nmapresult;
+create table NmapResult (
+	NmapResultID 	uuid PRIMARY KEY,
+	ProfileID		uuid,
+	UserID			uuid,
+	FullOutput		text,
+	CreatedOn		timestamp,
+	CreatedBy		uuid,
+	LastModifiedOn	timestamp,
+	LastModifiedBy	uuid,
+	IsActive		boolean
+);
+
+drop table nmaphost;
+create table NmapHost (
+	NmapHostID		uuid PRIMARY KEY,
+	NmapResultID 	uuid,
+	ProfileID		uuid,
+	UserID			uuid,
+	Hostname		varchar(1024),
+	IPAddressv4		varchar(15),
+	IPAddressv6		varchar(64),
+	MAC				varchar(256),
+	DeviceType		varchar(256),
+	OS				varchar(256),
+	OS_Details		varchar(256),
+	NetworkDistance varchar(256),
+	CreatedOn		timestamp,
+	CreatedBy		uuid,
+	LastModifiedOn	timestamp,
+	LastModifiedBy	uuid,
+	IsActive		boolean
+);
+
+drop table hostport;
+create table HostPort (
+	HostPortID			uuid PRIMARY KEY,
+	NmapHostID			uuid,
+	UserID				uuid,
+	parentprofileid		uuid,
+	parentscanid		uuid,
+	PortNumber			int,
+	IsUDP				boolean,
+	DeepScan			text,
+	Service				varchar(100),
+	HydraServiceName	varchar(100),
+	State				varchar(30),
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table smbresult;
+create table SMBResult (
+	SMBResultID			uuid PRIMARY KEY,
+	HostPortID			uuid,
+	ProfileID			uuid,
+	ScanID				uuid,
+	UserID				uuid,
+	FullOutput			text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table smbresultchild;
+create table SMBResultChild (
+	SMBResultChildID	uuid PRIMARY KEY,
+	SMBResultID			uuid,
+	FileList			text,
+	Sharename			varchar(256),
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table sqlmapresult;
+create table SQLmapResult (
+	SQLMapResultID		uuid PRIMARY KEY,
+	HostPortID			uuid,
+	ScanID				uuid,
+	UserID				uuid,
+	Fulloutput			text,
+	Log				text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+	
+);
+
+drop table sqlmapresultchildren;
+create table SQLMapResultChildren (
+	SQLMapResultChildID		uuid PRIMARY KEY,
+	SQLMapResultID			uuid,
+	URL						text,
+	HTTPRequestType			text,
+	Parameter				text,
+	PayloadType				text,
+	Payload					text,
+	Title					text,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+drop table nessusscan;
+create table NessusScan (
+	NessusScanID			uuid PRIMARY KEY,
+	RemoteScanID			text,
+	ParentScanID			uuid,
+	NessusReportID			uuid,
+	Name					text,
+	Owner					text,
+	Range					text,
+	UniqueReportNo			int,
+	StartTime				timestamp,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+drop table nessusreport;
+create table NessusReport (
+	NessusReportID			uuid PRIMARY KEY,
+	RemoteReportID			text,
+	ParentNessusScanID		uuid,
+	ReadableName			text,
+	Status					text,
+	FullReport				text,
+	ReportType				text,
+	TS						timestamp,
+	Report					text,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+drop table openvastask;
+create table OpenVASTask (
+	OpenVASTaskID			uuid PRIMARY KEY,
+	RemoteTaskID			uuid,
+	ScanID					uuid,
+	RemoteReportID			uuid,
+	FullReport				text,
+	Comment					text,
+	Status					text,
+	StatusText				text,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+drop table openvasreport;
+create table OpenVASReport (
+	OpenVASReportID			uuid PRIMARY KEY,
+	RemoteReportID			uuid,
+	FullReport				text,
+	ReportType				text,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+
+
+drop table nexposescan;
+create table NexposeScan (
+	NexposeScanID			uuid PRIMARY KEY,
+	RemoteScanID 			int,
+	RemoteSiteID			int,
+	FullReport				text,
+	ReportType				varchar(128),
+	ScanID					uuid,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+);
+
+drop table nexposereport;
+create table nexposereport (
+	NexposeReportID			uuid PRIMARY KEY,
+	NexposeScanID			uuid,
+	FullReport				text,
+	ReportType				text,
+	CreatedOn				timestamp,
+	CreatedBy				uuid,
+	LastModifiedOn			timestamp,
+	LastModifiedBy			uuid,
+	IsActive				boolean
+	
+);
+
+drop table onesixtyoneresult;
+create table onesixtyoneresult (
+	OneSixtyOneResultID		uuid PRIMARY KEY,
+	ProfileID			uuid,
+	FullOutput			text,
+	HostPortID			uuid,
+	UserID				uuid,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table cve;
+create table CVE (
+	CVEID				uuid PRIMARY KEY,
+	Name				text,
+	Description			text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table cvereference;
+create table CVEReference (
+	CVEReferenceID		uuid PRIMARY KEY,
+	CVEID				uuid,
+	Source				text,
+	URL					text,
+	Description			text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table cvecomment;
+create table CVEComment (
+	CVECommentID		uuid PRIMARY KEY,
+	CVEID				uuid,
+	Voter				text,
+	Comment				text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table nvd;
+create table NVD (
+	NVDID				uuid PRIMARY KEY,
+	RemoteNVDID			text,
+	NVDCVSSID			uuid,
+	CVEID				uuid,
+	RemoteCVEID			text,
+	DatePublished		timestamp,
+	LastModified		timestamp,
+	CWE					text,
+	Summary				text,
+	Name				text,
+	Description			text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table nvdreference;
+create table NVDReference (
+	NVDReferenceID 		uuid PRIMARY KEY,
+	NVDID				uuid,
+	Source				text,
+	URL					text,
+	Description			text,
+	Type				text,
+	CreatedOn			timestamp,
+	CreatedBy			uuid,
+	LastModifiedOn		timestamp,
+	LastModifiedBy		uuid,
+	IsActive			boolean
+);
+
+drop table nvdvulnerablesoftware;
+create table NVDVulnerableSoftware (
+	NVDVulnerableSoftwareID		uuid PRIMARY KEY,
+	NVDID						uuid,
+	Software					text,
+	CreatedOn					timestamp,
+	CreatedBy					uuid,
+	LastModifiedOn				timestamp,
+	LastModifiedBy				uuid,
+	IsActive					boolean
+);
+
+drop table nvdcvss;
+create table NVDCVSS (
+	NVDCVSSID					uuid PRIMARY KEY,
+	NVDID						uuid,
+	Score						decimal,
+	Vector						text,
+	Complexity					text,
+	Authentication				text,
+	ConfidentialityImpact		text,
+	IntegrityImpact				text,
+	AvailabilityImpact			text,
+	CreatedOn					timestamp,
+	CreatedBy					uuid,
+	LastModifiedOn				timestamp,
+	LastModifiedBy				uuid,
+	IsActive					boolean
+);
+
+drop table wapiti;
+create table Wapiti (
+  wapitiresultid    uuid PRIMARY KEY,
+  portid	    uuid,
+  parentprofileid   uuid,
+  fulloutput        text,
+  hostipaddressv4   text,
+  hostport	    integer,
+  istcp		    boolean,
+  createdby         uuid,
+  createdon         timestamp,
+  lastmodifiedby    uuid,
+  lastmodifiedon    timestamp,
+  isactive          boolean
+);
+
+drop table wapitibug;
+create table WapitiBug (
+  wapitibugid     uuid PRIMARY KEY,
+  wapitiresultid  uuid,
+  host            text,
+  info            text,
+  parameter	  text,
+  level           integer,
+  port            integer,
+  type            text,
+  url             text,
+  wapititimestamp text,
+  createdby       uuid,
+  createdon       timestamp,
+  lastmodifiedby  uuid,
+  lastmodifiedon  timestamp,
+  isactive        boolean
+);
+
+
+drop table wapitireference;
+create table WapitiReference (
+  wapitireferenceid     uuid PRIMARY KEY,
+  wapitibugid           uuid,
+  title                 text,
+  url                   text,
+  createdby             uuid,
+  createdon             timestamp,
+  lastmodifiedby        uuid,
+  lastmodifiedon        timestamp,
+  isactive              boolean
+);

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data.Metasploit.Pro.BusinessObjects</RootNamespace>
+    <AssemblyName>AutoAssess.Data.Metasploit.Pro.Objects</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MetasploitExploitSession.cs" />
+    <Compile Include="MetasploitScan.cs" />
+    <Compile Include="MetasploitHost.cs" />
+    <Compile Include="MetasploitHostDetail.cs" />
+    <Compile Include="MetasploitExploitAttempt.cs" />
+    <Compile Include="MetasploitService.cs" />
+    <Compile Include="MetasploitNote.cs" />
+    <Compile Include="MetasploitVulnerability.cs" />
+    <Compile Include="MetasploitRef.cs" />
+    <Compile Include="MetasploitVulnerabilityDetail.cs" />
+    <Compile Include="MetasploitCredential.cs" />
+    <Compile Include="MetasploitEvent.cs" />
+    <Compile Include="MetasploitWebsite.cs" />
+    <Compile Include="MetasploitWebpage.cs" />
+    <Compile Include="MetasploitWebForm.cs" />
+    <Compile Include="MetasploitModuleDetail.cs" />
+    <Compile Include="MetasploitModuleAuthor.cs" />
+    <Compile Include="MetasploitModuleReference.cs" />
+    <Compile Include="MetasploitModuleArchitecture.cs" />
+    <Compile Include="MetasploitModulePlatform.cs" />
+    <Compile Include="MetasploitModuleTarget.cs" />
+    <Compile Include="MetasploitModuleAction.cs" />
+    <Compile Include="MetasploitModuleMixin.cs" />
+    <Compile Include="MetasploitTag.cs" />
+    <Compile Include="MetasploitHostCredential.cs" />
+    <Compile Include="MetasploitReport.cs" />
+    <Compile Include="MetasploitWebVulnerability.cs" />
+    <Compile Include="MetasploitVulnerabilityReference.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

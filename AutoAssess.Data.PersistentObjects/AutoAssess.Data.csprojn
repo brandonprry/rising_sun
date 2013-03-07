@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85624617-6B56-4A51-9B2C-D361B0604028}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data</RootNamespace>
+    <AssemblyName>AutoAssess.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="ICSharpCode.SharpZipLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Assessment.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="AssessmentOptions.cs" />
+    <Compile Include="NMapHost.cs" />
+    <Compile Include="Port.cs" />
+    <Compile Include="ToolOptions\OpenVASToolOptions.cs" />
+    <Compile Include="ToolOptions\NMapToolOptions.cs" />
+    <Compile Include="ToolOptions\WhoisToolOptions.cs" />
+    <Compile Include="ToolOptions\ARP-ScanToolOptions.cs" />
+    <Compile Include="ToolOptions\HydraToolOptions.cs" />
+    <Compile Include="ToolOptions\MetasploitToolOptions.cs" />
+    <Compile Include="ToolOptions\NBTScanToolOptions.cs" />
+    <Compile Include="ToolOptions\NiktoToolOptions.cs" />
+    <Compile Include="ToolOptions\OneSixtyOneToolOptions.cs" />
+    <Compile Include="ToolOptions\SMBClientToolOptions.cs" />
+    <Compile Include="ToolOptions\SSLScanToolOptions.cs" />
+    <Compile Include="ToolOptions\TcpDumpToolOptions.cs" />
+    <Compile Include="ToolOptions\TracerouteToolOptions.cs" />
+    <Compile Include="ToolOptions\W3afToolOptions.cs" />
+    <Compile Include="ToolOptions\WapitiToolOptions.cs" />
+    <Compile Include="ToolOptions\WinexeToolOptions.cs" />
+    <Compile Include="ToolResults\OpenVASToolResults.cs" />
+    <Compile Include="ToolResults\NMapToolResults.cs" />
+    <Compile Include="ToolResults\ARP-ScanToolResults.cs" />
+    <Compile Include="ToolResults\WhoisToolOptions.cs" />
+    <Compile Include="ToolResults\HydraToolResults.cs" />
+    <Compile Include="ToolResults\MetasploitToolResults.cs" />
+    <Compile Include="ToolResults\NBTScanToolResults.cs" />
+    <Compile Include="ToolResults\NiktoToolResults.cs" />
+    <Compile Include="ToolResults\OneSixtyOneToolResults.cs" />
+    <Compile Include="ToolResults\SMBClientToolResults.cs" />
+    <Compile Include="ToolResults\SSLScanToolResults.cs" />
+    <Compile Include="ToolResults\TcpDumpToolResults.cs" />
+    <Compile Include="ToolResults\TracerouteToolResults.cs" />
+    <Compile Include="ToolResults\W3afToolResults.cs" />
+    <Compile Include="ToolResults\WapitiToolResults.cs" />
+    <Compile Include="ToolResults\WinexeToolResults.cs" />
+    <Compile Include="Tools\OpenVAS.cs" />
+    <Compile Include="Tools\SMBClient.cs" />
+    <Compile Include="Tools\ARP-Scan.cs" />
+    <Compile Include="Tools\SSLScan.cs" />
+    <Compile Include="Tools\OneSixtyOne.cs" />
+    <Compile Include="Tools\NBTScan.cs" />
+    <Compile Include="Tools\NMap.cs" />
+    <Compile Include="Tools\Traceroute.cs" />
+    <Compile Include="Tools\Hydra.cs" />
+    <Compile Include="Tools\W3af.cs" />
+    <Compile Include="Tools\Wapiti.cs" />
+    <Compile Include="Tools\Nikto.cs" />
+    <Compile Include="Tools\Winexe.cs" />
+    <Compile Include="Tools\Metasploit.cs" />
+    <Compile Include="Tools\TcpDump.cs" />
+    <Compile Include="Tools\Whois.cs" />
+    <Compile Include="ITool.cs" />
+    <Compile Include="IToolOptions.cs" />
+    <Compile Include="IToolResults.cs" />
+    <Compile Include="Scan.cs" />
+    <Compile Include="ScanType.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="ToolOptions\" />
+    <Folder Include="ToolResults\" />
+    <Folder Include="Tools\" />
+  </ItemGroup>
+</Project>

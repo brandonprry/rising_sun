@@ -1,0 +1,39 @@
+<Type Name="MyClass" FullName="AutoAssess.Data.Reporting.MyClass">
+  <TypeSignature Language="C#" Value="public class MyClass" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MyClass extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Reporting</AssemblyName>
+    <AssemblyVersion>1.0.4613.40884</AssemblyVersion>
+    <AssemblyVersion>1.0.4643.34789</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41866</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30161</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36211</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MyClass ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.40884</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34789</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41866</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30161</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36211</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

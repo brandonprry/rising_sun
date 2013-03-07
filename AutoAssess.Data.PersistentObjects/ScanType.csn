@@ -1,0 +1,10 @@
+using System;
+namespace AutoAssess.Data
+{
+	public enum ScanType
+	{
+		Profile=0,
+		Full=1
+	}
+}
+

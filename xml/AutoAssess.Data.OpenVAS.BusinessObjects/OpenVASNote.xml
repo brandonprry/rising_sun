@@ -1,0 +1,316 @@
+<Type Name="OpenVASNote" FullName="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote">
+  <TypeSignature Language="C#" Value="public class OpenVASNote : AutoAssess.Data.OpenVAS.BusinessObjects.IOpenVASObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit OpenVASNote extends System.Object implements class AutoAssess.Data.OpenVAS.BusinessObjects.IOpenVASObject" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.OpenVAS.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+    <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+    <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+    <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>AutoAssess.Data.OpenVAS.BusinessObjects.IOpenVASObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpenVASNote ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public virtual string Comment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public virtual string Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hosts">
+      <MemberSignature Language="C#" Value="public virtual string Hosts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Hosts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NVT">
+      <MemberSignature Language="C#" Value="public virtual AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT NVT { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT NVT" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.IOpenVASObject&gt; Parse (System.Xml.XmlDocument response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class AutoAssess.Data.OpenVAS.BusinessObjects.IOpenVASObject&gt; Parse(class System.Xml.XmlDocument response) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.IOpenVASObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Xml.XmlDocument" />
+      </Parameters>
+      <Docs>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Port">
+      <MemberSignature Language="C#" Value="public virtual int Port { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteNoteID">
+      <MemberSignature Language="C#" Value="public virtual Guid RemoteNoteID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid RemoteNoteID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Report">
+      <MemberSignature Language="C#" Value="public virtual AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASScan Report { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASScan Report" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASScan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Task">
+      <MemberSignature Language="C#" Value="public virtual AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask Task { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask Task" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreatLevel">
+      <MemberSignature Language="C#" Value="public virtual string ThreatLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ThreatLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4615.19654</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4629.30327</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

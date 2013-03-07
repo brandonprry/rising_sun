@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0D46987-B569-4BA6-A97D-2446789B3910}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data.OpenVAS.BusinessObjects</RootNamespace>
+    <AssemblyName>AutoAssess.Data.OpenVAS.BusinessObjects</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="IOpenVASObject.cs" />
+    <Compile Include="OpenVASAgent.cs" />
+    <Compile Include="OpenVASConfig.cs" />
+    <Compile Include="OpenVASCredentials.cs" />
+    <Compile Include="OpenVASEscalator.cs" />
+    <Compile Include="OpenVASLSCCredential.cs" />
+    <Compile Include="OpenVASNote.cs" />
+    <Compile Include="OpenVASNVT.cs" />
+    <Compile Include="OpenVASNVTFamily.cs" />
+    <Compile Include="OpenVASObjectManager.cs" />
+    <Compile Include="OpenVASOverride.cs" />
+    <Compile Include="OpenVASReportFormat.cs" />
+    <Compile Include="OpenVASSchedule.cs" />
+    <Compile Include="OpenVASSlave.cs" />
+    <Compile Include="OpenVASTarget.cs" />
+    <Compile Include="OpenVASTask.cs" />
+    <Compile Include="OpenVASReportParser.cs" />
+    <Compile Include="OpenVASResult.cs" />
+    <Compile Include="OpenVASScan.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\openvas-sharp\openvas-sharp.csproj">
+      <Project>{F133DABB-CC2F-4507-90C3-C1B20F9E66CF}</Project>
+      <Name>openvas-sharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

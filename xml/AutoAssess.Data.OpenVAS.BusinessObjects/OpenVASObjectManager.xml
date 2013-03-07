@@ -1,0 +1,920 @@
+<Type Name="OpenVASObjectManager" FullName="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASObjectManager">
+  <TypeSignature Language="C#" Value="public class OpenVASObjectManager : AutoAssess.Data.OpenVAS.OpenVASManager, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OpenVASObjectManager extends AutoAssess.Data.OpenVAS.OpenVASManager implements class System.IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.OpenVAS.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+    <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+    <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+    <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AutoAssess.Data.OpenVAS.OpenVASManager</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpenVASObjectManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpenVASObjectManager (AutoAssess.Data.OpenVAS.OpenVASManagerSession session);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class AutoAssess.Data.OpenVAS.OpenVASManagerSession session) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="session" Type="AutoAssess.Data.OpenVAS.OpenVASManagerSession" />
+      </Parameters>
+      <Docs>
+        <param name="session">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpenVASObjectManager (openvassharp.OpenVASManagerSession session);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class openvassharp.OpenVASManagerSession session) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="session" Type="openvassharp.OpenVASManagerSession" />
+      </Parameters>
+      <Docs>
+        <param name="session">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAgent">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent CreateAgent (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent agent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent CreateAgent(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent agent) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agent" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent" />
+      </Parameters>
+      <Docs>
+        <param name="agent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConfigByCopy">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig CreateConfigByCopy (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig CreateConfigByCopy(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEscalator">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator CreateEscalator (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator escalator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator CreateEscalator(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator escalator) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="escalator" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator" />
+      </Parameters>
+      <Docs>
+        <param name="escalator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLSCCredential">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential CreateLSCCredential (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential CreateLSCCredential(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential credentials) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="credentials" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential" />
+      </Parameters>
+      <Docs>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNote">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote CreateNote (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote note);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote CreateNote(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote note) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="note" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote" />
+      </Parameters>
+      <Docs>
+        <param name="note">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOverride">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride CreateOverride (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride or);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride CreateOverride(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride or) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="or" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride" />
+      </Parameters>
+      <Docs>
+        <param name="or">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTarget">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget CreateTarget (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget CreateTarget(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget target) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTask">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask CreateTask (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask task);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask CreateTask(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask task) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="task" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask" />
+      </Parameters>
+      <Docs>
+        <param name="task">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFormat">
+      <MemberSignature Language="C#" Value="public string DefaultFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSortField">
+      <MemberSignature Language="C#" Value="public string DefaultSortField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultSortField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSortOrder">
+      <MemberSignature Language="C#" Value="public string DefaultSortOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultSortOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteConfig">
+      <MemberSignature Language="C#" Value="public void DeleteConfig (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteConfig(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteEscalator">
+      <MemberSignature Language="C#" Value="public void DeleteEscalator (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator escalator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteEscalator(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator escalator) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="escalator" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASEscalator" />
+      </Parameters>
+      <Docs>
+        <param name="escalator">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteLSCCredential">
+      <MemberSignature Language="C#" Value="public void DeleteLSCCredential (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteLSCCredential(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential credentials) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="credentials" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASLSCCredential" />
+      </Parameters>
+      <Docs>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteNote">
+      <MemberSignature Language="C#" Value="public void DeleteNote (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote note);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteNote(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote note) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="note" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNote" />
+      </Parameters>
+      <Docs>
+        <param name="note">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteOverride">
+      <MemberSignature Language="C#" Value="public void DeleteOverride (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride or);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteOverride(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride or) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="or" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASOverride" />
+      </Parameters>
+      <Docs>
+        <param name="or">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteReport">
+      <MemberSignature Language="C#" Value="public void DeleteReport (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReport report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteReport(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReport report) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="report" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReport" />
+      </Parameters>
+      <Docs>
+        <param name="report">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteReport">
+      <MemberSignature Language="C#" Value="public void DeleteReport (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASScan report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteReport(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASScan report) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="report" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASScan" />
+      </Parameters>
+      <Docs>
+        <param name="report">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteReportFormat">
+      <MemberSignature Language="C#" Value="public void DeleteReportFormat (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteReportFormat(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportFormat format) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASReportFormat" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSchedule">
+      <MemberSignature Language="C#" Value="public void DeleteSchedule (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASSchedule schedule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteSchedule(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASSchedule schedule) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schedule" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASSchedule" />
+      </Parameters>
+      <Docs>
+        <param name="schedule">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSlave">
+      <MemberSignature Language="C#" Value="public void DeleteSlave (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASSlave slave);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteSlave(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASSlave slave) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="slave" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASSlave" />
+      </Parameters>
+      <Docs>
+        <param name="slave">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTarget">
+      <MemberSignature Language="C#" Value="public void DeleteTarget (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteTarget(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget target) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTarget" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTask">
+      <MemberSignature Language="C#" Value="public void DeleteTask (AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask task);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteTask(class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask task) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="task" Type="AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASTask" />
+      </Parameters>
+      <Docs>
+        <param name="task">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAgent">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent GetAgent (Guid agentID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent GetAgent(valuetype System.Guid agentID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agentID" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="agentID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllAgents">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent&gt; GetAllAgents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent&gt; GetAllAgents() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASAgent&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllConfigs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig&gt; GetAllConfigs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig&gt; GetAllConfigs() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASConfig&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllNVTFamilies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVTFamily&gt; GetAllNVTFamilies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVTFamily&gt; GetAllNVTFamilies() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVTFamily&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllNVTs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT&gt; GetAllNVTs (bool getPreferences, bool getPreferenceCount, bool getDetails, string family, string configID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT&gt; GetAllNVTs(bool getPreferences, bool getPreferenceCount, bool getDetails, string family, string configID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="getPreferences" Type="System.Boolean" />
+        <Parameter Name="getPreferenceCount" Type="System.Boolean" />
+        <Parameter Name="getDetails" Type="System.Boolean" />
+        <Parameter Name="family" Type="System.String" />
+        <Parameter Name="configID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="getPreferences">To be added.</param>
+        <param name="getPreferenceCount">To be added.</param>
+        <param name="getDetails">To be added.</param>
+        <param name="family">To be added.</param>
+        <param name="configID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNVT">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT GetNVT (string oid, bool getPreferences, bool getPreferenceCount, bool getDetails);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT GetNVT(string oid, bool getPreferences, bool getPreferenceCount, bool getDetails) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.OpenVAS.BusinessObjects.OpenVASNVT</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oid" Type="System.String" />
+        <Parameter Name="getPreferences" Type="System.Boolean" />
+        <Parameter Name="getPreferenceCount" Type="System.Boolean" />
+        <Parameter Name="getDetails" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="oid">To be added.</param>
+        <param name="getPreferences">To be added.</param>
+        <param name="getPreferenceCount">To be added.</param>
+        <param name="getDetails">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSpecialTimeout">
+      <MemberSignature Language="C#" Value="public bool UseSpecialTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSpecialTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39782</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40889</AssemblyVersion>
+        <AssemblyVersion>1.0.4628.4076</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34783</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41859</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30154</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36203</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38752</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

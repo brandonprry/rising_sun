@@ -1,0 +1,1343 @@
+<html>
+  <head>
+    <title>AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">AutoAssess.Data.Metasploit.Pro.Objects</a> : <a href="index.html">AutoAssess.Data.Metasploit.Pro.BusinessObjects Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost">Overview</a>
+      </p>
+      <p>
+        <a href="#T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost">MetasploitHost  Class</h1>
+    <p class="Summary" id="T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Signature">
+      <h2>Syntax</h2>
+      <div class="Signature">public class  <b>MetasploitHost</b></div>
+    </div>
+    <div class="Remarks" id="T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Docs:Version Information">
+        <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4813.38747</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost">MetasploitHost</a>
+                    </b>()</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost(System.Xml.XmlNode)">MetasploitHost</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Address">Address</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Comm">Comm</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Credentials">Credentials</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitCredential&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Details">Details</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitHostDetail&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttemptCount">ExploitAttemptCount</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttempts">ExploitAttempts</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitExploitAttempt&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.HostDetailCount">HostDetailCount</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Info">Info</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.MAC">MAC</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Name">Name</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.NoteCount">NoteCount</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Notes">Notes</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitNote&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSArchitecture">OSArchitecture</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSFlavor">OSFlavor</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSLanguage">OSLanguage</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSName">OSName</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSServicePack">OSServicePack</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Purpose">Purpose</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteCreatedAt">RemoteCreatedAt</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteID">RemoteID</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteUpdatedAt">RemoteUpdatedAt</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteWorkspaceID">RemoteWorkspaceID</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ServiceCount">ServiceCount</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Services">Services</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitService&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Sessions">Sessions</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitExploitSession&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.State">State</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Tags">Tags</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitTag&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.VulnCount">VulnCount</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Vulnerabilities">Vulnerabilities</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitVulnerability&gt;</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost">MetasploitHost Constructor</h3>
+        <blockquote id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>MetasploitHost</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost(System.Xml.XmlNode)">MetasploitHost Constructor</h3>
+        <blockquote id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost(System.Xml.XmlNode):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>MetasploitHost</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> doc)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost(System.Xml.XmlNode):Parameters">
+            <dl>
+              <dt>
+                <i>doc</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost(System.Xml.XmlNode):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost(System.Xml.XmlNode):Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Address">Address Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Address:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Address</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Address:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Address:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Address:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Comm">Comm Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Comm:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Comm</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Comm:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Comm:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Comm:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Credentials">Credentials Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Credentials:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitCredential&gt;</a> <b>Credentials</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Credentials:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Credentials:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Credentials:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Details">Details Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Details:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitHostDetail&gt;</a> <b>Details</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Details:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Details:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Details:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttemptCount">ExploitAttemptCount Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttemptCount:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>ExploitAttemptCount</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttemptCount:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttemptCount:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttemptCount:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttempts">ExploitAttempts Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttempts:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitExploitAttempt&gt;</a> <b>ExploitAttempts</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttempts:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttempts:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ExploitAttempts:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.HostDetailCount">HostDetailCount Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.HostDetailCount:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>HostDetailCount</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.HostDetailCount:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.HostDetailCount:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.HostDetailCount:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Info">Info Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Info:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Info</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Info:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Info:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Info:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.MAC">MAC Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.MAC:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MAC</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.MAC:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.MAC:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.MAC:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Name">Name Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Name:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Name</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Name:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Name:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Name:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.NoteCount">NoteCount Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.NoteCount:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>NoteCount</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.NoteCount:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.NoteCount:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.NoteCount:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Notes">Notes Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Notes:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitNote&gt;</a> <b>Notes</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Notes:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Notes:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Notes:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSArchitecture">OSArchitecture Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSArchitecture:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>OSArchitecture</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSArchitecture:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSArchitecture:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSArchitecture:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSFlavor">OSFlavor Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSFlavor:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>OSFlavor</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSFlavor:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSFlavor:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSFlavor:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSLanguage">OSLanguage Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSLanguage:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>OSLanguage</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSLanguage:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSLanguage:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSLanguage:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSName">OSName Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSName:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>OSName</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSName:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSName:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSName:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSServicePack">OSServicePack Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSServicePack:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>OSServicePack</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSServicePack:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSServicePack:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.OSServicePack:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Purpose">Purpose Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Purpose:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Purpose</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Purpose:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Purpose:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Purpose:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteCreatedAt">RemoteCreatedAt Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteCreatedAt:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>RemoteCreatedAt</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteCreatedAt:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteCreatedAt:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteCreatedAt:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteID">RemoteID Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteID:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>RemoteID</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteID:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteID:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteID:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteUpdatedAt">RemoteUpdatedAt Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteUpdatedAt:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>RemoteUpdatedAt</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteUpdatedAt:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteUpdatedAt:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteUpdatedAt:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteWorkspaceID">RemoteWorkspaceID Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteWorkspaceID:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>RemoteWorkspaceID</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteWorkspaceID:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteWorkspaceID:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.RemoteWorkspaceID:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ServiceCount">ServiceCount Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ServiceCount:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>ServiceCount</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ServiceCount:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ServiceCount:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.ServiceCount:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Services">Services Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Services:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitService&gt;</a> <b>Services</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Services:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Services:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Services:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Sessions">Sessions Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Sessions:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitExploitSession&gt;</a> <b>Sessions</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Sessions:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Sessions:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Sessions:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.State">State Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.State:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>State</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.State:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.State:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.State:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Tags">Tags Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Tags:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitTag&gt;</a> <b>Tags</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Tags:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Tags:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Tags:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.VulnCount">VulnCount Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.VulnCount:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>VulnCount</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.VulnCount:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.VulnCount:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.VulnCount:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Vulnerabilities">Vulnerabilities Property</h3>
+        <blockquote id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Vulnerabilities:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MetasploitVulnerability&gt;</a> <b>Vulnerabilities</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Vulnerabilities:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Vulnerabilities:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:AutoAssess.Data.Metasploit.Pro.BusinessObjects.MetasploitHost.Vulnerabilities:Version Information">
+            <b>Namespace: </b>AutoAssess.Data.Metasploit.Pro.BusinessObjects<br /><b>Assembly: </b>AutoAssess.Data.Metasploit.Pro.Objects (in AutoAssess.Data.Metasploit.Pro.Objects.dll)<br /><b>Assembly Versions: </b>1.0.4644.41067, 1.0.4647.41863, 1.0.4648.30158, 1.0.4648.36208, 1.0.4657.36823, 1.0.4813.38747</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

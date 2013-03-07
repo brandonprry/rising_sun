@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A6372CC-CEFC-4EBB-8D94-D7A6640A169D}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Web</RootNamespace>
+    <AssemblyName>AutoAssess.Web</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="CreateProfile.aspx" />
+    <Content Include="ViewProfiles.aspx" />
+    <Content Include="ViewProfile.aspx" />
+    <Content Include="ViewHost.aspx" />
+    <Content Include="ViewPortDetails.aspx" />
+    <Content Include="ViewWhois.aspx" />
+    <Content Include="ViewTraceroute.aspx" />
+    <Content Include="CompareProfiles.aspx" />
+    <Content Include="CreateScan.aspx" />
+    <Content Include="ViewScans.aspx" />
+    <Content Include="ViewScan.aspx" />
+    <Content Include="ViewNessusScan.aspx" />
+    <Content Include="RemediationDetails.aspx" />
+    <Content Include="MasterPage.master" />
+    <Content Include="Registration.aspx" />
+    <Content Include="VerifyRegistration.aspx" />
+    <Content Include="UserProfile.aspx" />
+    <Content Include="VerifyProfile.aspx" />
+    <Content Include="static\css\style.css" />
+    <Content Include="static\javascript\js.js" />
+    <Content Include="static\javascript\jquery.js" />
+    <Content Include="static\images\header.png" />
+    <Content Include="Logout.aspx" />
+    <Content Include="static\images\Anonymous_server.png" />
+    <Content Include="EditUserProfile.aspx" />
+    <Content Include="static\images\metasploit_shield_small.png" />
+    <Content Include="static\images\nexpose_shield_small.png" />
+    <Content Include="static\images\openvas_logo_small.png" />
+    <Content Include="static\images\tenable_logo_small.png" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\ManageUsers.aspx" />
+    <Content Include="Admin\ManageUser.aspx" />
+    <Content Include="Admin\Impersonate.aspx" />
+    <Content Include="AddHostToProfile.aspx" />
+    <Content Include="CreditCardPayment.aspx" />
+    <Content Include="Remediation.aspx" />
+    <Content Include="ThankYou.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="code\WebUserIdentity.cs" />
+    <Compile Include="code\WebUserPrincipal.cs" />
+    <Compile Include="code\AutoAssessPage.cs" />
+    <Compile Include="code\AutoAssessWebApplication.cs" />
+    <Compile Include="CreateProfile.aspx.cs">
+      <DependentUpon>CreateProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProfile.aspx.designer.cs">
+      <DependentUpon>CreateProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfiles.aspx.cs">
+      <DependentUpon>ViewProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfiles.aspx.designer.cs">
+      <DependentUpon>ViewProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfile.aspx.cs">
+      <DependentUpon>ViewProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfile.aspx.designer.cs">
+      <DependentUpon>ViewProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHost.aspx.cs">
+      <DependentUpon>ViewHost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHost.aspx.designer.cs">
+      <DependentUpon>ViewHost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPortDetails.aspx.cs">
+      <DependentUpon>ViewPortDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPortDetails.aspx.designer.cs">
+      <DependentUpon>ViewPortDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWhois.aspx.cs">
+      <DependentUpon>ViewWhois.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWhois.aspx.designer.cs">
+      <DependentUpon>ViewWhois.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTraceroute.aspx.cs">
+      <DependentUpon>ViewTraceroute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTraceroute.aspx.designer.cs">
+      <DependentUpon>ViewTraceroute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompareProfiles.aspx.cs">
+      <DependentUpon>CompareProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompareProfiles.aspx.designer.cs">
+      <DependentUpon>CompareProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateScan.aspx.cs">
+      <DependentUpon>CreateScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateScan.aspx.designer.cs">
+      <DependentUpon>CreateScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewScans.aspx.cs">
+      <DependentUpon>ViewScans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewScans.aspx.designer.cs">
+      <DependentUpon>ViewScans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewScan.aspx.cs">
+      <DependentUpon>ViewScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewScan.aspx.designer.cs">
+      <DependentUpon>ViewScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewNessusScan.aspx.cs">
+      <DependentUpon>ViewNessusScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewNessusScan.aspx.designer.cs">
+      <DependentUpon>ViewNessusScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemediationDetails.aspx.cs">
+      <DependentUpon>RemediationDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemediationDetails.aspx.designer.cs">
+      <DependentUpon>RemediationDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyRegistration.aspx.cs">
+      <DependentUpon>VerifyRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyRegistration.aspx.designer.cs">
+      <DependentUpon>VerifyRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyProfile.aspx.cs">
+      <DependentUpon>VerifyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyProfile.aspx.designer.cs">
+      <DependentUpon>VerifyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserProfile.aspx.cs">
+      <DependentUpon>EditUserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserProfile.aspx.designer.cs">
+      <DependentUpon>EditUserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="code\AutoAssessAdminPage.cs" />
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUser.aspx.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUser.aspx.designer.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Impersonate.aspx.cs">
+      <DependentUpon>Impersonate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Impersonate.aspx.designer.cs">
+      <DependentUpon>Impersonate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddHostToProfile.aspx.cs">
+      <DependentUpon>AddHostToProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddHostToProfile.aspx.designer.cs">
+      <DependentUpon>AddHostToProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditCardPayment.aspx.cs">
+      <DependentUpon>CreditCardPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditCardPayment.aspx.designer.cs">
+      <DependentUpon>CreditCardPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remediation.aspx.cs">
+      <DependentUpon>Remediation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remediation.aspx.designer.cs">
+      <DependentUpon>Remediation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="true" VerifyCodeBehindEvents="true">
+        <XspParameters Port="8081" Address="0.0.0.0" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+        <WebDeployTargets>
+          <Target Name="">
+            <FileCopier Handler="MonoDevelop.Deployment.LocalFileCopyHandler" TargetDirectory="/home/bperry/tmp/www" ctype="LocalFileCopyConfiguration" />
+          </Target>
+        </WebDeployTargets>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Misc\AutoAssess.Misc.csproj">
+      <Project>{183217A9-6980-4783-ADEF-4D4F273FA70A}</Project>
+      <Name>AutoAssess.Misc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Web.Data\AutoAssess.Web.Data.csproj">
+      <Project>{9DA2BC04-8058-416D-8E47-FD748AEB96CC}</Project>
+      <Name>AutoAssess.Web.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.BusinessObjects\AutoAssess.Data.BusinessObjects.csproj">
+      <Project>{9349CF02-BCB2-4F87-B413-DD6D9AEE0AA9}</Project>
+      <Name>AutoAssess.Data.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.PersistentObjects\AutoAssess.Data.PersistentObjects.csproj">
+      <Project>{85624617-6B56-4A51-9B2C-D361B0604028}</Project>
+      <Name>AutoAssess.Data.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.PersistentObjects\AutoAssess.Data.Nessus.PersistentObjects.csproj">
+      <Project>{48CB24EF-F501-463E-AC9C-95491A1E6D5B}</Project>
+      <Name>AutoAssess.Data.Nessus.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.PersistentObjects\AutoAssess.Data.OpenVAS.PersistentObjects.csproj">
+      <Project>{3161735C-8CE5-43E5-A4E1-837B6FD32A72}</Project>
+      <Name>AutoAssess.Data.OpenVAS.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.BusinessObjects\AutoAssess.Data.Nessus.BusinessObjects.csproj">
+      <Project>{CCA85782-68B2-4838-9C36-14D209AEC90F}</Project>
+      <Name>AutoAssess.Data.Nessus.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.BusinessObjects\AutoAssess.Data.OpenVAS.BusinessObjects.csproj">
+      <Project>{C0D46987-B569-4BA6-A97D-2446789B3910}</Project>
+      <Name>AutoAssess.Data.OpenVAS.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.BusinessObjects\AutoAssess.Data.Nexpose.BusinessObjects.csproj">
+      <Project>{180C0D69-7307-4C9A-9E54-0F5E7A561B04}</Project>
+      <Name>AutoAssess.Data.Nexpose.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.PersistentObjects\AutoAssess.Data.Nexpose.PersistentObjects.csproj">
+      <Project>{E9A53559-118E-4744-AA84-8F16277E86BD}</Project>
+      <Name>AutoAssess.Data.Nexpose.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nexpose-sharp\nexpose-sharp\nexpose-sharp.csproj">
+      <Project>{35EDE3B5-13AE-4E8B-B699-50C48E1CCE17}</Project>
+      <Name>nexpose-sharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\metasploit-sharp\metasploit-sharp\metasploit-sharp.csproj">
+      <Project>{7406EF69-41DD-467A-90F9-BB34FBC39C0C}</Project>
+      <Name>metasploit-sharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.BusinessObjects\AutoAssess.Data.Metasploit.Pro.BusinessObjects.csproj">
+      <Project>{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.PersistentObjects\AutoAssess.Data.Metasploit.Pro.PersistentObjects.csproj">
+      <Project>{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.PersistentObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="static\" />
+    <Folder Include="code\" />
+    <Folder Include="static\css\" />
+    <Folder Include="static\javascript\" />
+    <Folder Include="static\images\" />
+    <Folder Include="Admin\" />
+  </ItemGroup>
+</Project>

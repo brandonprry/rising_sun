@@ -1,0 +1,86 @@
+<%@ Master Language="C#" Inherits="AutoAssess.Web.MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head runat="server">
+	<title>OpenDiagnostics, LLC</title>
+	<link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+ 	<script type="text/javascript" src="/static/javascript/jquery.js"></script>
+	<script type="text/javascript">
+			var profilesVisible = false;
+			function showProfiles()
+			{
+				if (!profilesVisible)
+				{
+					$('.profiles').show("fast", function showNext() {
+    					$(this).next(".profileMenuItem").show("fast", showNext);
+  					});
+			
+					profilesVisible = true;
+				}
+			}
+			
+			function hideProfiles()
+			{
+				if (profilesVisible)
+				{
+					$('.profiles').hide('fast', function hideNext() {
+    					$(this).next(".profileMenuItem").hide("fast", hideNext); 
+					});
+			
+					profilesVisible = false;
+				}
+			}
+			
+			var logoutVisible = false;
+			function showLogoutDiv()
+			{
+				if (!logoutVisible)
+				{
+					$('.userMenu').show("fast", function showLogout() {
+						$(this).next(".userMenuItem").hide("fast", showLogout);
+					});
+			
+					logoutVisible = true;
+				}
+			}
+			
+			function hideLogoutDiv()
+			{
+				if (logoutVisible)
+				{
+					$('.userMenu').hide("fast", function hideLogout() {
+						$(this).next(".userMenuItem").hide("fast", hideLogout);
+					});
+			
+					logoutVisible = false;
+				}
+			}
+			
+			function hideMenuStuff()
+			{
+				hideLogoutDiv();
+				hideProfiles();
+			}
+	</script>
+</head>	
+<body>
+	<form runat="server">
+		<div class="main">
+			<div class="header" onmouseover="hideMenuStuff()">&nbsp;</div>
+			<div class="menu">
+				<div class="menuItems" id="divMenuItems" runat="server" />
+				<div class="rightMenu" id="divRightMenu" runat="server" onmouseover="javascript:showLogoutDiv()" />
+			</div>
+			<div class="profiles" id="divProfiles" runat="server"/>
+			<div id="divUserMenu" class="userMenu" runat="server" >
+				<div class="userMenuItem">
+					<a href="/Logout.aspx">Log Out</a>
+				</div>
+			</div>
+			<div id="divContent" style="padding-left:30px; padding-right: 30px;" onmouseover="hideMenuStuff()" runat="server">
+	    		<asp:ContentPlaceholder id="main" runat="server" /> 			
+			</div>
+		</div>
+	</form>
+</body>
+</html>

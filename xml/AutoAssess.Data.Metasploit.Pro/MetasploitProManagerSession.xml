@@ -1,0 +1,36 @@
+<Type Name="MetasploitProManagerSession" FullName="AutoAssess.Data.Metasploit.Pro.MetasploitProManagerSession">
+  <TypeSignature Language="C#" Value="public class MetasploitProManagerSession : AutoAssess.Data.Metasploit.MetasploitManagerSession" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetasploitProManagerSession extends AutoAssess.Data.Metasploit.MetasploitManagerSession" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Metasploit.Pro</AssemblyName>
+    <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AutoAssess.Data.Metasploit.MetasploitManagerSession</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetasploitProManagerSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4643.34790</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41863</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30158</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36207</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36823</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2845</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9A53559-118E-4744-AA84-8F16277E86BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Data.Nexpose.PersistentObjects</RootNamespace>
+    <AssemblyName>AutoAssess.Data.Nexpose.PersistentObjects</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="PersistentNexposeSite.cs" />
+    <Compile Include="PersistentNexposeScan.cs" />
+    <Compile Include="PersistentNexposeEngine.cs" />
+    <Compile Include="PersistentNexposeReport.cs" />
+    <Compile Include="Mappings\NexposeScanMapping.cs" />
+    <Compile Include="PersistentNexposeAsset.cs" />
+    <Compile Include="PersistentNexposeHostName.cs" />
+    <Compile Include="PersistentNexposeHostFingerprint.cs" />
+    <Compile Include="PersistentNexposeHostTest.cs" />
+    <Compile Include="PersistentNexposeHostService.cs" />
+    <Compile Include="PersistentNexposeServiceFingerprint.cs" />
+    <Compile Include="PersistentNexposeServiceConfiguration.cs" />
+    <Compile Include="PersistentNexposeServiceTest.cs" />
+    <Compile Include="Mappings\NexposeAssetMap.cs" />
+    <Compile Include="Mappings\NexposeHostNameMap.cs" />
+    <Compile Include="Mappings\NexposeHostServiceMap.cs" />
+    <Compile Include="Mappings\NexposeHostFingerprintMap.cs" />
+    <Compile Include="Mappings\NexposeHostTestMap.cs" />
+    <Compile Include="Mappings\NexposeServiceConfigurationMap.cs" />
+    <Compile Include="Mappings\NexposeServiceFingerprintMap.cs" />
+    <Compile Include="Mappings\NexposeServiceTestMap.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.BusinessObjects\AutoAssess.Data.Nexpose.BusinessObjects.csproj">
+      <Project>{180C0D69-7307-4C9A-9E54-0F5E7A561B04}</Project>
+      <Name>AutoAssess.Data.Nexpose.BusinessObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

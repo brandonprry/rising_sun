@@ -1,0 +1,86 @@
+<Type Name="NexposeReport" FullName="AutoAssess.Data.Nexpose.BusinessObjects.NexposeReport">
+  <TypeSignature Language="C#" Value="public class NexposeReport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NexposeReport extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Nexpose.BusinessObjects</AssemblyName>
+    <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+    <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+    <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NexposeReport ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Base64EncodedReport">
+      <MemberSignature Language="C#" Value="public string Base64EncodedReport { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Base64EncodedReport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NexposeReportType">
+      <MemberSignature Language="C#" Value="public AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType NexposeReportType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType NexposeReportType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4613.39784</AssemblyVersion>
+        <AssemblyVersion>1.0.4613.40886</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34785</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41861</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30156</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36205</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36821</AssemblyVersion>
+        <AssemblyVersion>1.0.4813.38748</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AutoAssess.Data.Nexpose.BusinessObjects.NexposeReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

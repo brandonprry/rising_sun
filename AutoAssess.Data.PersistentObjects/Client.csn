@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Net;
+
+namespace AutoAssess.Data
+{
+	public class Client : Entity
+	{
+		public Client ()
+		{
+		}
+		
+		public Guid ClientID { get { return ID; } set { ID = value; } }
+		
+		public string Name { get; set; }
+		
+		public string LogoPath { get; set; }
+		
+		public string AssessmentManager { get; set; }
+		
+		public IList<Assessment> Assessments { get; set; }
+		
+		public IList<Profile> Profiles { get; set; }
+		
+		public string URL { get; set; }
+		
+		public IPAddress IPAddress { get; set; }
+	}
+}

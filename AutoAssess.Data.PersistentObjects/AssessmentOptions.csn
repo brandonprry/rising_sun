@@ -1,0 +1,28 @@
+using System;
+
+namespace AutoAssess.Data
+{
+
+
+	public class AssessmentOptions
+	{
+
+		public AssessmentOptions ()
+		{
+		}
+		
+		public bool RunW3af { get; set; }
+		
+		public bool RunWapiti { get; set; }
+		
+		public bool UseNessus { get; set; }
+		
+		public bool RunMBSA { get; set; }
+		
+		public MBSAOptions MBSAOptions { get; set; }
+		
+		public bool TestWeakCredentials { get; set; }
+		
+		public bool RecordPacketForSession { get; set; }
+	}
+}

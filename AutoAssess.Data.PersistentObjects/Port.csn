@@ -1,0 +1,54 @@
+using System;
+namespace AutoAssess.Data
+{
+	public class Port
+	{
+		public Port ()
+		{
+		}
+		
+		/// <summary>
+		/// The port Service is listening on
+		/// </summary>
+		public int PortNumber { get; set; }
+		
+		/// <summary>
+		/// Is the service on this port UDP or TCP?
+		/// </summary>
+		public bool IsUDP { get; set; }
+		
+		//this may seem redundant, but it will make code readability a bit better IMO
+		/// <summary>
+		/// Equal to !IsUDP
+		/// </summary>
+		public bool IsTCP 
+		{ 
+			get
+			{
+				return !this.IsUDP;
+			}
+			set 
+			{
+				IsUDP = !value;
+			}
+		}
+		
+		/// <summary>
+		/// Name of the service listening on the port
+		/// </summary>
+		public string Service { get; set; }
+		
+		/// <summary>
+		/// Name of the service when using hydra to bruteforce weak credentials
+		/// </summary>
+		public string HydraServiceName { get; set; }
+		
+		/// <summary>
+		/// State of the port (open, filtered, closed)
+		/// Could probably be an enum...
+		/// </summary>
+		public string State { get; set; }
+		
+	}
+}
+

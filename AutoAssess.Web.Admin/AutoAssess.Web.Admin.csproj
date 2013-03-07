@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9FCB3A2-63B7-4480-9BA0-4CF902D47541}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AutoAssess.Web.Admin</RootNamespace>
+    <AssemblyName>AutoAssess.Web.Admin</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\ThirdParty\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ThirdParty\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdParty\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\ThirdParty\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdParty\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ThirdParty\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\ThirdParty\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="CreateWebUser.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="ListUsers.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="CreateClient.aspx" />
+    <Content Include="UserInfo.aspx" />
+    <Content Include="ManagePlans.aspx" />
+    <Content Include="MasterPage.master" />
+    <Content Include="Metasploit\Index.aspx" />
+    <Content Include="Nessus\Index.aspx" />
+    <Content Include="Nexpose\Index.aspx" />
+    <Content Include="OpenVAS\Index.aspx" />
+    <Content Include="static\css\style.css" />
+    <Content Include="static\js\js.js" />
+    <Content Include="CreateScan.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateWebUser.aspx.cs">
+      <DependentUpon>CreateWebUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateWebUser.aspx.designer.cs">
+      <DependentUpon>CreateWebUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListUsers.aspx.cs">
+      <DependentUpon>ListUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListUsers.aspx.designer.cs">
+      <DependentUpon>ListUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateClient.aspx.cs">
+      <DependentUpon>CreateClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateClient.aspx.designer.cs">
+      <DependentUpon>CreateClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.aspx.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.aspx.designer.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePlans.aspx.cs">
+      <DependentUpon>ManagePlans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePlans.aspx.designer.cs">
+      <DependentUpon>ManagePlans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="code\AdminPage.cs" />
+    <Compile Include="Metasploit\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Metasploit\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nessus\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nessus\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nexpose\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nexpose\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenVAS\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenVAS\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateScan.aspx.cs">
+      <DependentUpon>CreateScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateScan.aspx.designer.cs">
+      <DependentUpon>CreateScan.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="true" VerifyCodeBehindEvents="true">
+        <XspParameters Port="8087" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoAssess.Misc\AutoAssess.Misc.csproj">
+      <Project>{183217A9-6980-4783-ADEF-4D4F273FA70A}</Project>
+      <Name>AutoAssess.Misc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Web.Data\AutoAssess.Web.Data.csproj">
+      <Project>{9DA2BC04-8058-416D-8E47-FD748AEB96CC}</Project>
+      <Name>AutoAssess.Web.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.PersistentObjects\AutoAssess.Data.PersistentObjects.csproj">
+      <Project>{85624617-6B56-4A51-9B2C-D361B0604028}</Project>
+      <Name>AutoAssess.Data.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.BusinessObjects\AutoAssess.Data.BusinessObjects.csproj">
+      <Project>{9349CF02-BCB2-4F87-B413-DD6D9AEE0AA9}</Project>
+      <Name>AutoAssess.Data.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.BusinessObjects\AutoAssess.Data.Metasploit.Pro.BusinessObjects.csproj">
+      <Project>{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Metasploit.Pro.PersistentObjects\AutoAssess.Data.Metasploit.Pro.PersistentObjects.csproj">
+      <Project>{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}</Project>
+      <Name>AutoAssess.Data.Metasploit.Pro.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.BusinessObjects\AutoAssess.Data.Nessus.BusinessObjects.csproj">
+      <Project>{CCA85782-68B2-4838-9C36-14D209AEC90F}</Project>
+      <Name>AutoAssess.Data.Nessus.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nessus.PersistentObjects\AutoAssess.Data.Nessus.PersistentObjects.csproj">
+      <Project>{48CB24EF-F501-463E-AC9C-95491A1E6D5B}</Project>
+      <Name>AutoAssess.Data.Nessus.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.PersistentObjects\AutoAssess.Data.Nexpose.PersistentObjects.csproj">
+      <Project>{E9A53559-118E-4744-AA84-8F16277E86BD}</Project>
+      <Name>AutoAssess.Data.Nexpose.PersistentObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Nexpose.BusinessObjects\AutoAssess.Data.Nexpose.BusinessObjects.csproj">
+      <Project>{180C0D69-7307-4C9A-9E54-0F5E7A561B04}</Project>
+      <Name>AutoAssess.Data.Nexpose.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.BusinessObjects\AutoAssess.Data.OpenVAS.BusinessObjects.csproj">
+      <Project>{C0D46987-B569-4BA6-A97D-2446789B3910}</Project>
+      <Name>AutoAssess.Data.OpenVAS.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.OpenVAS.PersistentObjects\AutoAssess.Data.OpenVAS.PersistentObjects.csproj">
+      <Project>{3161735C-8CE5-43E5-A4E1-837B6FD32A72}</Project>
+      <Name>AutoAssess.Data.OpenVAS.PersistentObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Nessus\" />
+    <Folder Include="Metasploit\" />
+    <Folder Include="OpenVAS\" />
+    <Folder Include="code\" />
+    <Folder Include="static\" />
+    <Folder Include="static\css\" />
+    <Folder Include="static\js\" />
+    <Folder Include="static\images\" />
+    <Folder Include="Nexpose\" />
+  </ItemGroup>
+</Project>

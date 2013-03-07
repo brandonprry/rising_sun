@@ -1,0 +1,19 @@
+
+using System;
+using ICSharpCode.SharpZipLib.Zip;
+
+namespace AutoAssess.Data
+{
+	public class Profile : Entity
+	{
+		public Profile ()
+		{
+		}
+		
+		public ZipFile Archive { get; set; }
+		
+		public DateTime DateOf { get; set; }
+		
+		public Client Client { get; set; }
+	}
+}

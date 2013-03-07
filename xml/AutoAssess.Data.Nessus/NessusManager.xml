@@ -1,0 +1,1731 @@
+<Type Name="NessusManager" FullName="AutoAssess.Data.Nessus.NessusManager">
+  <TypeSignature Language="C#" Value="public class NessusManager : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NessusManager extends System.Object implements class System.IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>AutoAssess.Data.Nessus</AssemblyName>
+    <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+    <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+    <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+    <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+    <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NessusManager (AutoAssess.Data.Nessus.NessusManagerSession sess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class AutoAssess.Data.Nessus.NessusManagerSession sess) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sess" Type="AutoAssess.Data.Nessus.NessusManagerSession" />
+      </Parameters>
+      <Docs>
+        <param name="sess">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUser">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument AddUser (string username, string password, bool isAdmin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument AddUser(string username, string password, bool isAdmin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="isAdmin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="isAdmin">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUser">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument AddUser (string username, string password, bool isAdmin, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument AddUser(string username, string password, bool isAdmin, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="isAdmin" Type="System.Boolean" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="isAdmin">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeUserPassword">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ChangeUserPassword (string username, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ChangeUserPassword(string username, string password) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeUserPassword">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ChangeUserPassword (string username, string password, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ChangeUserPassword(string username, string password, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyPolicy">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument CopyPolicy (int policyID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument CopyPolicy(int32 policyID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="policyID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyPolicy">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument CopyPolicy (int policyID, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument CopyPolicy(int32 policyID, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyID" Type="System.Int32" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="policyID">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScan">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument CreateScan (string target, int policyID, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument CreateScan(string target, int32 policyID, string name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="policyID" Type="System.Int32" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="policyID">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScan">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument CreateScan (string target, int policyID, string name, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument CreateScan(string target, int32 policyID, string name, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="policyID" Type="System.Int32" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="policyID">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScanTemplate">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument CreateScanTemplate (string name, int policyID, string target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument CreateScanTemplate(string name, int32 policyID, string target) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="policyID" Type="System.Int32" />
+        <Parameter Name="target" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="policyID">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScanTemplate">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument CreateScanTemplate (string name, int policyID, string target, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument CreateScanTemplate(string name, int32 policyID, string target, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="policyID" Type="System.Int32" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="policyID">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeletePolicy">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument DeletePolicy (int policyID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument DeletePolicy(int32 policyID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="policyID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeletePolicy">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument DeletePolicy (int policyID, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument DeletePolicy(int32 policyID, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyID" Type="System.Int32" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="policyID">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteReport">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument DeleteReport (string reportID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument DeleteReport(string reportID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteReport">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument DeleteReport (string reportID, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument DeleteReport(string reportID, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteScanTemplate">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument DeleteScanTemplate (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument DeleteScanTemplate(string name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteScanTemplate">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument DeleteScanTemplate (string name, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument DeleteScanTemplate(string name, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteUser">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument DeleteUser (string username);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument DeleteUser(string username) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteUser">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument DeleteUser (string username, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument DeleteUser(string username, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditScanTemplate">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument EditScanTemplate (string name, string readableName, int policyID, string target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument EditScanTemplate(string name, string readableName, int32 policyID, string target) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="readableName" Type="System.String" />
+        <Parameter Name="policyID" Type="System.Int32" />
+        <Parameter Name="target" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="readableName">To be added.</param>
+        <param name="policyID">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditScanTemplate">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument EditScanTemplate (string name, string readableName, int policyID, string target, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument EditScanTemplate(string name, string readableName, int32 policyID, string target, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="readableName" Type="System.String" />
+        <Parameter Name="policyID" Type="System.Int32" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="readableName">To be added.</param>
+        <param name="policyID">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditUser">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument EditUser (string username, string password, bool isAdmin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument EditUser(string username, string password, bool isAdmin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="isAdmin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="isAdmin">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditUser">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument EditUser (string username, string password, bool isAdmin, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument EditUser(string username, string password, bool isAdmin, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="isAdmin" Type="System.Boolean" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="isAdmin">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFeedInformation">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetFeedInformation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetFeedInformation() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFeedInformation">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetFeedInformation (int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetFeedInformation(int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNessusV2Report">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetNessusV2Report (string reportID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetNessusV2Report(string reportID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNessusV2Report">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetNessusV2Report (string reportID, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetNessusV2Report(string reportID, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPluginDescriptionByFilename">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetPluginDescriptionByFilename (string filename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetPluginDescriptionByFilename(string filename) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPluginDescriptionByFilename">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetPluginDescriptionByFilename (string filename, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetPluginDescriptionByFilename(string filename, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="filename">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPortsForHostFromReport">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetPortsForHostFromReport (string reportID, string host);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetPortsForHostFromReport(string reportID, string host) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+        <Parameter Name="host" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="host">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPortsForHostFromReport">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetPortsForHostFromReport (string reportID, string host, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetPortsForHostFromReport(string reportID, string host, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+        <Parameter Name="host" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="host">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReportDetailsByPortAndHost">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetReportDetailsByPortAndHost (string reportID, string host, int port, string protocol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetReportDetailsByPortAndHost(string reportID, string host, int32 port, string protocol) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+        <Parameter Name="host" Type="System.String" />
+        <Parameter Name="port" Type="System.Int32" />
+        <Parameter Name="protocol" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="host">To be added.</param>
+        <param name="port">To be added.</param>
+        <param name="protocol">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReportDetailsByPortAndHost">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetReportDetailsByPortAndHost (string reportID, string host, int port, string protocol, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetReportDetailsByPortAndHost(string reportID, string host, int32 port, string protocol, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+        <Parameter Name="host" Type="System.String" />
+        <Parameter Name="port" Type="System.Int32" />
+        <Parameter Name="protocol" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="host">To be added.</param>
+        <param name="port">To be added.</param>
+        <param name="protocol">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReportHosts">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetReportHosts (string reportID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetReportHosts(string reportID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReportHosts">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetReportHosts (string reportID, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetReportHosts(string reportID, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReportTags">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetReportTags (Guid reportID, string host);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetReportTags(valuetype System.Guid reportID, string host) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.Guid" />
+        <Parameter Name="host" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="host">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReportTags">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument GetReportTags (Guid reportID, string host, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetReportTags(valuetype System.Guid reportID, string host, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportID" Type="System.Guid" />
+        <Parameter Name="host" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reportID">To be added.</param>
+        <param name="host">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LaunchScanTemplate">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument LaunchScanTemplate (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument LaunchScanTemplate(string name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LaunchScanTemplate">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument LaunchScanTemplate (string name, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument LaunchScanTemplate(string name, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPluginFamilies">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListPluginFamilies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListPluginFamilies() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPluginFamilies">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListPluginFamilies (int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListPluginFamilies(int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPluginsByFamily">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListPluginsByFamily (string family);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListPluginsByFamily(string family) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="family" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="family">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPluginsByFamily">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListPluginsByFamily (string family, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListPluginsByFamily(string family, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="family" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="family">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPolicies">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListPolicies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListPolicies() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPolicies">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListPolicies (int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListPolicies(int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListReports">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListReports ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListReports() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListReports">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListReports (int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListReports(int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListScans">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListScans ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListScans() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListScans">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListScans (int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListScans(int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListUsers">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListUsers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListUsers() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListUsers">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ListUsers (int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ListUsers(int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Login">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument Login (string username, string password, out bool loggedIn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument Login(string username, string password, bool loggedIn) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="loggedIn" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="loggedIn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Login">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument Login (string username, string password, int seq, out bool loggedIn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument Login(string username, string password, int32 seq, bool loggedIn) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="seq" Type="System.Int32" />
+        <Parameter Name="loggedIn" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="seq">To be added.</param>
+        <param name="loggedIn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logout">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument Logout ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument Logout() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logout">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument Logout (int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument Logout(int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PauseScan">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument PauseScan (Guid scanID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument PauseScan(valuetype System.Guid scanID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scanID" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="scanID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PauseScan">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument PauseScan (Guid scanID, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument PauseScan(valuetype System.Guid scanID, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scanID" Type="System.Guid" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="scanID">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeScan">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ResumeScan (Guid scanID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ResumeScan(valuetype System.Guid scanID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scanID" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="scanID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeScan">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument ResumeScan (Guid scanID, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument ResumeScan(valuetype System.Guid scanID, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scanID" Type="System.Guid" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="scanID">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopScan">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument StopScan (Guid scanID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument StopScan(valuetype System.Guid scanID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scanID" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="scanID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopScan">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDocument StopScan (Guid scanID, int seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument StopScan(valuetype System.Guid scanID, int32 seq) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4628.4074</AssemblyVersion>
+        <AssemblyVersion>1.0.4643.34782</AssemblyVersion>
+        <AssemblyVersion>1.0.4647.41858</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.30153</AssemblyVersion>
+        <AssemblyVersion>1.0.4648.36202</AssemblyVersion>
+        <AssemblyVersion>1.0.4657.36819</AssemblyVersion>
+        <AssemblyVersion>1.0.4669.2840</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scanID" Type="System.Guid" />
+        <Parameter Name="seq" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="scanID">To be added.</param>
+        <param name="seq">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

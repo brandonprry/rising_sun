@@ -1,0 +1,378 @@
+html, body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	min-height: 800px;
+	height: auto;
+	font-size: 12px;
+}
+
+.dashboardItem {
+	margin: 30px;
+	margin-left: 75px;
+	padding: 10px;
+	display: inline-block;
+	clear:both;
+	border: 1px solid #000;
+	min-height: 400px;
+	width:325px;
+}
+
+.dashboardItemHeader {
+	margin: 0px;
+	text-align: center;
+	text-decoration: underline;
+	border-bottom: 2px solid #000;
+	padding: 3px;
+	width: 99%;
+	height: 20px;
+	font-size 14px;
+	font-weight: heavy;
+}
+
+.main { 
+	margin: 0 auto !important;
+	display:block;
+	width: 1024px;
+	min-height: 800px;
+	height: auto;
+	padding: 0px;
+	margin:0px;
+	border-top: 0px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color:#e5e5e5;
+}
+
+.header {
+	margin:0px;
+	padding: 0px;
+	border-bottom: 1px solid #000;
+	width: 100%;
+	height: 100px;
+	background-image: url(/static/images/header.png);
+	background-color:#fff;
+}
+
+.menu {
+	width: 100%;
+	height: 25px;
+	border-bottom: 1px solid #000;
+	padding:0px;
+	margin: 0px;
+	background-color:#b5b5b5;
+}
+
+.menuItem { 
+	width: 150px;
+	border-right: 1px solid #000;
+	text-align: center;
+	margin: 0px;
+	padding: 5px;
+	display: inline-block;
+}
+
+.menuItem:hover {
+	background-color:#c5c5c5;
+}
+
+.profiles {
+	width: 160px;
+	position: absolute;
+	height: auto;
+	background-color: #fff;
+	display:none;
+	margin-left: 160px;
+}
+
+.profileMenuItem {
+	width: 100%;
+	height: 20px;
+	display: block;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	text-align:center;
+}
+
+.rightMenu {
+	width: auto;
+	height:22px;
+	float:right;
+	text-align: right;
+	padding-right: 5px;
+	padding-top: 5px;
+	display: inline-block;
+	/*border-left: 1px solid #000;*/
+}
+
+.userMenu {
+	width: 110px;
+	position: absolute;
+	float: right;
+	margin-right:0px;
+	margin-left: 913px;
+	display:none;
+	padding:0px;
+}
+
+.userMenuItem {
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	height: 20px;
+}
+
+.login {
+	width:256px;
+	padding: 10px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menuItems {
+	width: 800px;
+	height: 25px;
+	padding: 0px;
+	margin: 0px;
+	display:inline-block;
+}
+
+.hostContainer {
+	width: 450px;
+	height: 100px;
+	margin: 30px;
+	padding: 20px;
+	display: inline-block;
+	text-align: left;
+}
+
+.server {
+	margin-left: 17px;
+}
+
+.userInfo {
+	width: 50%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+
+.hosts {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	margin: 0px;
+}
+
+a { 
+	color: #333;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+a:visited {
+	color: #333;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.textboxLabel {
+	display:inline-block;
+	width:130px;
+}
+
+.currentProfileDetails {
+	padding-left:25px;
+	padding-top:15px;
+	width:97.5%; /* is this cross browser??? */
+	border-bottom: 1px dotted #888;
+}
+
+.profileStats
+{
+	width:40%;
+	display:inline-block;
+}
+
+.profileHostSummary {
+	border:1px solid #999;
+	width: 375px;
+	padding: 10px;
+	min-height: 100px;
+	display:inline-block;
+	margin: 25px;
+}
+
+.profileDetailsActive {
+	background-color: #fff;
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+	border-left:2px solid #000;
+	border-right:2px solid #000;
+	border-top: 1px dotted #888;
+	padding: 10px;
+}
+
+.profileDetailsInactive {
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+	border-left:1px solid #666; /* >:) */
+	border-right:1px solid #666;
+	border-top: 1px dotted #888;
+	padding: 10px;
+
+}
+
+.multiEmailContainerActive {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 1px dotted #888;
+	padding:10px
+}
+
+.multiEmailContainerInactive {
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-top: 1px dotted #888;
+	padding: 10px;
+}
+
+.addHostContainerActive {
+	background-color: #fff;
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+	border-left:2px solid #000;
+	border-right:2px solid #000;
+	border-top: 1px dotted #888;
+	padding: 10px;
+}
+
+.verificationFileContainerActive {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 1px dotted #888;
+	padding: 10px;
+}
+
+.verificationFileContainerInactive {
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-top: 1px dotted #888;
+	padding: 10px;
+}
+
+.addHostContainerInactive {
+	margin-right: auto;
+	margin-left: auto;
+	width:60%;
+	border-left:1px solid #666;
+	border-right:1px solid #666;
+	border-top: 1px dotted #888;
+	padding: 10px;
+}
+
+.createProfileExplanationActive {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	padding: 10px;
+}
+
+.createProfileExplanationInactive {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	padding: 10px;
+}
+
+.finishUpContainerActive {
+	background-color: #fff;
+	margin-right: auto;
+	margin-left: auto;
+	width:60%;
+	border-left:2px solid #000;
+	border-right:2px solid #000;
+	border-top: 1px dotted #888;
+	padding: 10px;
+}
+
+.finishUpContainerInactive {
+	margin-right: auto;
+	margin-left: auto;
+	width:60%;
+	border-left:1px solid #666;
+	border-right: 1px solid #666;
+	border-top: 1px dotted #888;
+	padding: 10px
+}
+
+.profileHostsContainer {
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	padding: 10px;
+	border: 1px solid #000;
+	border-top: 1px dotted #888;
+}
+
+.scanPlan {
+	border: 1px solid #000;
+	padding: 15px;
+	display:inline-block;
+	width: 230px;
+	height: 350px;
+	margin: 20px;
+}
+
+.hostImage {
+	margin-left: 135px;
+	width: 100px;
+	height: 100px;
+	
+}
+
+.scanPlanHeader {
+	width: 100%;
+	border-bottom: 2px solid #000;
+	height: 30px;
+}
+
+.footer {
+
+}
