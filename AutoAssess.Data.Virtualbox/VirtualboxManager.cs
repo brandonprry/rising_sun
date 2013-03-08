@@ -35,6 +35,21 @@ namespace AutoAssess.Data.Virtualbox
 			
 			return machines.ToArray();
 		}
+
+		public void StopVirtualMachine (string id)
+		{
+			string cmd = " controlvm \"" + id + "\" poweroff";
+			
+			this.RunCommand(cmd);
+		}
+		
+		public void StopVirtualMachine (VirtualMachine machine)
+		{
+			if (machine.Guid != Guid.Empty)
+				this.StopVirtualMachine(machine.Guid.ToString());
+			else 
+				this.StopVirtualMachine(machine.Name);
+		}
 		
 		public void ResetVirtualMachine(string id)
 		{
@@ -45,7 +60,7 @@ namespace AutoAssess.Data.Virtualbox
 		
 		public void ResetVirtualMachine(VirtualMachine machine)
 		{
-			if (machine.Guid != null && machine.Guid != Guid.Empty)
+			if (machine.Guid != Guid.Empty)
 				this.ResetVirtualMachine(machine.Guid.ToString());
 			else
 				this.ResetVirtualMachine(machine.Name);
@@ -61,7 +76,7 @@ namespace AutoAssess.Data.Virtualbox
 		public string ExecuteNativeCommand(VirtualMachine machine, string command)
 		{
 			string output = string.Empty;
-			if (machine.Guid != null && machine.Guid != Guid.Empty)
+			if (machine.Guid != Guid.Empty)
 				output = this.ExecuteNativeCommand(machine.Guid.ToString(), command, machine.Username, machine.Password);
 			else 
 				output = this.ExecuteNativeCommand(machine.Name, command, machine.Username, machine.Password);
@@ -77,7 +92,7 @@ namespace AutoAssess.Data.Virtualbox
 		
 		public void StartVirtualMachine(VirtualMachine machine)
 		{
-			if (machine.Guid != null && machine.Guid != Guid.Empty)
+			if (machine.Guid != Guid.Empty)
 				this.StartVirtualMachine(machine.Guid.ToString());
 			else 
 				this.StartVirtualMachine(machine.Name);

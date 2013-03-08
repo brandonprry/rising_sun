@@ -22,6 +22,7 @@ using System.Net;
 using System.IO;
 using AutoAssess.Data.Metasploit.Pro.BusinessObjects;
 using AutoAssess.Data.Metasploit.Pro.PersistentObjects;
+using AutoAssess.Data.Virtualbox;
 
 namespace autoassess_service
 {
@@ -205,6 +206,15 @@ namespace autoassess_service
 					
 					scan.ParentProfile.CurrentResults.PopulateNonPersistentHosts ();
 					
+					if (scan.ScanOptions.VirtualMachines.Count > 0)
+					{
+						using (VirtualboxManager manager = new VirtualboxManager("vboxmanage"))
+						{
+							foreach (var vm in scan.ScanOptions.VirtualMachines)
+								manager.StartVirtualMachine(vm);
+						}
+					}
+					
 					NessusScan nessusScan = null;
 					NexposeScan nexposeScan = null;
 					OpenVASScan openvasScan = null;
@@ -280,7 +290,18 @@ namespace autoassess_service
 					scan.Run (out nessusScan, out nexposeScan, out openvasScan, out metasploitScan, out toolResults);
 					
 					if (toolResults == null)
+					{
+						if (scan.ScanOptions.VirtualMachines.Count > 0)
+						{
+							using (VirtualboxManager manager = new VirtualboxManager("vboxmanage"))
+							{
+								foreach (var vm in scan.ScanOptions.VirtualMachines)
+									manager.StopVirtualMachine(vm);
+							}
+						}
+						
 						continue;
+					}
 					
 					///this is really super dirty
 					///coded myself into a corner, gotta unwind
@@ -364,6 +385,15 @@ namespace autoassess_service
 							Console.WriteLine("Save failed!");
 							
 							throw ex;
+						}
+					}
+					
+					if (scan.ScanOptions.VirtualMachines.Count > 0)
+					{
+						using (VirtualboxManager manager = new VirtualboxManager("vboxmanage"))
+						{
+							foreach (var vm in scan.ScanOptions.VirtualMachines)
+								manager.StopVirtualMachine(vm);
 						}
 					}
 				}

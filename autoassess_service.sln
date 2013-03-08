@@ -155,8 +155,16 @@ Global
 		{8CAE42AB-FACA-4D37-A0D9-071BC5217B93}.Debug|x86.Build.0 = Debug|Any CPU
 		{8CAE42AB-FACA-4D37-A0D9-071BC5217B93}.Release|x86.ActiveCfg = Release|Any CPU
 		{8CAE42AB-FACA-4D37-A0D9-071BC5217B93}.Release|x86.Build.0 = Release|Any CPU
+		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.CodeAnalysis|Any CPU.ActiveCfg = Debug|x86
+		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.CodeAnalysis|Any CPU.Build.0 = Debug|x86
+		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.CoreProfile|Any CPU.ActiveCfg = Debug|x86
+		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.CoreProfile|Any CPU.Build.0 = Debug|x86
 		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.Debug|x86.ActiveCfg = Debug|x86
 		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.Debug|x86.Build.0 = Debug|x86
+		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.Instrument|Any CPU.ActiveCfg = Debug|x86
+		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.Instrument|Any CPU.Build.0 = Debug|x86
+		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.PerformanceTest|Any CPU.ActiveCfg = Debug|x86
+		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.PerformanceTest|Any CPU.Build.0 = Debug|x86
 		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.Release|x86.ActiveCfg = Release|x86
 		{901A4651-55BC-4A66-90F8-EB2A75BD35CD}.Release|x86.Build.0 = Release|x86
 		{9349CF02-BCB2-4F87-B413-DD6D9AEE0AA9}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -229,7 +237,7 @@ Global
 		{F133DABB-CC2F-4507-90C3-C1B20F9E66CF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = AutoAssess.Web.API\AutoAssess.Web.API.csproj
+		StartupItem = autoassess_service\autoassess_service.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = Flat

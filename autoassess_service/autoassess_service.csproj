@@ -110,6 +110,10 @@
       <Project>{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}</Project>
       <Name>AutoAssess.Data.Metasploit.Pro.PersistentObjects</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AutoAssess.Data.Virtualbox\AutoAssess.Data.Virtualbox.csproj">
+      <Project>{734D0B0E-B6F9-438D-ACFB-7374862CCF7C}</Project>
+      <Name>AutoAssess.Data.Virtualbox</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
