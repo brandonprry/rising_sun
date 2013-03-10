@@ -51,7 +51,7 @@ namespace AutoAssess.Web.API
 				
 				scan.ScanOptions = new PersistentScanOptions();
 				scan.ScanOptions.SetCreationInfo(userID);
-				scan.ScanOptions.VirtualMachines = new List<PersistentVirtualMachine>();
+				scan.ParentProfile.VirtualMachines = new List<PersistentVirtualMachine>();
 				
 				if (context.Request["ScanVirtualMachines"] != null)
 				{
@@ -65,8 +65,10 @@ namespace AutoAssess.Web.API
 						PersistentVirtualMachine m = new PersistentVirtualMachine();
 						m.SetCreationInfo(userID);
 						m.Guid = Guid.Parse(machine);
-						m.ParentScan = scan;
-						scan.ScanOptions.VirtualMachines.Add(m);
+						m.ParentProfile = scan.ParentProfile;
+						scan.ParentProfile.VirtualMachines.Add(m);
+						
+						s.Update(scan.ParentProfile);
 					}
 				}
 				

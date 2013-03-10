@@ -29,7 +29,7 @@ namespace AutoAssess.Data.PersistentObjects
 		
 		public virtual Guid LastModifiedBy { get; set; }
 		
-		public virtual PersistentScan ParentScan { get; set; }
+		public virtual PersistentProfile ParentProfile { get; set; }
 		
 		public virtual void SetCreationInfo(Guid userID)
 		{

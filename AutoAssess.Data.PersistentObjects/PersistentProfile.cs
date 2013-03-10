@@ -77,6 +77,8 @@ namespace AutoAssess.Data.PersistentObjects
 		
 		public virtual PersistentUser User { get; set; }
 		
+		public virtual IList<PersistentVirtualMachine> VirtualMachines { get; set; }
+		
 		public virtual PersistentNMapResults CurrentResults 
 		{ 
 			get 

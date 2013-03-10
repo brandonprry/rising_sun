@@ -1204,7 +1204,7 @@ create table Event (
 drop table virtualmachines;
 create table VirtualMachines (
 	VirtualMachineID		uuid PRIMARY KEY,
-	ScanID					uuid,
+	ProfileID					uuid,
 	Name					text,
 	Guid					uuid,
 	Username				text,

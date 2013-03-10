@@ -693,9 +693,10 @@ namespace AutoAssess.Data.BusinessObjects
 					options.Add ("DS_JasperDbEnv", "production");
 					options.Add ("DS_JasperLogo", string.Empty);
 					options.Add ("DS_JasperDisplaySections", "1,2,3,4,5,6,7,8");
-					options.Add ("DS_EnabelPCIReport", true);
+					options.Add ("DS_EnablePCIReport", true);
 					options.Add ("DS_EnableFISMAReport", true);
 					options.Add ("DS_JasperDisplayWeb", true);
+					options.Add( "DS_CAMPAIGN_ID", "-1");
 					
 					Dictionary<string, object> response = manager.StartReport (options);
 					

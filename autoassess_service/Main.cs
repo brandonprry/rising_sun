@@ -66,6 +66,24 @@ namespace autoassess_service
 					
 				foreach (PersistentProfile profile in profilesToRun) {
 					
+					if (profile.VirtualMachines.Count > 0)
+					{
+						using (VirtualboxManager manager = new VirtualboxManager("vboxmanage"))
+						{
+							foreach (var vm in profile.VirtualMachines)
+								manager.StartVirtualMachine(vm);
+						}
+						
+						
+						Console.WriteLine("Letting vm's settle...waiting a bit");
+						for (int i = 0;i< 10;i++)
+						{
+							Console.Write(i);
+							System.Threading.Thread.Sleep(new TimeSpan(0,0,60));
+						}
+					
+					}
+					
 					List<List<IToolResults>> toolResults = null;
 					
 					conf = new Dictionary<string, string> ();
@@ -205,16 +223,14 @@ namespace autoassess_service
 				foreach (var scan in scansToRun) {
 					
 					scan.ParentProfile.CurrentResults.PopulateNonPersistentHosts ();
-					
-					if (scan.ScanOptions.VirtualMachines.Count > 0)
+					if (scan.ParentProfile.VirtualMachines.Count > 0)
 					{
 						using (VirtualboxManager manager = new VirtualboxManager("vboxmanage"))
 						{
-							foreach (var vm in scan.ScanOptions.VirtualMachines)
+							foreach (var vm in scan.ParentProfile.VirtualMachines)
 								manager.StartVirtualMachine(vm);
 						}
 					}
-					
 					NessusScan nessusScan = null;
 					NexposeScan nexposeScan = null;
 					OpenVASScan openvasScan = null;
@@ -291,11 +307,11 @@ namespace autoassess_service
 					
 					if (toolResults == null)
 					{
-						if (scan.ScanOptions.VirtualMachines.Count > 0)
+						if (scan.ParentProfile.VirtualMachines.Count > 0)
 						{
 							using (VirtualboxManager manager = new VirtualboxManager("vboxmanage"))
 							{
-								foreach (var vm in scan.ScanOptions.VirtualMachines)
+								foreach (var vm in scan.ParentProfile.VirtualMachines)
 									manager.StopVirtualMachine(vm);
 							}
 						}
@@ -388,11 +404,11 @@ namespace autoassess_service
 						}
 					}
 					
-					if (scan.ScanOptions.VirtualMachines.Count > 0)
+					if (scan.ParentProfile.VirtualMachines.Count > 0)
 					{
 						using (VirtualboxManager manager = new VirtualboxManager("vboxmanage"))
 						{
-							foreach (var vm in scan.ScanOptions.VirtualMachines)
+							foreach (var vm in scan.ParentProfile.VirtualMachines)
 								manager.StopVirtualMachine(vm);
 						}
 					}

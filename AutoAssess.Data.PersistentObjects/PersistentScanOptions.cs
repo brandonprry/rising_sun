@@ -69,8 +69,6 @@ namespace AutoAssess.Data.PersistentObjects
 		
 		public virtual PersistentUser User { get; set; }
 		
-		public virtual IList<PersistentVirtualMachine> VirtualMachines { get; set; }
-		
 		public virtual PersistentScan ParentScan 
 		{
 			get { return base.ParentScan as PersistentScan; }

@@ -31,4 +31,3 @@ namespace AutoAssess.Data.Virtualbox
 		public virtual string Password { get; set; }
 	}
 }
-

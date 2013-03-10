@@ -48,6 +48,12 @@ namespace AutoAssess.Data.PersistentObjects.PersistentObjects
 				.Table("event")
 				.KeyColumn("profileid")
 				.Cascade.SaveUpdate();
+			
+			
+			HasMany<PersistentVirtualMachine>(so => so.VirtualMachines)
+				.Table("virtualmachines")
+				.KeyColumn("profileid")
+				.Cascade.All();
 		}
 	}
 }

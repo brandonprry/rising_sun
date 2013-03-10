@@ -35,6 +35,24 @@ namespace AutoAssess.Data.Virtualbox
 			
 			return machines.ToArray();
 		}
+		
+		public string GetVirtualMachineIP(string id)
+		{
+			string cmd = " guestproperty get \"" + id + "\" \"/VirtualBox/GuestInfo/Net/0/V4/IP\"";
+			
+			return this.RunCommand(cmd);
+		}
+		
+		public string GetVirtualMachineIP(VirtualMachine machine)
+		{
+			string output = string.Empty;
+			if (machine.Guid != Guid.Empty)
+				output = this.GetVirtualMachineIP(machine.Guid.ToString());
+			else 
+				output = this.GetVirtualMachineIP(machine.Name);
+			
+			return output;
+		}
 
 		public void StopVirtualMachine (string id)
 		{

@@ -23,8 +23,8 @@ namespace Mappings
 			Map (vm => vm.LastModifiedBy).Column("lastmodifiedby");
 			Map (vm => vm.LastModifiedOn).Column("lastmodifiedon");
 			
-			References(vm => vm.ParentScan)
-				.Column("scanid");
+			References(vm => vm.ParentProfile)
+				.Column("profileid");
 		}
 	}
 }

@@ -37,10 +37,6 @@ namespace AutoAssess.Data.PersistentObjects.PersistentObjects
 				.Column("sqlmapoptionsid")
 				.Cascade.SaveUpdate();
 			
-			HasMany<PersistentVirtualMachine>(so => so.VirtualMachines)
-				.Table("virtualmachines")
-				.KeyColumn("scanid")
-				.Cascade.All();
 		}
 	}
 }
