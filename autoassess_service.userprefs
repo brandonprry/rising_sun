@@ -1,17 +1,16 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AutoAssess.Web.API/Database/AutoAssess_Service/Initial.sql">
+  <MonoDevelop.Ide.Workbench ActiveDocument="import_cves/app.config">
     <Files>
-      <File FileName="AutoAssess.Data.BusinessObjects/Scan.cs" Line="12" Column="7" />
+      <File FileName="AutoAssess.Data.BusinessObjects/Scan.cs" Line="10" Column="19" />
       <File FileName="autoassess_service/Main.cs" Line="1" Column="1" />
       <File FileName="AutoAssess.Web/Registration.aspx.cs" Line="1" Column="1" />
       <File FileName="AutoAssess.Web/CreateScan.aspx.cs" Line="1" Column="1" />
       <File FileName="AutoAssess.Web/CreateProfile.aspx.cs" Line="1" Column="1" />
       <File FileName="AutoAssess.Web/AddHostToProfile.aspx.cs" Line="1" Column="1" />
-      <File FileName="AutoAssess.Web/web.config" Line="1" Column="1" />
       <File FileName="AutoAssess.Data.OpenVAS.BusinessObjects/OpenVASObjectManager.cs" Line="1" Column="1" />
-      <File FileName="AutoAssess.Data.Nessus.BusinessObjects/NessusObjectManager.cs" Line="1" Column="1" />
-      <File FileName="AutoAssess.Web.API/GetNessusPolicies.ashx.cs" Line="1" Column="1" />
+      <File FileName="AutoAssess.Data.Nessus.BusinessObjects/NessusObjectManager.cs" Line="5" Column="19" />
+      <File FileName="AutoAssess.Web.API/GetNessusPolicies.ashx.cs" Line="4" Column="19" />
       <File FileName="AutoAssess.Web.API/GetOpenVASConfigs.ashx.cs" Line="13" Column="3" />
       <File FileName="AutoAssess.Data.Virtualbox/VirtualboxManager.cs" Line="22" Column="33" />
       <File FileName="AutoAssess.Data.Virtualbox/VirtualMachine.cs" Line="31" Column="18" />
@@ -21,31 +20,25 @@
       <File FileName="AutoAssess.Web.Admin/CreateScan.aspx.cs" Line="60" Column="24" />
       <File FileName="AutoAssess.Web.API/CreateScan.ashx.cs" Line="53" Column="12" />
       <File FileName="AutoAssess.Data.PersistentObjects/PersistentScan.cs" Line="74" Column="30" />
-      <File FileName="AutoAssess.Data.PersistentObjects/PersistentScanOptions.cs" Line="76" Column="53" />
-      <File FileName="AutoAssess.Data.PersistentObjects/Mappings/ScanOptionsMap.cs" Line="43" Column="20" />
+      <File FileName="AutoAssess.Data.PersistentObjects/PersistentScanOptions.cs" Line="76" Column="4" />
+      <File FileName="AutoAssess.Data.PersistentObjects/Mappings/ScanOptionsMap.cs" Line="42" Column="2" />
       <File FileName="AutoAssess.Web.API/Database/AutoAssess_Service/Initial.sql" Line="1199" Column="30" />
       <File FileName="AutoAssess.Data.PersistentObjects/PersistentVirtualMachine.cs" Line="20" Column="39" />
       <File FileName="AutoAssess.Data.PersistentObjects/Mappings/VirtualMachineMap.cs" Line="24" Column="59" />
+      <File FileName="AutoAssess.Web.API/GetNessusReport.ashx.cs" Line="7" Column="19" />
+      <File FileName="AutoAssess.Web.API/GetNessusReportHostPort.ashx.cs" Line="6" Column="19" />
+      <File FileName="AutoAssess.Web.API/GetNessusReportHosts.ashx.cs" Line="5" Column="19" />
+      <File FileName="AutoAssess.Web.API/GetNessusReportPorts.ashx.cs" Line="6" Column="19" />
+      <File FileName="AutoAssess.Web.API/web.config" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web.Admin/web.config" Line="1" Column="1" />
+      <File FileName="AutoAssess.Web/web.config" Line="1" Column="1" />
+      <File FileName="import_cves/app.config" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="AutoAssess.Data.PersistentObjects" expanded="True">
-            <Node name="Mappings" expanded="True" />
-          </Node>
-          <Node name="AutoAssess.Data.Virtualbox" expanded="True" />
-          <Node name="AutoAssess.Web.Admin" expanded="True">
-            <Node name="CreateScan.aspx" expanded="True" />
-          </Node>
-          <Node name="AutoAssess.Web.API" expanded="True">
-            <Node name="Database" expanded="True">
-              <Node name="AutoAssess_Service" expanded="True">
-                <Node name="Initial.sql" selected="True" />
-              </Node>
-            </Node>
-            <Node name="CreateScan.ashx" expanded="True" />
-            <Node name="GetAvailableVirtualMachines.ashx" expanded="True" />
-          </Node>
+          <Node name="import_cves" expanded="True" />
+          <Node name="load_ovas_nss_nx_to_msf_and_save" selected="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">

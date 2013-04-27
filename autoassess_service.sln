@@ -47,8 +47,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wapiti_to_sqlmap_example", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wapiti_to_dsxs", "wapiti_to_dsxs\wapiti_to_dsxs.csproj", "{66013AAF-8C55-45AA-A27B-177FC4B2D298}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsgPack", "..\msgpack\src\MsgPack\MsgPack.csproj", "{5BCEC32E-990E-4DE5-945F-BD27326A7418}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "load_ovas_nss_nx_to_msf_and_save", "load_ovas_nss_nx_to_msf_and_save\load_ovas_nss_nx_to_msf_and_save.csproj", "{93EBAB27-73D4-4CAE-AF1C-0A5B9D67DBF8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nessus-sharp", "..\nessus-sharp\nessus-sharp.csproj", "{C5D9ABF5-AF33-4479-8237-EAE828C5BFCE}"
@@ -56,6 +54,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "openvas-sharp", "..\openvas-sharp\openvas-sharp.csproj", "{F133DABB-CC2F-4507-90C3-C1B20F9E66CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoAssess.Data.Virtualbox", "AutoAssess.Data.Virtualbox\AutoAssess.Data.Virtualbox.csproj", "{734D0B0E-B6F9-438D-ACFB-7374862CCF7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsgPack.Mono", "..\msgpack-cli\src\MsgPack.Mono\MsgPack.Mono.csproj", "{6E8C2296-21E9-4113-89C4-76376516AA14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,18 +103,6 @@ Global
 		{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}.Debug|x86.Build.0 = Debug|Any CPU
 		{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}.Release|x86.ActiveCfg = Release|Any CPU
 		{4E414E63-30C4-43B6-9C4F-63DE51EBDE0D}.Release|x86.Build.0 = Release|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.CodeAnalysis|Any CPU.ActiveCfg = CodeAnalysis|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.CodeAnalysis|Any CPU.Build.0 = CodeAnalysis|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.CoreProfile|Any CPU.ActiveCfg = CoreProfile|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.CoreProfile|Any CPU.Build.0 = CoreProfile|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.Debug|x86.Build.0 = Debug|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.Instrument|Any CPU.ActiveCfg = Instrument|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.Instrument|Any CPU.Build.0 = Instrument|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.PerformanceTest|Any CPU.ActiveCfg = PerformanceTest|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.PerformanceTest|Any CPU.Build.0 = PerformanceTest|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.Release|x86.ActiveCfg = Release|Any CPU
-		{5BCEC32E-990E-4DE5-945F-BD27326A7418}.Release|x86.Build.0 = Release|Any CPU
 		{66013AAF-8C55-45AA-A27B-177FC4B2D298}.Debug|x86.ActiveCfg = Debug|x86
 		{66013AAF-8C55-45AA-A27B-177FC4B2D298}.Debug|x86.Build.0 = Debug|x86
 		{66013AAF-8C55-45AA-A27B-177FC4B2D298}.Release|x86.ActiveCfg = Release|x86
@@ -123,6 +111,18 @@ Global
 		{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}.Debug|x86.Build.0 = Debug|Any CPU
 		{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}.Release|x86.ActiveCfg = Release|Any CPU
 		{694AAE02-5D99-4C8A-B701-E32CA70C5CC7}.Release|x86.Build.0 = Release|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.CodeAnalysis|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.CodeAnalysis|Any CPU.Build.0 = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.CoreProfile|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.CoreProfile|Any CPU.Build.0 = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.Debug|x86.Build.0 = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.Instrument|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.Instrument|Any CPU.Build.0 = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.PerformanceTest|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.PerformanceTest|Any CPU.Build.0 = Debug|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.Release|x86.ActiveCfg = Release|Any CPU
+		{6E8C2296-21E9-4113-89C4-76376516AA14}.Release|x86.Build.0 = Release|Any CPU
 		{734D0B0E-B6F9-438D-ACFB-7374862CCF7C}.CodeAnalysis|Any CPU.ActiveCfg = Debug|Any CPU
 		{734D0B0E-B6F9-438D-ACFB-7374862CCF7C}.CodeAnalysis|Any CPU.Build.0 = Debug|Any CPU
 		{734D0B0E-B6F9-438D-ACFB-7374862CCF7C}.CoreProfile|Any CPU.ActiveCfg = Debug|Any CPU

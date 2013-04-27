@@ -1,7 +1,7 @@
 using System;
 using System.Web;
 using System.Web.UI;
-using AutoAssess.Data.Nessus;
+using nessusssharp;
 using AutoAssess.Data.Nessus.BusinessObjects;
 using AutoAssess.Data.Nessus.PersistentObjects;
 using AutoAssess.Data.PersistentObjects;

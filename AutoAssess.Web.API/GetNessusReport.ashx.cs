@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using AutoAssess.Data.PersistentObjects;
-using AutoAssess.Data.Nessus;
+using nessusssharp;
 using AutoAssess.Data.Nessus.BusinessObjects;
 using AutoAssess.Data.Nessus.PersistentObjects;
 using NHibernate;

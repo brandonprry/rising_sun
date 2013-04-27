@@ -2,7 +2,7 @@ using System;
 using System.Xml;
 using System.Collections.Generic;
 
-using AutoAssess.Data.Nessus;
+using nessusssharp;
 using AutoAssess.Data.Nessus.BusinessObjects;
 
 namespace AutoAssess.Data.Nessus.BusinessObjects

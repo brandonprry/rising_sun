@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Xml;
 using AutoAssess.Data;
-using AutoAssess.Data.Nessus;
+using nessusssharp;
 using AutoAssess.Data.Nessus.BusinessObjects;
 using nexposesharp;
 using AutoAssess.Data.OpenVAS.BusinessObjects;
