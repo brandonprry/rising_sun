@@ -33,7 +33,7 @@ namespace AutoAssess.Web.API
 		{
 			string conn = "Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";";
 			conn += "Port=" + ConfigurationManager.AppSettings["PostgreSQLPort"] + ";";
-			conn += "Database=autoassess;";
+			conn += "Database=rising_sun;";
 			conn += "User Id=" + ConfigurationManager.AppSettings["PostgreSQLUser"] + ";";
 			conn += "Password=" + ConfigurationManager.AppSettings["PostgreSQLPass"] + ";";
 			conn += "SSL=true;";

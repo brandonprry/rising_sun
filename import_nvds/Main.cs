@@ -19,7 +19,7 @@ namespace import_nvds
 	{
 		public static void Main (string[] args)
 		{
-			IPersistenceConfigurer config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString ("Server=" + ConfigurationManager.AppSettings ["PostgreSQL"] + ";Port=5432;Database=autoassess;User Id=" + 
+			IPersistenceConfigurer config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString ("Server=" + ConfigurationManager.AppSettings ["PostgreSQL"] + ";Port=5432;Database=rising_sun;User Id=" + 
 			                                                                                       ConfigurationManager.AppSettings ["PostgreSQLUser"] + ";Password=" + 
 			                                                                                       ConfigurationManager.AppSettings ["PostgreSQLPassword"] + ";SSL=true;");
 			

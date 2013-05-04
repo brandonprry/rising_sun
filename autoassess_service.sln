@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoAssess.Data.Virtualbox"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsgPack.Mono", "..\msgpack-cli\src\MsgPack.Mono\MsgPack.Mono.csproj", "{6E8C2296-21E9-4113-89C4-76376516AA14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sqlmap-sharp", "..\sqlmap-sharp\sqlmap-sharp\sqlmap-sharp\sqlmap-sharp.csproj", "{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -75,6 +77,18 @@ Global
 		{183217A9-6980-4783-ADEF-4D4F273FA70A}.Debug|x86.Build.0 = Debug|Any CPU
 		{183217A9-6980-4783-ADEF-4D4F273FA70A}.Release|x86.ActiveCfg = Release|Any CPU
 		{183217A9-6980-4783-ADEF-4D4F273FA70A}.Release|x86.Build.0 = Release|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.CodeAnalysis|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.CodeAnalysis|Any CPU.Build.0 = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.CoreProfile|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.CoreProfile|Any CPU.Build.0 = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.Debug|x86.Build.0 = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.Instrument|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.Instrument|Any CPU.Build.0 = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.PerformanceTest|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.PerformanceTest|Any CPU.Build.0 = Debug|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.Release|x86.ActiveCfg = Release|Any CPU
+		{1F1EF74E-66C5-4CD1-ADF6-5C427274AB60}.Release|x86.Build.0 = Release|Any CPU
 		{3161735C-8CE5-43E5-A4E1-837B6FD32A72}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{3161735C-8CE5-43E5-A4E1-837B6FD32A72}.Debug|x86.Build.0 = Debug|Any CPU
 		{3161735C-8CE5-43E5-A4E1-837B6FD32A72}.Release|x86.ActiveCfg = Release|Any CPU

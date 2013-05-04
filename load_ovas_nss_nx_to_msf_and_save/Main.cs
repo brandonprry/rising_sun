@@ -20,7 +20,7 @@ namespace load_ovas_nss_nx_to_msf_and_save
 		{
 			string conn = "Server=192.168.1.5;";
 			conn += "Port=5433;";
-			conn += "Database=autoassess;";
+			conn += "Database=rising_sun;";
 			conn += "User Id=postgres;";
 			conn += "Password=password;";
 			conn += "SSL=true;";

@@ -29,7 +29,7 @@ namespace AutoAssess.Web.Admin
 		
 		protected virtual void Session_Start (Object sender, EventArgs e)
 		{
-			IPersistenceConfigurer config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString("Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";Port=5432;Database=autoassess_web;User Id=postgres;Password=password;SSL=true;");
+			IPersistenceConfigurer config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString("Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";Port=5432;Database=rising_sun_web;User Id=postgres;Password=password;SSL=true;");
 			
 			ISessionFactory factory = Fluently.Configure()
 				.Database(config)
@@ -39,7 +39,7 @@ namespace AutoAssess.Web.Admin
 				
 			this.Session["User?Session"] = factory.OpenSession();
 			
-			config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString("Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";Port=5432;Database=autoassess;User Id=postgres;Password=password;SSL=true;");
+			config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString("Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";Port=5432;Database=rising_sun;User Id=postgres;Password=password;SSL=true;");
 			
 			factory = Fluently.Configure()
 				.Database(config)

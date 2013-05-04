@@ -25,7 +25,7 @@ namespace AutoAssess.Web.Admin
 			
 			string conn = "Server=" + ConfigurationManager.AppSettings ["PostgreSQL"] + ";";
 			conn += "Port=" + ConfigurationManager.AppSettings ["PostgreSQLPort"] + ";";
-			conn += "Database=autoassess_web;";
+			conn += "Database=rising_sun_web;";
 			conn += "User Id=" + ConfigurationManager.AppSettings ["PostgreSQLUser"] + ";";
 			conn += "Password=" + ConfigurationManager.AppSettings ["PostgreSQLPass"] + ";";
 			conn += "SSL=true;";
@@ -117,7 +117,7 @@ namespace AutoAssess.Web.Admin
 
 			foreach (KeyValuePair<string, string> kv in opts)
 				url = url + "&" + kv.Key + "=" + kv.Value;
-			
+			Console.WriteLine(url);
 			WebRequest request = WebRequest.Create(url);
 
 			string xml = string.Empty;

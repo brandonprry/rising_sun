@@ -126,7 +126,7 @@ namespace AutoAssess.Web
 					lblOpenVASPortResults.Visible = false;
 					gvOpenVASPortResults.Visible = false;
 				} else {
-					gvOpenVASPortResults.DataSource = objs.Where(o => o.Threat != "Log").ToList();
+					gvOpenVASPortResults.DataSource = objs.Where (o => o.Threat != "Log").ToList ();
 					gvOpenVASPortResults.DataBind ();
 				}
 			} else {
@@ -155,7 +155,7 @@ namespace AutoAssess.Web
 					lblNessusPortResults.Visible = false;
 					gvNessusPortResults.Visible = false;
 				} else {
-					gvNessusPortResults.DataSource = objs.OrderByDescending(o => o.Threat).ToList();
+					gvNessusPortResults.DataSource = objs.OrderByDescending (o => o.Threat).ToList ();
 					gvNessusPortResults.DataBind ();
 				}
 			} else {
@@ -267,101 +267,104 @@ namespace AutoAssess.Web
 				
 				foreach (var result in results)
 					vulns.AddRange (result.PersistentVulnerabilities.ToList ());
-				
-				var sqlInjectionPoints = wapitiResults.Bugs.Where (b => b.Info.Contains ("SQL Injection") && !b.Info.Contains ("Blind")).ToList ();
-				var wxss = wapitiResults.Bugs.Where (b => b.Info.Contains ("XSS")).ToList ();
-				var wincludes = wapitiResults.Bugs.Where (b => b.Info.Contains ("include"));
-				var wexecution = wapitiResults.Bugs.Where (b => b.Info.Contains ("execution"));
-				
-				
-				List<NotSQLWebVuln> xss = new List<NotSQLWebVuln> ();
-				List<NotSQLWebVuln> includes = new List<NotSQLWebVuln> ();
-				List<NotSQLWebVuln> execution = new List<NotSQLWebVuln> ();
-				
-				foreach (var x in wxss) {
-					NotSQLWebVuln v = new NotSQLWebVuln ();
+
+
+				if (wapitiResults != null && wapitiResults.Bugs != null) {
+					var sqlInjectionPoints = wapitiResults.Bugs.Where (b => b.Info.Contains ("SQL Injection") && !b.Info.Contains ("Blind")).ToList ();
+					var wxss = wapitiResults.Bugs.Where (b => b.Info.Contains ("XSS")).ToList ();
+					var wincludes = wapitiResults.Bugs.Where (b => b.Info.Contains ("include"));
+					var wexecution = wapitiResults.Bugs.Where (b => b.Info.Contains ("execution"));
 					
-					v.Method = x.URL.Contains (x.Parameter) ? "GET" : "POST";
-					v.Parameter = x.Parameter;
-					v.URL = x.URL;
 					
-					xss.Add (v);
-				}
-				
-				foreach (var x in wincludes) {
-					NotSQLWebVuln i = new NotSQLWebVuln ();
+					List<NotSQLWebVuln> xss = new List<NotSQLWebVuln> ();
+					List<NotSQLWebVuln> includes = new List<NotSQLWebVuln> ();
+					List<NotSQLWebVuln> execution = new List<NotSQLWebVuln> ();
 					
-					i.Method = x.URL.Contains (x.Parameter) ? "GET" : "POST";
-					i.Parameter = x.Parameter;
-					i.URL = x.URL;
-					
-					includes.Add (i);
-				}
-				
-				foreach (var x in wexecution) {
-					NotSQLWebVuln ex = new NotSQLWebVuln ();
-					
-					ex.Method = x.URL.Contains (x.Parameter) ? "GET" : "POST";
-					ex.Parameter = x.Parameter;
-					ex.URL = x.URL;
-					
-					execution.Add (ex);
-				}
-				
-				lblXSS.Text = "XSS Vulnerabilities";
-				gvXSS.DataSource = xss;
-				gvXSS.DataBind ();
-				
-				lblIncludes.Text = "Remote and Local File Include Vulnerabilities";
-				gvIncludes.DataSource = includes;
-				gvIncludes.DataBind ();
-				
-				lblCommandExecution.Text = "Remote Command Execution Vulnerabilities";
-				gvCommandExecution.DataSource = execution;
-				gvCommandExecution.DataBind ();
-				
-				if (sqlInjectionPoints.Count () > 0) {
-					List<WebVuln> exploitedVulns = new List<WebVuln> ();
-					List<WebVuln> otherVulns = new List<WebVuln> ();
-					
-					foreach (var bug in sqlInjectionPoints) {
-						WebVuln v = new WebVuln ();
+					foreach (var x in wxss) {
+						NotSQLWebVuln v = new NotSQLWebVuln ();
 						
-						v.URL = bug.URL;
-						v.Method = (bug.URL.Contains (bug.Parameter) ? "GET" : "POST");
+						v.Method = x.URL.Contains (x.Parameter) ? "GET" : "POST";
+						v.Parameter = x.Parameter;
+						v.URL = x.URL;
 						
-						var vul = vulns.Where (vuln => vuln.Target == bug.URL).FirstOrDefault ();
-						
-						v.IsExploitable = (vul != null) ? "Exploited with " + vul.PayloadType + " SQL injection." : string.Empty;
-						
-						foreach (string parm in bug.Parameter.Split('&')) {
-							if (parm.Contains ("%BF%27%22%28"))
-								v.Parameter = "<b>" + parm.Split ('=') [0] + "</b>";
-							else if (parm.Contains ("%27+or+sleep%287%29%23")) {
-								v.Parameter = parm.Split ('=') [0];
-								
-								if (string.IsNullOrEmpty (v.IsExploitable))
-									v.IsExploitable = "Exploited with a blind SQL injection.";
-							}
-						}
-						
-						if (string.IsNullOrEmpty (v.IsExploitable)) {
-							otherVulns.Add (v);
-							continue;
-						}
-						
-						exploitedVulns.Add (v);
+						xss.Add (v);
 					}
 					
-					lblPossibleSQLInjections.Text = "Possible SQL Injection Vulnerabilities";
-					gvPossibleInjectionPoints.DataSource = otherVulns;
-					gvPossibleInjectionPoints.DataBind ();
+					foreach (var x in wincludes) {
+						NotSQLWebVuln i = new NotSQLWebVuln ();
+						
+						i.Method = x.URL.Contains (x.Parameter) ? "GET" : "POST";
+						i.Parameter = x.Parameter;
+						i.URL = x.URL;
+						
+						includes.Add (i);
+					}
 					
-					lblSQLInjections.Text = "Exploitable SQL Injection Vulnerabilities";
-					gvSQLInjections.DataSource = exploitedVulns;
-					gvSQLInjections.DataBind ();
-				}
+					foreach (var x in wexecution) {
+						NotSQLWebVuln ex = new NotSQLWebVuln ();
+						
+						ex.Method = x.URL.Contains (x.Parameter) ? "GET" : "POST";
+						ex.Parameter = x.Parameter;
+						ex.URL = x.URL;
+						
+						execution.Add (ex);
+					}
+					
+					lblXSS.Text = "XSS Vulnerabilities";
+					gvXSS.DataSource = xss;
+					gvXSS.DataBind ();
+
+					lblIncludes.Text = "Remote and Local File Include Vulnerabilities";
+					gvIncludes.DataSource = includes;
+					gvIncludes.DataBind ();
+					
+					lblCommandExecution.Text = "Remote Command Execution Vulnerabilities";
+					gvCommandExecution.DataSource = execution;
+					gvCommandExecution.DataBind ();
+				
+					if (sqlInjectionPoints.Count () > 0) {
+						List<WebVuln> exploitedVulns = new List<WebVuln> ();
+						List<WebVuln> otherVulns = new List<WebVuln> ();
+					
+						foreach (var bug in sqlInjectionPoints) {
+							WebVuln v = new WebVuln ();
+						
+							v.URL = bug.URL;
+							v.Method = (bug.URL.Contains (bug.Parameter) ? "GET" : "POST");
+						
+							var vul = vulns.Where (vuln => vuln.Target == bug.URL).FirstOrDefault ();
+						
+							v.IsExploitable = (vul != null) ? "Exploited with " + vul.PayloadType + " SQL injection." : string.Empty;
+						
+							foreach (string parm in bug.Parameter.Split('&')) {
+								if (parm.Contains ("%BF%27%22%28"))
+									v.Parameter = "<b>" + parm.Split ('=') [0] + "</b>";
+								else if (parm.Contains ("%27+or+sleep%287%29%23")) {
+									v.Parameter = parm.Split ('=') [0];
+								
+									if (string.IsNullOrEmpty (v.IsExploitable))
+										v.IsExploitable = "Exploited with a blind SQL injection.";
+								}
+							}
+						
+							if (string.IsNullOrEmpty (v.IsExploitable)) {
+								otherVulns.Add (v);
+								continue;
+							}
+						
+							exploitedVulns.Add (v);
+						}
+					
+						lblPossibleSQLInjections.Text = "Possible SQL Injection Vulnerabilities";
+						gvPossibleInjectionPoints.DataSource = otherVulns;
+						gvPossibleInjectionPoints.DataBind ();
+					
+						lblSQLInjections.Text = "Exploitable SQL Injection Vulnerabilities";
+						gvSQLInjections.DataSource = exploitedVulns;
+						gvSQLInjections.DataBind ();
+					}
 			
+				}
 
 				PersistentNiktoResults niktoResults = this.CurrentScanSession.CreateCriteria<PersistentNiktoResults> ()
 					.Add (Restrictions.Eq ("HostPortID", hpid))

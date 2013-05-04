@@ -1,9 +1,9 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="import_cves/app.config">
+  <MonoDevelop.Ide.Workbench ActiveDocument="load_ovas_nss_nx_to_msf_and_save/Main.cs">
     <Files>
       <File FileName="AutoAssess.Data.BusinessObjects/Scan.cs" Line="10" Column="19" />
-      <File FileName="autoassess_service/Main.cs" Line="1" Column="1" />
+      <File FileName="autoassess_service/Main.cs" Line="35" Column="12" />
       <File FileName="AutoAssess.Web/Registration.aspx.cs" Line="1" Column="1" />
       <File FileName="AutoAssess.Web/CreateScan.aspx.cs" Line="1" Column="1" />
       <File FileName="AutoAssess.Web/CreateProfile.aspx.cs" Line="1" Column="1" />
@@ -17,7 +17,7 @@
       <File FileName="AutoAssess.Web.API/GetAvailableVirtualMachines.ashx" Line="1" Column="1" />
       <File FileName="AutoAssess.Web.API/GetAvailableVirtualMachines.ashx.cs" Line="21" Column="53" />
       <File FileName="AutoAssess.Web.Admin/CreateScan.aspx" Line="17" Column="41" />
-      <File FileName="AutoAssess.Web.Admin/CreateScan.aspx.cs" Line="60" Column="24" />
+      <File FileName="AutoAssess.Web.Admin/CreateScan.aspx.cs" Line="28" Column="12" />
       <File FileName="AutoAssess.Web.API/CreateScan.ashx.cs" Line="53" Column="12" />
       <File FileName="AutoAssess.Data.PersistentObjects/PersistentScan.cs" Line="74" Column="30" />
       <File FileName="AutoAssess.Data.PersistentObjects/PersistentScanOptions.cs" Line="76" Column="4" />
@@ -32,13 +32,33 @@
       <File FileName="AutoAssess.Web.API/web.config" Line="1" Column="1" />
       <File FileName="AutoAssess.Web.Admin/web.config" Line="1" Column="1" />
       <File FileName="AutoAssess.Web/web.config" Line="1" Column="1" />
-      <File FileName="import_cves/app.config" Line="1" Column="1" />
+      <File FileName="import_cves/app.config" Line="3" Column="1" />
+      <File FileName="AutoAssess.Web.Admin/Global.asax.cs" Line="42" Column="140" />
+      <File FileName="AutoAssess.Web/code/AutoAssessPage.cs" Line="70" Column="217" />
+      <File FileName="AutoAssess.Web/Global.asax.cs" Line="41" Column="194" />
+      <File FileName="AutoAssess.Web.API/ApiHttpHandler.cs" Line="36" Column="12" />
+      <File FileName="import_nvds/Main.cs" Line="22" Column="165" />
+      <File FileName="import_cves/Main.cs" Line="22" Column="165" />
+      <File FileName="load_ovas_nss_nx_to_msf_and_save/Main.cs" Line="23" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
+          <Node name="AutoAssess.Web" expanded="True">
+            <Node name="code" expanded="True" />
+            <Node name="Global.asax" expanded="True" />
+          </Node>
+          <Node name="AutoAssess.Web.Admin" expanded="True">
+            <Node name="CreateScan.aspx" expanded="True" />
+            <Node name="Global.asax" expanded="True" />
+          </Node>
+          <Node name="AutoAssess.Web.API" expanded="True" />
+          <Node name="autoassess_service" expanded="True" />
           <Node name="import_cves" expanded="True" />
-          <Node name="load_ovas_nss_nx_to_msf_and_save" selected="True" />
+          <Node name="import_nvds" expanded="True" />
+          <Node name="load_ovas_nss_nx_to_msf_and_save" expanded="True">
+            <Node name="Main.cs" selected="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">

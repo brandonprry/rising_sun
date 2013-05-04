@@ -13,6 +13,7 @@ namespace AutoAssess.Data.Nexpose.BusinessObjects
 		
 		public NexposeAsset (XmlNode node)
 		{
+			Console.WriteLine(node.OuterXml);
 			this.IPAddressV4 = node.Attributes["address"].Value;
 			this.Status = node.Attributes["status"].Value;
 			this.RemoteDeviceID = int.Parse(node.Attributes["device-id"].Value);

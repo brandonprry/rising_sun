@@ -26,6 +26,7 @@ namespace AutoAssess.Web.API
 			
 			using (ITransaction t = s.BeginTransaction())
 			{
+				Console.WriteLine("fdsa");
 				Guid userID = new Guid(context.Request["UserID"]);
 				Guid clientID = new Guid(context.Request["ClientID"]);
 				

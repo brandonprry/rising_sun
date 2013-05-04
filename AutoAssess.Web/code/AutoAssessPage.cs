@@ -67,7 +67,7 @@ namespace AutoAssess.Web
 		
 		public void GetServiceSession()
 		{
-			IPersistenceConfigurer config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString("Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";Port=" + ConfigurationManager.AppSettings["PostgreSQLPort"] + ";Database=autoassess;User Id=" + ConfigurationManager.AppSettings["PostgreSQLUser"] + ";Password=" + ConfigurationManager.AppSettings["PostgreSQLPass"] + ";SSL=true;");
+			IPersistenceConfigurer config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString("Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";Port=" + ConfigurationManager.AppSettings["PostgreSQLPort"] + ";Database=rising_sun;User Id=" + ConfigurationManager.AppSettings["PostgreSQLUser"] + ";Password=" + ConfigurationManager.AppSettings["PostgreSQLPass"] + ";SSL=true;");
 			
 			ISessionFactory factory = Fluently.Configure()
 				.Database(config)
@@ -87,7 +87,7 @@ namespace AutoAssess.Web
 
 		public void GetWebSession ()
 		{
-			IPersistenceConfigurer config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString("Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";Port=" + ConfigurationManager.AppSettings["PostgreSQLPort"] + ";Database=autoassess_web;User Id=" + ConfigurationManager.AppSettings["PostgreSQLUser"] + ";Password=" + ConfigurationManager.AppSettings["PostgreSQLPass"] + ";SSL=true;");
+			IPersistenceConfigurer config = PostgreSQLConfiguration.PostgreSQL82.ConnectionString("Server=" + ConfigurationManager.AppSettings["PostgreSQL"] + ";Port=" + ConfigurationManager.AppSettings["PostgreSQLPort"] + ";Database=rising_sun_web;User Id=" + ConfigurationManager.AppSettings["PostgreSQLUser"] + ";Password=" + ConfigurationManager.AppSettings["PostgreSQLPass"] + ";SSL=true;");
 			
 			
 			ISessionFactory factory = Fluently.Configure()

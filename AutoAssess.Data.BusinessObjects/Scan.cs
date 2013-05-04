@@ -19,6 +19,7 @@ using AutoAssess.Data.OpenVAS.PersistentObjects;
 using metasploitsharp;
 using AutoAssess.Data.Metasploit.Pro.BusinessObjects;
 using openvassharp;
+using sqlmapsharp;
 
 namespace AutoAssess.Data.BusinessObjects
 {
@@ -66,9 +67,8 @@ namespace AutoAssess.Data.BusinessObjects
 				
 			IList<NMapHost > hosts = this.ParentProfile.CurrentResults.Hosts;
 			
-			if (hosts.Count() == 0)
-			{
-				Console.WriteLine("ERROR: no hosts in the profile. Aborting.");
+			if (hosts.Count () == 0) {
+				Console.WriteLine ("ERROR: no hosts in the profile. Aborting.");
 				toolResults = null;
 				return;
 			}
@@ -98,7 +98,7 @@ namespace AutoAssess.Data.BusinessObjects
 						target = openvasManager.CreateTarget (target);
 						
 						OpenVASConfig config = openvasManager.GetAllConfigs ()
-							.Where (c => c.RemoteConfigID == new Guid (this.Configuration["openvasConfig"]))
+							.Where (c => c.RemoteConfigID == new Guid (this.Configuration ["openvasConfig"]))
 							.SingleOrDefault ();
 						
 						OpenVASTask task = new OpenVASTask ();
@@ -113,7 +113,8 @@ namespace AutoAssess.Data.BusinessObjects
 						
 						if (!taskResponse.FirstChild.Attributes ["status"].Value.StartsWith ("20"))
 							throw new Exception ("Creating OpenVAS scan failed: " + 
-								taskResponse.FirstChild.Attributes ["status_text"].Value);
+								taskResponse.FirstChild.Attributes ["status_text"].Value
+							);
 						
 						openvasReportID = taskResponse.FirstChild.FirstChild.InnerText;
 						openvasTaskID = task.RemoteTaskID.ToString ();
@@ -135,7 +136,7 @@ namespace AutoAssess.Data.BusinessObjects
 								
 					using (NessusObjectManager nessusManager = new NessusObjectManager (nessusSession)) {
 							
-					var tmp = nessusManager.CreateAndStartScan (csv, -2, this.Name + uniqueNo.ToString ());
+						var tmp = nessusManager.CreateAndStartScan (csv, -2, this.Name + uniqueNo.ToString ());
 							
 						string scanName = tmp.Name;
 						nessusScanID = scanName;
@@ -179,10 +180,10 @@ namespace AutoAssess.Data.BusinessObjects
 						siteXml = siteXml + "<host>" + host + "</host>";
 								
 					siteXml = siteXml + "</Hosts>" +
-										"<Credentials></Credentials>" +
-										"<Alerting></Alerting>" +
-										"<ScanConfig configID=\"" + id + "\" name=\"" + name + "\" templateID=\"" + template + "\"></ScanConfig>" +
-										"</Site>";
+						"<Credentials></Credentials>" +
+						"<Alerting></Alerting>" +
+						"<ScanConfig configID=\"" + id + "\" name=\"" + name + "\" templateID=\"" + template + "\"></ScanConfig>" +
+						"</Site>";
 								
 					XmlDocument doc = new XmlDocument ();
 					doc.LoadXml (siteXml);
@@ -273,11 +274,11 @@ namespace AutoAssess.Data.BusinessObjects
 				Dictionary<VulnerabilityScanType, XmlNode> reports = this.GetReports (scans);
 				foreach (var report in reports) {
 					if (report.Key == VulnerabilityScanType.Nessus)
-						nessusScan = new NessusScan(report.Value);
+						nessusScan = new NessusScan (report.Value);
 					else if (report.Key == VulnerabilityScanType.Nexpose)
-						nexposeScan = new NexposeScan(report.Value);
+						nexposeScan = new NexposeScan (report.Value);
 					else if (report.Key == VulnerabilityScanType.OpenVAS)
-						openvasScan = new OpenVASScan(report.Value);
+						openvasScan = new OpenVASScan (report.Value);
 					else
 						throw new Exception ("Don't know this scan type");
 				}
@@ -294,7 +295,7 @@ namespace AutoAssess.Data.BusinessObjects
 						System.Threading.Thread.Sleep (new TimeSpan (0, 0, 30));
 					}
 					
-					metasploitScan = new MetasploitScan(this.GetMetasploitProReport (workspace));
+					metasploitScan = new MetasploitScan (this.GetMetasploitProReport (workspace));
 				}
 			}
 			
@@ -335,8 +336,8 @@ namespace AutoAssess.Data.BusinessObjects
 				}
 			}
 			
-			XmlDocument doc = new XmlDocument();
-			doc.LoadXml(report);
+			XmlDocument doc = new XmlDocument ();
+			doc.LoadXml (report);
 			
 			return doc.LastChild;
 		}
@@ -351,18 +352,18 @@ namespace AutoAssess.Data.BusinessObjects
 					Dictionary<NexposeReportFilterType, string> filters = new Dictionary<NexposeReportFilterType, string> ();
 					filters.Add (NexposeReportFilterType.Site, id);
 					
-					report = manager.GenerateAdHocReport (NexposeUtil.GenerateAdHocReportConfig ("audit-report", NexposeReportFormat.RawXML, filters));
+					report = manager.GenerateAdHocReport (NexposeUtil.GenerateAdHocReportConfig ("audit-report", NexposeReportFormat.RawXMLv2, filters));
 					
 					//stupid hack
 					while (report.Length < 91) {
 						Thread.Sleep (500);
-						report = manager.GenerateAdHocReport (NexposeUtil.GenerateAdHocReportConfig ("audit-report", NexposeReportFormat.RawXML, filters));
+						report = manager.GenerateAdHocReport (NexposeUtil.GenerateAdHocReportConfig ("audit-report", NexposeReportFormat.RawXMLv2, filters));
 					}
 				}
 			}
 			
-			XmlDocument doc = new XmlDocument();
-			doc.LoadXml(Encoding.UTF8.GetString(report));
+			XmlDocument doc = new XmlDocument ();
+			doc.LoadXml (Encoding.UTF8.GetString (report));
 			
 			return doc.LastChild;
 		}
@@ -400,8 +401,8 @@ namespace AutoAssess.Data.BusinessObjects
 				}
 			}
 			
-			XmlDocument doc = new XmlDocument();
-			doc.LoadXml(report);
+			XmlDocument doc = new XmlDocument ();
+			doc.LoadXml (report);
 			return doc.LastChild;
 		}
 		
@@ -523,29 +524,26 @@ namespace AutoAssess.Data.BusinessObjects
 				
 				port.ParentIPAddress = host.IPAddressv4;
 				
-				if ((port.Service == "http" || port.Service == "https") && bool.Parse(config["isSQLMap"])) {
-					IToolOptions _options = new WapitiToolOptions();
+				if ((port.Service == "http" || port.Service == "https") && bool.Parse (config ["isSQLMap"])) {
+					IToolOptions _options = new WapitiToolOptions ();
 					
 					(_options as WapitiToolOptions).Host = host.IPAddressv4;
 					(_options as WapitiToolOptions).Port = port.PortNumber;
-					(_options as WapitiToolOptions).Path = config["wapitiPath"];
+					(_options as WapitiToolOptions).Path = config ["wapitiPath"];
 					
-					Wapiti wapiti = new Wapiti(_options);
+					Wapiti wapiti = new Wapiti (_options);
 					
-					Console.WriteLine("Running wapiti (http/" + port.PortNumber + ") on host: " + (string.IsNullOrEmpty(host.Hostname) ? host.IPAddressv4 : host.Hostname));
+					Console.WriteLine ("Running wapiti (http/" + port.PortNumber + ") on host: " + (string.IsNullOrEmpty (host.Hostname) ? host.IPAddressv4 : host.Hostname));
 					WapitiToolResults wapitiResults = null;
-					try
-					{	
-						wapitiResults = wapiti.Run(new TimeSpan(0,10,0)) as WapitiToolResults;
+					try {	
+						wapitiResults = wapiti.Run (new TimeSpan (0, 10, 0)) as WapitiToolResults;
 						wapitiResults.HostIPAddressV4 = host.IPAddressv4;
 						wapitiResults.HostPort = port.PortNumber;
 						wapitiResults.IsTCP = true;
 						
-						_results.Add(wapitiResults);
-					}
-					catch(Exception ex)
-					{
-						Console.WriteLine(ex.Message);
+						_results.Add (wapitiResults);
+					} catch (Exception ex) {
+						Console.WriteLine (ex.Message);
 					}
 						
 					if (sqlmapOptions != null && wapitiResults != null) {
@@ -563,28 +561,69 @@ namespace AutoAssess.Data.BusinessObjects
 							
 							_results.Add (sqlmapResults);
 						} else {
-							foreach (WapitiBug bug in wapitiResults.Bugs) {
-								if (bug.Type.StartsWith ("SQL Injection")) {
+							
+							using (SqlmapSession sess = new SqlmapSession("127.0.0.1", 8775)) {
+								using (SqlmapManager manager = new SqlmapManager(sess)) {
+									foreach (WapitiBug bug in wapitiResults.Bugs) {
+										if (bug.Type.StartsWith ("SQL Injection")) {
 									
-									Console.WriteLine("Starting SQLMap on host/port: " + (string.IsNullOrEmpty(host.Hostname) ? host.IPAddressv4 : host.Hostname) + "/" + port.PortNumber);
+											Console.WriteLine ("Starting SQLMap on host/port: " + (string.IsNullOrEmpty (host.Hostname) ? host.IPAddressv4 : host.Hostname) + "/" + port.PortNumber);
 									
-									sqlmapOptions.Path = config ["sqlmapPath"];
-									SQLMap mapper = new SQLMap (sqlmapOptions);
+											sqlmapOptions.Path = config ["sqlmapPath"];
+											//SQLMap mapper = new SQLMap (sqlmapOptions);
 									
-									SQLMapResults results = mapper.Run (bug) as SQLMapResults;
+											//SQLMapResults results = mapper.Run (bug) as SQLMapResults;
 									
-									if (results == null )
-										continue;
-									
-									if (results.Vulnerabilities != null)
-										foreach (var vuln in results.Vulnerabilities)
-											vuln.Target = bug.URL;
-									
-									results.ParentHostPort = port;
-									
-									_results.Add (results);
-								} else if (bug.Type.Contains ("Cross Site Scripting)")) {
-									//dsxs
+//									if (results == null )
+//										continue;
+//									
+//									if (results.Vulnerabilities != null)
+//										foreach (var vuln in results.Vulnerabilities)
+//											vuln.Target = bug.URL;
+//									
+//									results.ParentHostPort = port;
+//									
+//									_results.Add (results);
+
+											string taskid = manager.NewTask ();
+											Dictionary<string, object> opts = manager.GetOptions (taskid);
+
+
+											if (bug.URL.Contains (bug.Parameter)) {
+												opts ["url"] = bug.URL.Replace("%BF%27%22%28", "abcd").Replace("%27+or+benchmark%2810000000%2CMD5%281%29%29%23", "abcd");
+												manager.StartTask(taskid, opts);
+
+											} else {
+												opts ["url"] = bug.URL;
+												opts["data"] = bug.Parameter.Replace("%BF%27%22%28", "abcd").Replace("%27+or+benchmark%2810000000%2CMD5%281%29%29%23", "abcd");
+												manager.StartTask(taskid, opts);
+											}
+
+											SqlmapStatus status = manager.GetScanStatus(taskid);
+
+											while (status.Status != "terminated")
+											{
+												System.Threading.Thread.Sleep(new TimeSpan(0,0,10));
+												status = manager.GetScanStatus(taskid);
+											}
+
+											List<SqlmapLogItem> logItems = manager.GetLog(taskid);
+
+											SQLMapResults results = new SQLMapResults();
+											results.Vulnerabilities = new List<SQLMapVulnerability>();
+
+											foreach (SqlmapLogItem item in logItems.Where(l => l.Level == "INFO" && l.Message.EndsWith("injectable")))
+											{
+												SQLMapVulnerability vuln = new SQLMapVulnerability();
+											
+												Console.WriteLine(item.Message);
+											}
+											manager.DeleteTask(taskid);
+
+										} else if (bug.Type.Contains ("Cross Site Scripting)")) {
+											//dsxs
+										}
+									}
 								}
 							}
 						}
@@ -623,6 +662,7 @@ namespace AutoAssess.Data.BusinessObjects
 
 		string WriteRemoteReport (string report)
 		{
+
 			string sshfsDir = this.Configuration ["tmpSshfsDir"];
 			
 			string filename = Guid.NewGuid ().ToString ();
@@ -696,7 +736,7 @@ namespace AutoAssess.Data.BusinessObjects
 					options.Add ("DS_EnablePCIReport", true);
 					options.Add ("DS_EnableFISMAReport", true);
 					options.Add ("DS_JasperDisplayWeb", true);
-					options.Add( "DS_CAMPAIGN_ID", "-1");
+					options.Add ("DS_CAMPAIGN_ID", "-1");
 					
 					Dictionary<string, object> response = manager.StartReport (options);
 					
@@ -713,12 +753,12 @@ namespace AutoAssess.Data.BusinessObjects
 					
 					response = manager.DownloadReportByTask (response ["task_id"] as string);
 					
-					taskID = response["data"] as string;
+					taskID = response ["data"] as string;
 				}
 			}
 			
-			XmlDocument doc = new XmlDocument();
-			doc.LoadXml(taskID);
+			XmlDocument doc = new XmlDocument ();
+			doc.LoadXml (taskID);
 			
 			return doc.LastChild;
 		}
@@ -738,8 +778,7 @@ namespace AutoAssess.Data.BusinessObjects
 					options.Add ("ips", hosts);
 					options.Add ("workspace", workspace);
 					
-					if (this.ScanOptions.MetasploitDiscovers)
-					{
+					if (this.ScanOptions.MetasploitDiscovers) {
 						Console.WriteLine ("Discovering...");
 						response = manager.StartDiscover (options);
 						

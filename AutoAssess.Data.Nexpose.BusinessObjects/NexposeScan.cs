@@ -13,6 +13,8 @@ namespace AutoAssess.Data.Nexpose.BusinessObjects
 		
 		public NexposeScan (XmlNode report)
 		{
+			System.IO.File.WriteAllText("/tmp/nexpose_enterprise.xml", report.OuterXml);
+
 			foreach (XmlNode child in report.ChildNodes)
 			{
 				if (child.Name == "scans")
